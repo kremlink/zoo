@@ -1,0 +1,24 @@
+@include exports("@path:components\_header.scss"){/*@path:components\_header.scss*/
+  .header-top{
+    border:none;
+    @include flx(display,flex);
+    @include flx(justify-content,space-between);
+    @include flx(flex-flow,'row wrap');
+  }
+  .header-top-free{
+    font-weight:700;
+    margin:20px 40px 0 0;
+  }
+  .header-top-call{
+    margin-top:20px;
+  }
+  .search-field{
+    margin-right:45px;
+  }
+  .search-drop-down{
+    display:none;
+  }
+  .header-middle .right-entries{
+    text-align:center;
+  }
+}
