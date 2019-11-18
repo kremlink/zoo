@@ -432,11 +432,6 @@ html {
 
 /*@path:base\_exts.scss*/
 /*@path:components\_footer.scss*/
-#footer {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
 /*@path:components\_header.scss*/
 .header-top {
   border: none;
@@ -451,7 +446,29 @@ html {
 }
 
 .header-top-call {
-  margin-top: 20px;
+  margin: 20px 60px 0 0;
+  color: #000;
+  position: relative;
+  padding-right: 44px;
+}
+@media (min-width: 1200px) {
+  .header-top-call {
+    margin-right: 0;
+  }
+}
+.header-top-call:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  width: 31px;
+  height: 31px;
+  background: url(../images/shared-sprite.png) 0px -223px no-repeat;
+}
+
+.fa-phone {
+  margin-right: 10px;
 }
 
 .search-field {
@@ -463,7 +480,147 @@ html {
 }
 
 .header-middle .right-entries {
+  width: 210px;
+}
+
+.fa-shopping-cart ~ b {
+  margin-left: 14px;
+  vertical-align: middle;
+}
+
+.header-cart-side {
+  position: fixed;
+  top: 90px;
+  right: 10px;
+  width: 30px;
+  height: 29px;
+  background: url(../images/shared-sprite.png) 0px -103px no-repeat;
+  z-index: 1;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .header-cart-side {
+    display: block;
+  }
+}
+.header-cart-side span {
+  position: absolute;
+  left: -18px;
+  top: 24px;
+  background: #678621;
+  height: 24px;
+  line-height: 22px;
+  padding: 0 6px;
+  min-width: 24px;
+  color: #fff;
   text-align: center;
+}
+
+.navigation-addit {
+  font-size: 15px;
+  margin: 0 20px;
+  z-index: 1;
+}
+@media (min-width: 1200px) {
+  .navigation-addit {
+    margin: 0;
+    line-height: 70px;
+    position: absolute;
+    top: 0;
+    right: 70px;
+    bottom: 0;
+    display: flex;
+  }
+}
+
+.navigation-deliv {
+  display: block;
+  color: #fff;
+  padding-top: 20px;
+}
+@media (min-width: 1200px) {
+  .navigation-deliv {
+    line-height: 70px;
+    padding: 0 30px;
+  }
+}
+
+.navigation-log {
+  display: block;
+  padding: 12px 0 12px 20px;
+  position: relative;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .navigation-log {
+    line-height: 70px;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0 30px 0 60px;
+  }
+}
+.navigation-log:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 12px;
+  height: 14px;
+  background: url(../images/shared-sprite.png) 0px -11px no-repeat;
+}
+@media (min-width: 1200px) {
+  .navigation-log:before {
+    left: 30px;
+  }
+}
+
+.navigation-header .close-menu {
+  top: 5px;
+}
+
+.nav-overflow {
+  top: 150px;
+}
+@media (min-width: 1200px) {
+  .nav-overflow {
+    top: auto;
+  }
+}
+
+nav > ul > li > a {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  nav > ul > li > a {
+    line-height: 36px;
+    padding-top: 34px;
+  }
+}
+nav > ul > li > .fa {
+  margin-left: 6px;
+  top: -6px;
+}
+
+.navigation-footer {
+  display: none;
+}
+
+.menu-item-pic {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translate(-50%, 0);
+}
+@media (min-width: 1200px) {
+  .menu-item-pic {
+    display: block;
+  }
+}
+.menu-item-pic.i1 {
+  width: 32px;
+  height: 32px;
+  background: url(../images/shared-sprite.png) 0px -264px no-repeat;
 }
 
 /*@path:components\_shared.scss*/

@@ -1,15 +1,50 @@
 $shared-sprite:(
  img:'#{$path}shared-sprite.png',
  items:(
-  browsers:(
-   width:30px,
-   height:120px,
-   pos:0px -43px
+  hit:(
+   width:33px,
+   height:31px,
+   pos:0px -182px
   ),
-  iso:(
-   width:95px,
-   height:33px,
+  i-cart:(
+   width:23px,
+   height:22px,
+   pos:0px -35px
+  ),
+  l-arr:(
+   width:30px,
+   height:30px,
+   pos:0px -142px
+  ),
+  log:(
+   width:12px,
+   height:14px,
+   pos:0px -11px
+  ),
+  menu1:(
+   width:32px,
+   height:32px,
+   pos:0px -264px
+  ),
+  nothing:(
+   width:1px,
+   height:1px,
    pos:0px 0px
+  ),
+  pay1:(
+   width:43px,
+   height:26px,
+   pos:0px -67px
+  ),
+  sidecart:(
+   width:30px,
+   height:29px,
+   pos:0px -103px
+  ),
+  wapp:(
+   width:31px,
+   height:31px,
+   pos:0px -223px
   )
  )
 );

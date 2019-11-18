@@ -5,10 +5,13 @@ $maw:1200px;
 $pkw:900px;
 $pd:34px;
 
+$pk12:1200px;
+
 $anim:.3s;
 
 $colors:(
-  ref:#f00
+        ref:#f00,
+        grn:#678621
 );
 
 @function getc($arg,$c:$colors){

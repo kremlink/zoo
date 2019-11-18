@@ -18,8 +18,8 @@
   @include vendor($arg,$what,(''));
 }
 
-@mixin pk($s:''){
-  @media(min-width:$pkw + $s){
+@mixin med($s){
+  @media(min-width:$s){
     @content;
   }
 }
