@@ -490,7 +490,7 @@ html {
 
 .header-cart-side {
   position: fixed;
-  top: 90px;
+  top: 34px;
   right: 10px;
   width: 30px;
   height: 29px;
@@ -516,6 +516,53 @@ html {
   text-align: center;
 }
 
+.navigation-header .close-menu {
+  top: 15px;
+}
+
+.nav-overflow {
+  top: 75px;
+}
+@media (min-width: 1200px) {
+  .nav-overflow {
+    top: auto;
+  }
+}
+
+nav > ul > li > a {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  nav > ul > li > a {
+    line-height: 36px;
+    padding-top: 34px;
+  }
+}
+nav > ul > li > .fa {
+  margin-left: 6px;
+  top: -6px;
+}
+
+@media (min-width: 1200px) {
+  nav > ul:nth-child(2) {
+    margin-left: -30px;
+  }
+}
+nav > ul:nth-child(2) > li {
+  padding: 0;
+}
+
+.fixed-header ul:nth-child(2) {
+  display: none;
+}
+.fixed-header .header-cart-side {
+  top: 100px;
+}
+
+.fixed-header-square-button {
+  padding: 0;
+}
+
 .navigation-addit {
   font-size: 15px;
   margin: 0 20px;
@@ -525,10 +572,6 @@ html {
   .navigation-addit {
     margin: 0;
     line-height: 70px;
-    position: absolute;
-    top: 0;
-    right: 70px;
-    bottom: 0;
     display: flex;
   }
 }
@@ -572,33 +615,6 @@ html {
   .navigation-log:before {
     left: 30px;
   }
-}
-
-.navigation-header .close-menu {
-  top: 5px;
-}
-
-.nav-overflow {
-  top: 150px;
-}
-@media (min-width: 1200px) {
-  .nav-overflow {
-    top: auto;
-  }
-}
-
-nav > ul > li > a {
-  position: relative;
-}
-@media (min-width: 1200px) {
-  nav > ul > li > a {
-    line-height: 36px;
-    padding-top: 34px;
-  }
-}
-nav > ul > li > .fa {
-  margin-left: 6px;
-  top: -6px;
 }
 
 .navigation-footer {
