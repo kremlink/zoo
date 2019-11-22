@@ -32,8 +32,11 @@
   .search-drop-down{
     display:none;
   }
-  .header-middle .right-entries{
-    width:210px;
+  .header-middle{
+    padding-top:25px;
+    .right-entries{
+      width:210px;
+    }
   }
   .fa-shopping-cart~b{
     margin-left:14px;

@@ -1,3 +1,50 @@
 @include exports("@path:components\_footer.scss"){/*@path:components\_footer.scss*/
-
+  .footer-bottom-navigation{
+    border-top: 1px #ebebeb solid;
+    margin-top:40px;
+    .footer-links{
+      font-size:14px;
+    }
+    .cell-view{
+      text-align:left;
+      &:first-child{
+        width:280px;
+      }
+      &:last-child{
+        margin-top:40px;
+        @include med($pk){
+          margin:0;
+          text-align:right;
+        }
+      }
+    }
+    p{
+      margin-top:20px;
+      line-height:20px;
+      &:first-child{
+        margin:0;
+      }
+    }
+  }
+  .footer-links{
+    .pluso a{
+      margin:5px 0 0 5px !important;
+      border:none;
+    }
+    .payment-methods a{
+      margin-right:7px;
+    }
+    a{
+      font-weight:700;
+      margin:0!important;
+      &.footer-agreement{
+        text-decoration:underline;
+        font-weight:500;
+      }
+    }
+  }
+  .payment-methods{
+    margin-top:20px;
+    text-align:left;
+  }
 }

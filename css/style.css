@@ -432,6 +432,57 @@ html {
 
 /*@path:base\_exts.scss*/
 /*@path:components\_footer.scss*/
+.footer-bottom-navigation {
+  border-top: 1px #ebebeb solid;
+  margin-top: 40px;
+}
+.footer-bottom-navigation .footer-links {
+  font-size: 14px;
+}
+.footer-bottom-navigation .cell-view {
+  text-align: left;
+}
+.footer-bottom-navigation .cell-view:first-child {
+  width: 280px;
+}
+.footer-bottom-navigation .cell-view:last-child {
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  .footer-bottom-navigation .cell-view:last-child {
+    margin: 0;
+    text-align: right;
+  }
+}
+.footer-bottom-navigation p {
+  margin-top: 20px;
+  line-height: 20px;
+}
+.footer-bottom-navigation p:first-child {
+  margin: 0;
+}
+
+.footer-links .pluso a {
+  margin: 5px 0 0 5px !important;
+  border: none;
+}
+.footer-links .payment-methods a {
+  margin-right: 7px;
+}
+.footer-links a {
+  font-weight: 700;
+  margin: 0 !important;
+}
+.footer-links a.footer-agreement {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.payment-methods {
+  margin-top: 20px;
+  text-align: left;
+}
+
 /*@path:components\_header.scss*/
 .header-top {
   border: none;
@@ -479,6 +530,9 @@ html {
   display: none;
 }
 
+.header-middle {
+  padding-top: 25px;
+}
 .header-middle .right-entries {
   width: 210px;
 }
@@ -641,5 +695,49 @@ nav > ul:nth-child(2) > li {
 
 /*@path:components\_shared.scss*/
 /*@path:partials\_index.scss*/
+.information-entry-item {
+  margin-top: 16px;
+  line-height: 20px;
+  display: block;
+  color: #000;
+}
+.information-entry-item .imp {
+  display: block;
+}
+.information-entry-item .date {
+  font-size: 16px;
+}
+
+#content-block .latest-review footer {
+  font-size: 16px;
+  text-align: center;
+}
+
+.latest-review footer cite {
+  color: #888;
+}
+
+.blockquote-slider {
+  margin-right: 0;
+}
+.logos-blocks {
+  margin: 60px -40px 0 -40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logos-blocks .item {
+  margin: 10px 40px 0 40px;
+  width: 160px;
+  text-align: center;
+}
+.logos-blocks img {
+  max-width: 160px;
+}
+.logos-blocks .ph {
+  width: 160px;
+  margin: 0 40px;
+}
 
 /*# sourceMappingURL=../../css/style.css.map */
