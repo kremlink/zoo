@@ -1,5 +1,139 @@
 /*@path:partials\_index.scss*/
-
+.bnr-block{
+  position:relative;
+  overflow:hidden;
+  @extend %loader;
+  margin-bottom:20px;
+  @include med($pk){
+    margin-bottom:46px;
+  }
+  &.loaded{
+    background:none;
+  }
+  .item{
+    @include abs($l:0,$r:0,$t:0,$b:0);
+    opacity:0;
+    background:center/cover no-repeat;
+    @include trs('opacity .5s ease-in-out');
+    &.active{
+      cursor:pointer;
+      opacity:1;
+      z-index:1;
+    }
+  }
+  .next-arr,.prev-arr{
+    background:none;
+    z-index:1;
+    @include center($f:v);
+    height:100%;
+    @include flx(display,flex);
+    @include flx(align-items,center);
+    padding:0 16px;
+    &.hidden,&.disabled{
+      display:none;
+    }
+    svg{
+      position: relative;
+      width:22px;
+      height:42px;
+    }
+  }
+  .next-arr{
+    @include trf('translate(0,-50%) scale(-1,1)');
+  }
+  .prev-arr{
+    left:6px;
+  }
+  .next-arr{
+    right:6px;
+  }
+}
+//---
+.mozaic-swiper .mozaic-banner-entry.type-1{
+  background-size:contain;
+}
+.mozaic-banner-content{
+  .title{
+    font-weight:400;
+    margin-right:-80px;
+    span{
+      font-size:12px;
+      color:getc(font);
+    }
+  }
+  .subtitle{
+    text-transform:none;
+  }
+}
+.mozaic-banner-entry .what{
+  width:96px;
+  @include abs($r:0,$t:0);
+  line-height:18px;
+  text-align:center;
+  color:#fff;
+}
+//---
+.swiper-wrapper{
+  @include flx(display,flex);
+}
+.products-swiper .paddings-container{
+  height:100%;
+  border-right:1px solid getc(bd);
+  position:relative;
+  padding-top:24px;
+  .disc{
+    @include center($l:21px);
+    line-height:18px;
+    padding:0 4px;
+    color:#fff;
+  }
+  .tri{
+    @include abs($l:21px,$t:0);
+  }
+  .what{
+    width:96px;
+    @include abs($r:21px,$t:0);
+    line-height:18px;
+    text-align:center;
+    color:#fff;
+  }
+}
+.product-slide-entry{
+  padding-bottom:80px;
+  position:relative;
+  height:100%;
+  .bottom{
+    @include abs($l:0,$r:0,$b:0);
+  }
+  .price{
+    margin:0;
+  }
+  .cart{
+    display:inline-block;
+    margin-top:14px;
+    padding:0 12px;
+    line-height:32px;
+    color:getc(grn);
+    border:none;
+    background:getc(bd);
+    &:before{
+      content:'';
+      display:inline-block;
+      margin-right:6px;
+      vertical-align:middle;
+      @include sprite(i-cart);
+    }
+  }
+}
+//---
+.product-column-entry{
+  .more{
+    font-size:16px;
+    margin-top:20px;
+    font-weight:500;
+  }
+}
+//---
 .information-entry-item{
   margin-top:16px;
   line-height:20px;

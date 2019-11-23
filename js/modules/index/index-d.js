@@ -7,7 +7,19 @@
   obj:mgr.data,
   field:'index',
   data:{
-   smth:3
+   bnr:{
+    container:'.bnr-block',
+    elements:'.item',
+    prev:'.bnr-block .prev-arr',
+    next:'.bnr-block .next-arr',
+    options:{
+     circular:true,
+     helpers:{swipe:mgr.get('lib.utils.swipe')}
+    },
+    extra:{
+     cls:'loaded'
+    }
+   }
   }
  });
  

@@ -7,12 +7,15 @@ $pd:34px;
 
 $pk:992px;
 $pk12:1200px;
+$min:500px;
 
 $anim:.3s;
 
 $colors:(
         ref:#f00,
-        grn:#678621
+        grn:#678621,
+        bd:#ebebeb,
+        font:#b3b3b3
 );
 
 @function getc($arg,$c:$colors){
