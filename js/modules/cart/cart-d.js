@@ -19,6 +19,9 @@
     pops:'.standard-pop.cart',
     overlay:'.overlay',
     closers:'.standard-pop.cart .close,.standard-pop.cart .btn',
+    options:{
+     esc:true
+    },
     extra:{
      shift:mgr.get('shared.pk')?200:100
     }

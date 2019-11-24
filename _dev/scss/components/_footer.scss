@@ -37,6 +37,7 @@
     a{
       font-weight:700;
       margin:0!important;
+      color:#000!important;
       &.footer-agreement{
         text-decoration:underline;
         font-weight:500;
@@ -46,5 +47,25 @@
   .payment-methods{
     margin-top:20px;
     text-align:left;
+    a{
+      border:none;
+      border-radius:0;
+    }
+  }
+  //---
+  .cart-box.popup{
+    .content{
+      .title,.price{
+        font-family:font();
+      }
+    }
+    .summary{
+      .subtotal,.grandtotal{
+        font-family:font();
+      }
+    }
+  }
+  body.style-1 .button.style-4{
+    color:#fff;
   }
 }

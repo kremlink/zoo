@@ -1,5 +1,6 @@
 /*@path:partials\_cart.scss*/
 .cart-block{
+  margin-top:40px;
   @extend %prod-amt;
   $l-sh:200px;
   input[type=text],input[type=password],input[type=number],textarea,select{
@@ -23,6 +24,7 @@
   }
   .h{
     text-align:center;
+    color:#000;
     font:24px/24px font();
     @include med($pk){
       text-align:left;
@@ -93,6 +95,7 @@
   .c-price{
     margin-left:20px;
     width:144px;
+    font:700 22px/22px font();
     @include flx(order,-1);
     @include med($pk + $l-sh){
       margin-left:24px;
@@ -101,23 +104,19 @@
     }
   }
   .c-p-val{
-    font:28px/28px font();
     span{
       font-size:14px;
-      font-weight:600;
     }
   }
   .c-p-info{
-    font-style:italic;
-    font-size:12px;
-    color:getc(font);
+    font-size:13px;
   }
   .c-p-old{
     text-decoration:line-through;
+    color:getc(font);
   }
   .c-p-disc{
     color:getc(red);
-    font-weight:600;
   }
   //---
   .add{
@@ -125,7 +124,7 @@
     @extend %g-add;
     @include med($pk){
       margin-top:30px;
-      border-bottom:2px solid getc(ref);
+      border-bottom:2px solid getc(grn);
     }
   }
   .a-wrap{
@@ -151,7 +150,7 @@
   .right{
     @include med($pk){
       width:420px;
-      @include abs($t:0,$b:0,$r:0);
+      @include abs($t:-20px,$b:0,$r:0);
     }
   }
   .info{
@@ -162,28 +161,42 @@
     @include med($pk){
       margin:0;
       padding:0 30px 30px 30px;
-      border-radius:8px;
     }
   }
   .in-h1{
-    background:getc(grn);
     margin:0 (- $mpd);
     height:54px;
     color:#fff;
     text-align:center;
-    font:600 20px/54px font();
+    font-size:30px;
+    line-height:54px;
+    text-transform:uppercase;
+    font-weight:300;
+    position:relative;
     @include med($pk){
-      margin:0 -30px;
-      border-radius:8px 8px 0 0;
+      margin:-2px -32px 0 -32px;
+    }
+    .type2 &{
+      background:getc(grn);
+    }
+    span{
+      position:relative;
+    }
+    &:before{
+      content:'';
+      @include abs($l:0,$t:0,$r:0,$b:0);
+      background:rgba(#000,0.15);
     }
   }
   .in-top{
-    background:getc(grn);
     margin:26px (- $mpd) 0 (- $mpd);
     padding:10px 0;
     position:relative;
     @include med($pk){
-      margin:26px -30px 0 -30px;
+      margin:26px -32px 0 -32px;
+    }
+    .type2 &{
+      background:getc(grn);
     }
   }
   .in-notif{
@@ -220,18 +233,18 @@
     text-align:center;
     width:10px;
     font-size:20px;
-    color:#fff;
+    color:#fff !important;
   }
   .in-choose{
     position:relative;
     padding-left:124px;
     background:none;
-    color:#fff;
+    color:#fff !important;
     display:block;
     svg{
       width:64px;
       height:40px;
-      @include abs($t:-2px,$l:30px);
+      @include abs($t:-5px,$l:30px);
     }
     span{
       @include grad-ref($c:#fff,$b:1px,$d:true);
@@ -249,9 +262,12 @@
       margin:30px -20px 0 -20px;
     }
     input{
-      border:2px solid getc(bd);
+      border:1px solid getc(bd);
       @include plh(){
         font-size:14px;
+        color:getc(font);
+        font-weight:400;
+        opacity:0.5;
       };
     }
   }
@@ -259,10 +275,7 @@
     border:none;
     background:none;
     @include abs($t:0,$r:0);
-    svg{
-      width:50px;
-      height:50px;
-    }
+    @include sprite(promo-btn1);
   }
   .in-price{
     margin-top:8px;
@@ -275,9 +288,6 @@
       font-size:20px;
       line-height:20px;
       font-weight:500;
-      div:last-child{
-        font-weight:600;
-      }
     }
     div{
       &:last-child{
@@ -288,8 +298,7 @@
     }
   }
   .in-free{
-    font-size:20px;
-    line-height:20px;
+    font:18px/20px font();
     color:#fff;
     text-align:center;
     background:getc(red);
@@ -311,23 +320,39 @@
     margin-top:26px;
     color:getc(gfont);
   }
-  .done-btn{
+  .i-agree{
+    text-align:center;
+    margin-top:40px;
+    font-size:14px;
+  }
+  .pass{
+    width:100%;
+  }
+  .btn{
     margin:26px auto 0 auto;
     width:260px;
     height:34px;
+    line-height:34px;
     display:block;
     font-size:20px;
-    line-height:20px;
-    color:#fff;
-    background:getc(grn);
-    border:2px solid getc(grn);
+    color:#fff !important;
+    font-weight:300;
+    border-radius:0;
+    padding:0;
     text-align:center;
+    &.done{
+      line-height:20px;
+    }
     &.disabled{
       margin-top:12px;
       color:getc(gfont);
       background:none;
       pointer-events:none;
       border-color:getc(gfont);
+    }
+    .type2 &{
+      background:getc(grn);
+      border:2px solid getc(grn);
     }
   }
   //---
@@ -369,6 +394,11 @@
     display:block;
     position:relative;
     max-width:300px;
+    padding:0;
+    font-weight:400;
+    color:getc(base);
+    font-size:16px;
+    line-height:20px;
     @include med($pk){
       margin-left:20px;
       max-width:none;
@@ -380,11 +410,18 @@
         width:226px;
       }
     }
+    &.center{
+      @include med($pk){
+        @include flx(flex,none);
+        width:300px;
+        margin-left:auto;
+      }
+    }
     &.soc{
       text-align:center;
     }
     svg{
-      @include abs($l:0,$t:1px);
+      @include abs($l:0,$t:4px);
       width:12px;
       height:14px;
     }
@@ -395,6 +432,9 @@
   .c-f-i-h{
     display:block;
     margin:0 0 6px 24px;
+    font-size:16px;
+    line-height:20px;
+    color:getc(base);
   }
   .c-f-soc{
     display:inline-block;

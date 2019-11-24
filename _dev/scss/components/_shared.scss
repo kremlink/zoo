@@ -1,10 +1,8 @@
 @include exports("@path:components\_shared.scss"){/*@path:components\_shared.scss*/
   .the-tabs{
-    font-size:20px;
-    line-height:24px;
+    font:20px/24px font();
     background:getc(bd);
     margin:0 auto;
-    border-radius:10px;
     width:270px;
     white-space:nowrap;
     @include med($pk){
@@ -17,15 +15,17 @@
       display:block;
       padding:13px 0;
       text-align:center;
-      border-radius:10px;
       position:relative;
+      .type2 &{
+        color:getc(grn);
+      }
       @include med($pk){
         padding:13px 30px;
         @include flx(display,flex);
         @include flx(align-items,center);
       }
       &.active{
-        color:#000;
+        color:#fff;
         background:getc(grn);
         span{
           background:none;
@@ -33,7 +33,7 @@
       }
     }
     span{
-      @include grad-ref($c:getc(red),$b:1px,$d:true);
+      @include grad-ref($c:getc(grn),$b:1px,$d:true);
     }
   }
   //---
@@ -43,28 +43,194 @@
     cursor:pointer;
     position:relative;
     padding-left:26px;
-    color:getc(ref);
+    color:getc(grn);
+    font-weight:400;
     &+.the-radio{
       margin-top:8px;
     }
     input{
       opacity:0;
       position:absolute;
-      &:checked+span{
-        background:transparent;
+      &:checked+.t-r-toggle:before{
+        content:'';
+        @include center();
+        border-radius:50%;
+        width:6px;
+        height:6px;
+        background:getc(font);
       }
     }
     .t-r-toggle{
-      @include abs($l:0,$t:1px);
-      width:8px;
-      height:8px;
+      @include abs($l:0,$t:6px);
+      width:12px;
+      height:12px;
       border-radius:50%;
-      border:4px solid getc(red);
-      background:getc(red);
+      border:1px solid getc(font);
     }
     .t-r-info{
       display:block;
       color:#000;
+      font-size:14px;
+    }
+  }
+  //---
+  .standard-pop{
+    padding:12px 40px 36px 40px;
+    background:getc(bd);
+    border-radius:8px;
+    @include center($t:0);
+    max-width:$pkw;
+    z-index:4;
+    opacity:0;
+    visibility:hidden;
+    @include trs('opacity #{$anim} ease-in-out');
+    &.active{
+      opacity:1;
+      visibility:visible;
+    }
+    .h{
+      font-size:20px;
+      line-height:20px;
+      @include abs($t:-32px,$l:0);
+    }
+    .close{
+      @include abs($t:-72px,$r:50%);
+      background:none;
+      margin-right:-16px;
+      @include med($pk){
+        right:0;
+        top:-42px;
+        margin:0;
+      }
+      svg{
+        width:33px;
+        height:33px;
+      }
+    }
+    &.cart{
+      width:auto;
+      padding-top:40px;
+      .the-tabs~.form.active{
+        margin-top:30px;
+      }
+      .form{
+        height:0;
+        overflow:hidden;
+        &.active{
+          overflow:visible;
+          height:auto;
+          opacity:1;
+          @include trs('opacity #{$anim*2} ease-in-out');
+        }
+      }
+      .the-radio{
+        @include med($pk){
+          width:60%;
+        }
+      }
+      .f-h{
+        font-size:24px;
+        line-height:24px;
+      }
+      .f-pack{
+        @include med($pk){
+          @include flx(display,flex);
+          @include flx(justify-content,space-between);
+        }
+        .f-item{
+          margin-top:20px;
+          @include med($pk){
+            width:20%;
+          }
+        }
+        .f-i-h{
+          padding:0;
+        }
+      }
+      .price{
+        margin:20px 16px 0 0;
+        @include med($pk){
+          margin-top:0;
+        }
+        span{
+          margin-left:10px;
+          font-size:18px;
+          line-height:18px;
+        }
+      }
+    }
+    .f-item{
+      display:block;
+      position:relative;
+      &:nth-child(n+2){
+        margin-top:20px;
+      }
+      svg{
+        @include abs($l:0,$t:8px);
+        width:12px;
+        height:14px;
+      }
+      &.att{
+        padding-left: 28px;
+        font-style: italic;
+        line-height: 16px;
+        color: getc(font);
+        svg{
+          height: 36px;
+          top: 6px;
+        }
+      }
+      input{
+        background:#fff;
+        border:none;
+        padding-left:24px;
+        width:100%;
+        height:50px;
+        font-size:14px;
+        @extend %bxz;
+        @include plh(){
+          color:getc(font);
+          font-size:12px;
+        };
+        &.error{
+          background:#f00;
+          @include plh(){
+            color:#fff;
+          };
+        }
+        &:disabled{
+          background:none;
+          border:2px solid getc(bd);
+        }
+      }
+    }
+    .f-i-h{
+      display:block;
+      margin:0 0 6px 24px;
+      font-size:14px;
+      line-height:20px;
+      color:#000;
+      font-weight:400;
+    }
+    .ctrls{
+      margin-top: 20px;
+      @include flx(display,flex);
+      @include flx(align-items,center);
+      @include flx(justify-content,center);
+      @include flx(flex-flow,'row wrap');
+      @include med($pk){
+        @include flx(justify-content,space-between);
+      }
+    }
+    .btn{
+      font-size:20px;
+      line-height:34px;
+      padding:0 30px;
+      background:none;
+      background:getc(grn);
+      color:#fff;
+      border:none;
+      border-radius:0;
     }
   }
 }

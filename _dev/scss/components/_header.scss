@@ -1,4 +1,20 @@
 @include exports("@path:components\_header.scss"){/*@path:components\_header.scss*/
+  .type2 .header-wrapper {
+    &.style-1 .navigation{
+      background:getc(grn);
+    }
+    &.style-10 header:not(.fixed-header) .nav-overflow:before {
+      @include med($pk12){
+        background:getc(grn);
+      }
+    }
+  }
+  .logo-wrapper{
+    width:460px;
+  }
+  .header-functionality-entry b{
+    font:600 20px/1 font();
+  }
   .header-top{
     border:none;
     @include flx(display,flex);
@@ -40,16 +56,27 @@
   }
   .header-middle{
     padding-top:25px;
+    @include med($pk12){
+      padding:50px 0;
+    }
     .right-entries{
-      width:210px;
+      width:230px;
     }
   }
-  .fa-shopping-cart~b{
-    margin-left:14px;
-    vertical-align:middle;
+  .fa-shopping-cart{
+    &~b{
+      margin-left:14px;
+      vertical-align:middle;
+      .type2 &{
+        color:getc(grn);
+      }
+    }
+    &~span{
+      font-size:14px;
+    }
   }
   .header-cart-side{
-    @include abs($t:34px,$r:10px,$p:fixed);
+    @include abs($t:34px,$r:0,$p:fixed);
     @include sprite(sidecart);
     z-index:1;
     display:none;
@@ -57,14 +84,16 @@
       display:block;
     }
     span{
-      @include abs($t:24px,$l:-18px);
-      background:getc(grn);
+      @include abs($l:-6px,$b:-6px);
       height:24px;
       line-height:22px;
       padding:0 6px;
       min-width:24px;
       color:#fff;
       text-align:center;
+      .type2 &{
+        background:getc(grn);
+      }
     }
   }
   .navigation-header .close-menu{
@@ -74,27 +103,6 @@
     top:75px;
     @include med($pk12){
       top:auto;
-    }
-  }
-  nav>ul>li{
-    &>a{
-      position:relative;
-      @include med($pk12){
-        line-height:36px;
-        padding-top:34px;
-      }
-    }
-    &>.fa{
-      margin-left:6px;
-      top:-6px;
-    }
-  }
-  nav>ul:nth-child(2){
-    @include med($pk12){
-      margin-left: -30px;
-    }
-    >li{
-      padding: 0;
     }
   }
   .fixed-header{
@@ -117,32 +125,34 @@
       line-height:70px;
       @include flx(display,flex);
     }
-  }
-  .navigation-deliv{
-    display:block;
-    color:#fff;
-    padding-top:20px;
-    @include med($pk12){
-      line-height:70px;
-      padding:0 30px;
-    }
-  }
-  .navigation-log{
-    display:block;
-    padding:12px 0 12px 20px;
-    position:relative;
-    color:#fff;
-    @include med($pk12){
-      line-height:70px;
-      background:rgba(#000,0.15);
-      padding:0 30px 0 60px;
-    }
-    &:before{
-      content:'';
-      @include center($l:0);
-      @include sprite(log);
+    .navigation-deliv{
+      display:block;
+      color:#fff;
+      font-family:font();
+      padding-top:20px;
       @include med($pk12){
-        left:30px;
+        line-height:70px;
+        padding:0 20px;
+      }
+    }
+    .navigation-log{
+      display:block;
+      padding:12px 0 12px 20px;
+      position:relative;
+      color:#fff;
+      font-family:font();
+      @include med($pk12){
+        line-height:70px;
+        background:rgba(#000,0.15);
+        padding:0 20px 0 40px;
+      }
+      &:before{
+        content:'';
+        @include center($l:0);
+        @include sprite(log);
+        @include med($pk12){
+          left:20px;
+        }
       }
     }
   }
@@ -158,5 +168,20 @@
     &.i1{
       @include sprite(menu1);
     }
+    &.i2{
+      @include sprite(menu2);
+    }
+    &.i3{
+      @include sprite(menu3);
+    }
+    &.i4{
+      @include sprite(menu4);
+    }
+    &.i5{
+      @include sprite(menu5);
+    }
+  }
+  .submenu-list-title a{
+    font-family:font();
   }
 }
