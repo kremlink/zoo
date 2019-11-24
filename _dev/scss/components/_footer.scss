@@ -68,4 +68,20 @@
   body.style-1 .button.style-4{
     color:#fff;
   }
+  //---
+  .cart-box.popup{
+    .content{
+      .title,.price{
+        font-family:font();
+      }
+    }
+    .summary{
+      .subtotal,.grandtotal{
+        font-family:font();
+      }
+    }
+  }
+  body.style-1 .button.style-4{
+    color:#fff;
+  }
 }
