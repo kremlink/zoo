@@ -601,6 +601,17 @@ body.style-1 .button.style-4 {
   color: #fff;
 }
 
+.cart-box.popup .content .title, .cart-box.popup .content .price {
+  font-family: "Comfortaa", sans-serif;
+}
+.cart-box.popup .summary .subtotal, .cart-box.popup .summary .grandtotal {
+  font-family: "Comfortaa", sans-serif;
+}
+
+body.style-1 .button.style-4 {
+  color: #fff;
+}
+
 /*@path:components\_header.scss*/
 .type2 .header-wrapper.style-1 .navigation {
   background: #749625;
@@ -1125,6 +1136,159 @@ body.style-1 .button.style-4 {
   color: #fff;
   border: none;
   border-radius: 0;
+}
+
+.standard-pop {
+  padding: 12px 40px 36px 40px;
+  background: #ebebeb;
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  max-width: 900px;
+  z-index: 6;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+.standard-pop.active {
+  opacity: 1;
+  visibility: visible;
+}
+.standard-pop .h {
+  font-size: 20px;
+  line-height: 20px;
+  position: absolute;
+  left: 0;
+  top: -32px;
+}
+.standard-pop .close {
+  position: absolute;
+  top: -72px;
+  right: 50%;
+  background: none;
+  margin-right: -16px;
+}
+@media (min-width: 992px) {
+  .standard-pop .close {
+    right: 0;
+    top: -42px;
+    margin: 0;
+  }
+}
+.standard-pop .close svg {
+  width: 33px;
+  height: 33px;
+}
+.standard-pop.cart {
+  width: auto;
+  padding-top: 40px;
+}
+.standard-pop.cart .the-tabs ~ .form.active {
+  margin-top: 30px;
+}
+.standard-pop.cart .form {
+  height: 0;
+  overflow: hidden;
+}
+.standard-pop.cart .form.active {
+  overflow: visible;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+@media (min-width: 992px) {
+  .standard-pop.cart .the-radio {
+    width: 60%;
+  }
+}
+.standard-pop.cart .f-h {
+  font-size: 24px;
+  line-height: 24px;
+}
+@media (min-width: 992px) {
+  .standard-pop.cart .f-pack {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.standard-pop.cart .f-pack .f-item {
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .standard-pop.cart .f-pack .f-item {
+    width: 20%;
+  }
+}
+.standard-pop.cart .f-pack .f-i-h {
+  padding: 0;
+}
+.standard-pop.cart .price {
+  margin: 20px 16px 0 0;
+}
+@media (min-width: 992px) {
+  .standard-pop.cart .price {
+    margin-top: 0;
+  }
+}
+.standard-pop.cart .price span {
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 18px;
+}
+.standard-pop .f-item {
+  display: block;
+  position: relative;
+}
+.standard-pop .f-item:nth-child(n+2) {
+  margin-top: 20px;
+}
+.standard-pop .f-item svg {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 12px;
+  height: 14px;
+}
+.standard-pop .f-item.att {
+  padding-left: 28px;
+  font-style: italic;
+  line-height: 16px;
+  color: #808080;
+}
+.standard-pop .f-item.att svg {
+  height: 36px;
+  top: 6px;
+}
+.standard-pop .f-item input:disabled {
+  background: none;
+  border: 2px solid #ebebeb;
+}
+.standard-pop .f-i-h {
+  display: block;
+  margin: 0 0 6px 24px;
+}
+.standard-pop .ctrls {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+@media (min-width: 992px) {
+  .standard-pop .ctrls {
+    justify-content: space-between;
+  }
+}
+.standard-pop .btn {
+  font-size: 20px;
+  line-height: 34px;
+  padding: 0 30px;
+  background: none;
+  background: #749625;
+  color: #000;
+  border: none;
 }
 
 /*@path:partials\_cart.scss*/
