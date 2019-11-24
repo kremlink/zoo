@@ -162,28 +162,31 @@
     @include med($pk){
       margin:0;
       padding:0 30px 30px 30px;
-      border-radius:8px;
     }
   }
   .in-h1{
-    background:getc(grn);
     margin:0 (- $mpd);
     height:54px;
     color:#fff;
     text-align:center;
-    font:600 20px/54px font();
+    font-size:20px;
+    line-height:54px;
     @include med($pk){
       margin:0 -30px;
-      border-radius:8px 8px 0 0;
+    }
+    .type2 &{
+      background:getc(grn);
     }
   }
   .in-top{
-    background:getc(grn);
     margin:26px (- $mpd) 0 (- $mpd);
     padding:10px 0;
     position:relative;
     @include med($pk){
       margin:26px -30px 0 -30px;
+    }
+    .type2 &{
+      background:getc(grn);
     }
   }
   .in-notif{
@@ -311,23 +314,37 @@
     margin-top:26px;
     color:getc(gfont);
   }
-  .done-btn{
+  .i-agree{
+    text-align:center;
+    margin-top:40px;
+  }
+  .pass{
+    width:100%;
+  }
+  .btn{
     margin:26px auto 0 auto;
     width:260px;
     height:34px;
+    line-height:34px;
     display:block;
     font-size:20px;
-    line-height:20px;
     color:#fff;
-    background:getc(grn);
-    border:2px solid getc(grn);
+    border-radius:0;
+    padding:0;
     text-align:center;
+    &.done{
+      line-height:20px;
+    }
     &.disabled{
       margin-top:12px;
       color:getc(gfont);
       background:none;
       pointer-events:none;
       border-color:getc(gfont);
+    }
+    .type2 &{
+      background:getc(grn);
+      border:2px solid getc(grn);
     }
   }
   //---
@@ -369,6 +386,11 @@
     display:block;
     position:relative;
     max-width:300px;
+    padding:0;
+    font-weight:400;
+    color:getc(base);
+    font-size:16px;
+    line-height:20px;
     @include med($pk){
       margin-left:20px;
       max-width:none;
@@ -378,6 +400,13 @@
       @include med($pk){
         @include flx(flex,none);
         width:226px;
+      }
+    }
+    &.center{
+      @include med($pk){
+        @include flx(flex,none);
+        width:300px;
+        margin-left:auto;
       }
     }
     &.soc{
@@ -395,6 +424,9 @@
   .c-f-i-h{
     display:block;
     margin:0 0 6px 24px;
+    font-size:16px;
+    line-height:20px;
+    color:getc(base);
   }
   .c-f-soc{
     display:inline-block;

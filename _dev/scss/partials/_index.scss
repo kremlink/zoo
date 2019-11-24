@@ -28,24 +28,26 @@
     height:100%;
     @include flx(display,flex);
     @include flx(align-items,center);
-    padding:0 16px;
+    width:60px;
     &.hidden,&.disabled{
       display:none;
     }
-    svg{
-      position: relative;
-      width:22px;
-      height:42px;
+    &:before{
+      content:'';
+      @include center();
+    }
+  }
+  .prev-arr{
+    left:0;
+    .type2 &:before{
+      @include sprite(arr-l1);
     }
   }
   .next-arr{
-    @include trf('translate(0,-50%) scale(-1,1)');
-  }
-  .prev-arr{
-    left:6px;
-  }
-  .next-arr{
-    right:6px;
+    right:0;
+    .type2 &:before{
+      @include sprite(arr-r1);
+    }
   }
 }
 //---
@@ -54,7 +56,8 @@
 }
 .mozaic-banner-content{
   .title{
-    font-weight:400;
+    font-weight:300;
+    font-family:font();
     margin-right:-80px;
     span{
       font-size:12px;
@@ -62,7 +65,17 @@
     }
   }
   .subtitle{
+    font-family:font();
     text-transform:none;
+    margin-bottom:10px;
+  }
+  .description{
+    color:getc(base);
+    line-height:18px;
+  }
+  .button{
+    color:#000 !important;
+    font-weight:400;
   }
 }
 .mozaic-banner-entry .what{
@@ -71,18 +84,38 @@
   line-height:18px;
   text-align:center;
   color:#fff;
+  font-size:12px;
 }
-//---
+.mozaic-swiper .pagination{
+  .swiper-pagination-switch{
+    background:none;
+    border:2px solid getc(bd);
+  }
+  .type2 & .swiper-active-switch{
+    border-color:getc(grn);
+    background:getc(grn);
+  }
+}
 .swiper-wrapper{
   @include flx(display,flex);
 }
+//---
+.tabs-container .swiper-tabs .block-title{
+  color:getc(font);
+  font-family:font();
+  &.active{
+    font-weight:400;
+    color:#000;
+  }
+}
+//---
 .products-swiper .paddings-container{
   height:100%;
   border-right:1px solid getc(bd);
   position:relative;
   padding-top:24px;
   .disc{
-    @include center($l:21px);
+    @include abs($l:22px,$t:60px);
     line-height:18px;
     padding:0 4px;
     color:#fff;
@@ -102,7 +135,22 @@
   padding-bottom:80px;
   position:relative;
   height:100%;
+  margin-left:20px;
+  .product-image{
+    margin:0 20px 50px 20px;
+  }
+  .information-blocks & .tag{
+    font-size:14px;
+    color:getc(font);
+    text-transform:none;
+    margin-bottom:16px;
+  }
+  .information-blocks & .title{
+    font-family:font();
+    color:#000;
+  }
   .bottom{
+    font-family:font();
     @include abs($l:0,$r:0,$b:0);
   }
   .price{
@@ -113,9 +161,8 @@
     margin-top:14px;
     padding:0 12px;
     line-height:32px;
-    color:getc(grn);
     border:none;
-    background:getc(bd);
+    background:getc(bg);
     &:before{
       content:'';
       display:inline-block;
@@ -123,18 +170,32 @@
       vertical-align:middle;
       @include sprite(i-cart);
     }
+    .type2 &{
+      color:getc(grn);
+    }
   }
 }
 //---
 .product-column-entry{
+  .title{
+    font:700 18px/1 font();
+    text-transform:none;
+  }
   .more{
+    font:700 16px/1 font();
     font-size:16px;
     margin-top:20px;
-    font-weight:500;
+  }
+  .description a{
+    color:getc(base);
+    font-size:14px;
   }
 }
 //---
-.information-entry-item{
+.block-title{
+  font:700 18px/1 font();
+}
+.information-blocks .information-entry .information-entry-item{
   margin-top:16px;
   line-height:20px;
   display:block;
@@ -144,14 +205,21 @@
   }
   .date{
     font-size:16px;
+    font-family:font();
   }
 }
-#content-block .latest-review footer{
-  font-size:16px;
-  text-align:center;
-}
-.latest-review footer cite{
-  color:#888;
+#content-block .latest-review{
+  .text{
+    font-size:14px;
+  }
+  footer{
+    text-align:center;
+  }
+  cite{
+    color:#888;
+    font-family:font();
+    font-size:14px;
+  }
 }
 .blockquote-slider{
   margin-right:0;

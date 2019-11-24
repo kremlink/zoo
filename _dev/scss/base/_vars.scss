@@ -14,10 +14,12 @@ $anim:.3s;
 
 $colors:(
         ref:#f00,
-        grn:#678621,
+        grn:#749625,
         bd:#ebebeb,
-        font:#b3b3b3,
-        red:#962625
+        font:#808080,
+        red:#962625,
+        base:#313131,
+        bg:#f3f3f3
 );
 
 @function getc($arg,$c:$colors){
@@ -29,7 +31,7 @@ $colors:(
 }
 
 @function font(){
-  @return 'Open Sans',sans-serif;
+  @return 'Comfortaa',sans-serif;
 }
 
 @function m-prop($arg,$p:12){
