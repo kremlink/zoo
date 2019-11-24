@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @@include('components/head.html')
+    <script>
+     var theApp={
+      shared:{
+       modules:['cart'],
+       pk:matchMedia('(min-width:990px)').matches
+      },
+      data:{
+                 @@include('components/data.html')
+     }
+     };
+    </script>
+</head>
+<body class="style-1 type2" style="">
+
+<!-- LOADER -->
+<div id="loader-wrapper">
+    <div class="bubbles">
+        <div class="title">loading</div>
+        <span></span>
+        <span id="bubble2"></span>
+        <span id="bubble3"></span>
+    </div>
+</div>
+
+<div id="content-block">
+    
+    <div class="content-center fixed-header-margin">
+        <!-- HEADER -->
+        @@include('components/header.html')
+        
+        <div class="content-push">
+            <form action="" class="cart-block">
+                <div class="left">
+                    <h1 class="h">Ваша корзина</h1>
+                    <div class="cart">
+                        <div class="c-item">
+                            <a class="c-del" href="">
+                                <svg>
+                                    <use xlink:href="#icon-shared-icon-trash"></use>
+                                </svg>
+                            </a>
+                            <div class="c-img">
+                                <img src="images/product1-s.jpg" alt=""/>
+                            </div>
+                            <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
+                            <div class="p-amt">
+                                <button class="p-m">&ndash;</button>
+                                <input type="number" value="1" />
+                                <button class="p-p">+</button>
+                            </div>
+                            <div class="c-price">
+                                <div class="c-p-val">150 <span>₽</span></div>
+                                <div class="c-p-info">
+                                    75 ₽ / шт.<br/>
+                                    <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <a class="c-del" href="">
+                                <svg>
+                                    <use xlink:href="#icon-shared-icon-trash"></use>
+                                </svg>
+                            </a>
+                            <div class="c-img">
+                                <img src="images/product1-s.jpg" alt=""/>
+                            </div>
+                            <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
+                            <div class="p-amt">
+                                <div class="p-m">&ndash;</div>
+                                <input type="number" value="1" />
+                                <div class="p-p">+</div>
+                            </div>
+                            <div class="c-price">
+                                <div class="c-p-val">150 <span>₽</span></div>
+                                <div class="c-p-info">
+                                    75 ₽ / шт.<br/>
+                                    <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <a class="c-del" href="">
+                                <svg>
+                                    <use xlink:href="#icon-shared-icon-trash"></use>
+                                </svg>
+                            </a>
+                            <div class="c-img">
+                                <img src="images/product1-s.jpg" alt=""/>
+                            </div>
+                            <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
+                            <div class="p-amt">
+                                <div class="p-m">&ndash;</div>
+                                <input type="number" value="1" />
+                                <div class="p-p">+</div>
+                            </div>
+                            <div class="c-price">
+                                <div class="c-p-val">150 <span>₽</span></div>
+                                <div class="c-p-info">
+                                    75 ₽ / шт.<br/>
+                                    <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add">
+                        <h2 class="h">Добавьте в корзину</h2>
+                        <div class="a-wrap">
+                            <div class="c-item">
+                                <div class="c-img">
+                                    <img src="images/product1-s.jpg" alt=""/>
+                                </div>
+                                <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
+                                <div class="p-amt">
+                                    <div class="p-m">&ndash;</div>
+                                    <input type="number" value="1" />
+                                    <div class="p-p">+</div>
+                                </div>
+                                <div class="c-price">
+                                    <div class="c-p-val">150 <span>₽</span></div>
+                                    <div class="c-p-info">
+                                        75 ₽ / шт.<br/>
+                                        <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="g-add">
+                                <svg>
+                                    <use xlink:href="#icon-shared-icon-cart"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <aside class="info">
+                            <div class="in-h1">Оформление заказа</div>
+                            <div class="in-h">1. СПОСОБ ДОСТАВКИ</div>
+                            <div class="in-top">
+                                <div class="in-notif">
+                                    Для оформления заказа <br/><b>выберите способ доставки</b>
+                                    <a href="" class="in-n-close" onclick="this.parentNode.style.display='none';return false;">&times;</a>
+                                </div>
+                                <a href="" class="in-choose">
+                                    <svg>
+                                        <use xlink:href="#icon-shared-delivery-truck"></use>
+                                    </svg>
+                                    <span>Выбрать адрес<br/>доставки или самовывоз</span>
+                                </a>
+                            </div>
+                            <div class="in-h">2. СПОСОБ ОПЛАТЫ</div>
+                            <label class="the-radio"><input checked type="radio" name="pay"/><span class="t-r-toggle"></span>Наличными на месте получения</label>
+                            <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на месте получения</label>
+                            <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на сайте</label>
+                            <div class="in-promo">
+                                <input placeholder="Промокод (если есть)" type="text" name="promo"/>
+                                <a href="" class="in-promo-go">
+                                    <svg>
+                                        <use xlink:href="#icon-shared-promocode-icon-go"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="in-h">ИТОГО</div>
+                            <div class="in-price"><div>Сумма заказа</div><div>2 502 ₽</div></div>
+                            <div class="in-price disc"><div>Скидка</div><div>248 ₽</div></div>
+                            <div class="in-price"><div>Доставка</div><div>300 ₽</div></div>
+                            <div class="in-free">Минимальная сумма заказа &mdash; 500 р<br/><br/>БЕСПЛАТНАЯ ДОСТАВКА<br/>ПРИ ЗАКАЗЕ ОТ 3000 ₽</div>
+                            <div class="in-price sum"><div>К ОПЛАТЕ</div><div>2 554 ₽</div></div>
+                            <!--<div class="in-no-addr">Не выбран адрес доставки или самовывоза</div>
+                            <button class="in-done disabled">ОФОРМИТЬ ЗАКАЗ</button>-->
+                            <button class="done-btn">ОФОРМИТЬ ЗАКАЗ</button>
+                        </aside>
+                    </div>
+                </div>
+                <section class="c-bottom">
+                    <div class="the-tabs">
+                        <a class="active" href=""><span>Оформить заказ<br/>и зарегистрироваться</span></a><a href=""><span>Войти</span></a>
+                    </div>
+                    <div class="c-form">
+                        <label class="c-f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-user"></use>
+                            </svg>
+                            <span class="c-f-i-h">Ваше имя</span>
+                            <input type="text" name="name" />
+                        </label>
+                        <label class="c-f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-password"></use>
+                            </svg>
+                            <span class="c-f-i-h">Пароль</span>
+                            <input type="password" name="pass" />
+                        </label>
+                        <label class="c-f-item short">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-user"></use>
+                            </svg>
+                            <span class="c-f-i-h">Номер карты тройка</span>
+                            <input type="text" name="troj" />
+                        </label>
+                        <label class="c-f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-mail"></use>
+                            </svg>
+                            <span class="c-f-i-h">Электронная почта</span>
+                            <input type="text" name="email" />
+                        </label>
+                        <label class="c-f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-phone"></use>
+                            </svg>
+                            <span class="c-f-i-h">Номер телефона</span>
+                            <input class="phone-mask" type="text" name="phone" />
+                        </label>
+                        <div class="c-f-item short soc">
+                            Регистрация через соцсети<br/>
+                            <a class="c-f-soc" href="">
+                                <svg style="width: 37px;height: 22px;">
+                                    <use xlink:href="#icon-shared-social-vk"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="c-f-soc">
+                                <svg style="width: 36px;height: 36px;">
+                                    <use xlink:href="#icon-shared-social-google"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="c-f-soc">
+                                <svg style="width: 18px;height: 36px;">
+                                    <use xlink:href="#icon-shared-social-facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c-form">
+                        <label class="c-f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-mail"></use>
+                            </svg>
+                            <span class="c-f-i-h">Электронная почта</span>
+                            <input type="text" name="email" />
+                        </label>
+                        <label class="c-f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-password"></use>
+                            </svg>
+                            <span class="c-f-i-h">Пароль</span>
+                            <input type="password" name="pass" />
+                        </label>
+                        <div class="c-f-item short soc">
+                            Войти через соцсети<br/>
+                            <a class="c-f-soc" href="">
+                                <svg style="width: 37px;height: 22px;">
+                                    <use xlink:href="#icon-shared-social-vk"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="c-f-soc">
+                                <svg style="width: 36px;height: 36px;">
+                                    <use xlink:href="#icon-shared-social-google"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="c-f-soc">
+                                <svg style="width: 18px;height: 36px;">
+                                    <use xlink:href="#icon-shared-social-facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <div class="i-agree">Нажимая "ОФОРМИТЬ ЗАКАЗ", я соглашаюсь на обработку своих данных</div>
+                <button class="done-btn">ОФОРМИТЬ ЗАКАЗ</button>
+            </form>
+            
+            <!-- FOOTER -->
+            @@include('components/footer.html')
+        </div>
+    
+    </div>
+    <div class="clear"></div>
+
+</div>
+<div class="standard-pop cart">
+    <a href="" class="close">
+        <svg>
+            <use xlink:href="#icon-shared-close"></use>
+        </svg>
+    </a>
+    <div class="the-tabs">
+        <a class="active" href=""><span>Доставка1</span></a><a href=""><span>Доставка2</span></a><a href=""><span>Доставка3</span></a><a href=""><span>Доставка4</span></a>
+    </div>
+    <div class="form">
+        <div class="f-h">Ваши адреса</div>
+        <label class="the-radio"><input checked type="radio" name="pay"/><span class="t-r-toggle"></span>Наличными на месте получения на месте получения на месте получения</label>
+        <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на месте получения<span class="t-r-info">Пояснения черным цветом, если надо какие-то</span></label>
+        <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на сайте</label>
+        <div class="ctrls">
+            <button class="btn">Применить</button>
+            <div class="price">Стоимость доставки:<span>300 ₽</span></div>
+        </div>
+    </div>
+    <div class="form">
+        <label class="f-item">
+            <svg>
+                <use xlink:href="#icon-shared-icon-city"></use>
+            </svg>
+            <span class="f-i-h">Город</span>
+            <input disabled type="text" name="city" value="Москва" />
+        </label>
+        <label class="f-item">
+            <svg>
+                <use xlink:href="#icon-shared-icon-street"></use>
+            </svg>
+            <span class="f-i-h">Улица</span>
+            <input type="text" name="street" />
+        </label>
+        <div class="f-pack">
+            <label class="f-item">
+                <span class="f-i-h">Дом/корпус</span>
+                <input type="text" name="b" />
+            </label>
+            <label class="f-item">
+                <span class="f-i-h">Подъезд</span>
+                <input type="text" name="s" />
+            </label>
+            <label class="f-item">
+                <span class="f-i-h">Этаж</span>
+                <input type="text" name="f" />
+            </label>
+            <label class="f-item">
+                <span class="f-i-h">Кв./Офис</span>
+                <input type="text" name="a" />
+            </label>
+        </div>
+        <div class="ctrls">
+            <button class="btn">Применить</button>
+            <div class="price">Стоимость доставки:<span>300 ₽</span></div>
+        </div>
+    </div>
+    <div class="form">
+        <label class="f-item">
+            <svg>
+                <use xlink:href="#icon-shared-icon-city"></use>
+            </svg>
+            <span class="f-i-h">Индекс</span>
+            <input type="text" name="ind" />
+        </label>
+        <label class="f-item">
+            <svg>
+                <use xlink:href="#icon-shared-icon-city"></use>
+            </svg>
+            <span class="f-i-h">Область</span>
+            <input type="text" name="reg" />
+        </label>
+        <label class="f-item">
+            <svg>
+                <use xlink:href="#icon-shared-icon-city"></use>
+            </svg>
+            <span class="f-i-h">Город</span>
+            <input type="text" name="city" />
+        </label>
+        <label class="f-item">
+            <svg>
+                <use xlink:href="#icon-shared-icon-street"></use>
+            </svg>
+            <span class="f-i-h">Улица</span>
+            <input type="text" name="street" />
+        </label>
+        <div class="f-pack">
+            <label class="f-item">
+                <span class="f-i-h">Дом/корпус</span>
+                <input type="text" name="b" />
+            </label>
+            <label class="f-item">
+                <span class="f-i-h">Подъезд</span>
+                <input type="text" name="s" />
+            </label>
+            <label class="f-item">
+                <span class="f-i-h">Этаж</span>
+                <input type="text" name="f" />
+            </label>
+            <label class="f-item">
+                <span class="f-i-h">Кв./Офис</span>
+                <input type="text" name="a" />
+            </label>
+        </div>
+        <div class="ctrls">
+            <button class="btn">Применить</button>
+            <div class="price">Стоимость доставки:<span>300 ₽</span></div>
+        </div>
+    </div>
+    <div class="form">
+        <div id="gWidget"
+             data-from-city="Москва"
+             data-from-hide="1"
+             data-from-single="1"
+             data-no-weight="1"
+             data-no-partners="grastinpikup,boxberrypikup,hermespikup,dpdpikup,partnerpikup"
+             style="height:500px;"></div>
+        <div class="ctrls">
+            <button class="btn">Применить</button>
+        </div>
+        <!--<script src="//grastin.ru/widgets/delivery_widget/js/gWidget.js" async></script>-->
+    </div>
+</div>
+
+<div class="search-box popup">
+    <form>
+        <div class="search-button">
+            <i class="fa fa-search"></i>
+            <input type="submit" />
+        </div>
+        <div class="search-drop-down">
+            <div class="title"><span>All categories</span><i class="fa fa-angle-down"></i></div>
+            <div class="list">
+                <div class="overflow">
+                    <div class="category-entry">Category 1</div>
+                    <div class="category-entry">Category 2</div>
+                    <div class="category-entry">Category 2</div>
+                    <div class="category-entry">Category 4</div>
+                    <div class="category-entry">Category 5</div>
+                    <div class="category-entry">Lorem</div>
+                    <div class="category-entry">Ipsum</div>
+                    <div class="category-entry">Dollor</div>
+                    <div class="category-entry">Sit Amet</div>
+                </div>
+            </div>
+        </div>
+        <div class="search-field">
+            <input type="text" value="" placeholder="Search for product" />
+        </div>
+    </form>
+</div>
+<div id="product-popup" class="overlay-popup">
+    <div class="overflow">
+        <div class="table-view">
+            <div class="cell-view">
+                <div class="close-layer"></div>
+                <div class="popup-container">
+                    
+                    <div class="row">
+                        <div class="col-sm-6 information-entry">
+                            <div class="product-preview-box">
+                                <div class="swiper-container product-preview-swiper" data-autoplay="0" data-loop="1" data-speed="500" data-center="0" data-slides-per-view="1">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="product-zoom-image">
+                                                <img src="img/product-main-1.jpg" alt="" data-zoom="img/product-main-1-zoom.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-zoom-image">
+                                                <img src="img/product-main-2.jpg" alt="" data-zoom="img/product-main-2-zoom.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-zoom-image">
+                                                <img src="img/product-main-3.jpg" alt="" data-zoom="img/product-main-3-zoom.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-zoom-image">
+                                                <img src="img/product-main-4.jpg" alt="" data-zoom="img/product-main-4-zoom.jpg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination"></div>
+                                    <div class="product-zoom-container">
+                                        <div class="move-box">
+                                            <img class="default-image" src="img/product-main-1.jpg" alt="" />
+                                            <img class="zoomed-image" src="img/product-main-1-zoom.jpg" alt="" />
+                                        </div>
+                                        <div class="zoom-area"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-hidden-edges">
+                                    <div class="swiper-container product-thumbnails-swiper" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="responsive" data-xs-slides="3" data-int-slides="3" data-sm-slides="3" data-md-slides="4" data-lg-slides="4" data-add-slides="4">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide selected">
+                                                <div class="paddings-container">
+                                                    <img src="img/product-main-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="paddings-container">
+                                                    <img src="img/product-main-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="paddings-container">
+                                                    <img src="img/product-main-3.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="paddings-container">
+                                                    <img src="img/product-main-4.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 information-entry">
+                            <div class="product-detail-box">
+                                <h1 class="product-title">T-shirt Basic Stampata</h1>
+                                <h3 class="product-subtitle">Loremous Clothing</h3>
+                                <div class="rating-box">
+                                    <div class="star"><i class="fa fa-star"></i></div>
+                                    <div class="star"><i class="fa fa-star"></i></div>
+                                    <div class="star"><i class="fa fa-star"></i></div>
+                                    <div class="star"><i class="fa fa-star-o"></i></div>
+                                    <div class="star"><i class="fa fa-star-o"></i></div>
+                                    <div class="rating-number">25 Reviews</div>
+                                </div>
+                                <div class="product-description detail-info-entry">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.</div>
+                                <div class="price detail-info-entry">
+                                    <div class="prev">$90,00</div>
+                                    <div class="current">$70,00</div>
+                                </div>
+                                <div class="size-selector detail-info-entry">
+                                    <div class="detail-info-entry-title">Size</div>
+                                    <div class="entry active">xs</div>
+                                    <div class="entry">s</div>
+                                    <div class="entry">m</div>
+                                    <div class="entry">l</div>
+                                    <div class="entry">xl</div>
+                                    <div class="spacer"></div>
+                                </div>
+                                <div class="color-selector detail-info-entry">
+                                    <div class="detail-info-entry-title">Color</div>
+                                    <div class="entry active" style="background-color: #d23118;">&nbsp;</div>
+                                    <div class="entry" style="background-color: #2a84c9;">&nbsp;</div>
+                                    <div class="entry" style="background-color: #000;">&nbsp;</div>
+                                    <div class="entry" style="background-color: #d1d1d1;">&nbsp;</div>
+                                    <div class="spacer"></div>
+                                </div>
+                                <div class="quantity-selector detail-info-entry">
+                                    <div class="detail-info-entry-title">Quantity</div>
+                                    <div class="entry number-minus">&nbsp;</div>
+                                    <div class="entry number">10</div>
+                                    <div class="entry number-plus">&nbsp;</div>
+                                </div>
+                                <div class="detail-info-entry">
+                                    <a class="button style-10">Add to cart</a>
+                                    <a class="button style-11"><i class="fa fa-heart"></i> Add to Wishlist</a>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="tags-selector detail-info-entry">
+                                    <div class="detail-info-entry-title">Tags:</div>
+                                    <a href="#">bootstrap</a>/
+                                    <a href="#">collections</a>/
+                                    <a href="#">color/</a>
+                                    <a href="#">responsive</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="close-popup"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cart-box popup">
+    <div class="popup-container">
+        <div class="cart-entry">
+            <a class="image"><img src="img/product-menu-1.jpg" alt="" /></a>
+            <div class="content">
+                <a class="title" href="#">Pullover Batwing Sleeve Zigzag</a>
+                <div class="quantity">Quantity: 4</div>
+                <div class="price">$990,00</div>
+            </div>
+            <div class="button-x"><i class="fa fa-close"></i></div>
+        </div>
+        <div class="cart-entry">
+            <a class="image"><img src="img/product-menu-1_.jpg" alt="" /></a>
+            <div class="content">
+                <a class="title" href="#">Pullover Batwing Sleeve Zigzag</a>
+                <div class="quantity">Quantity: 4</div>
+                <div class="price">$990,00</div>
+            </div>
+            <div class="button-x"><i class="fa fa-close"></i></div>
+        </div>
+        <div class="summary">
+            <div class="subtotal">Subtotal: $990,00</div>
+            <div class="grandtotal">Grand Total <span>$1029,79</span></div>
+        </div>
+        <div class="cart-buttons">
+            <div class="column">
+                <a class="button style-3">view cart</a>
+                <div class="clear"></div>
+            </div>
+            <div class="column">
+                <a class="button style-4">checkout</a>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

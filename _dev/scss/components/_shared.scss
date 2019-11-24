@@ -1,3 +1,70 @@
 @include exports("@path:components\_shared.scss"){/*@path:components\_shared.scss*/
-
+  .the-tabs{
+    font-size:20px;
+    line-height:24px;
+    background:getc(bd);
+    margin:0 auto;
+    border-radius:10px;
+    width:270px;
+    white-space:nowrap;
+    @include med($pk){
+      width:auto;
+      @include flx(display,flex);
+      position:relative;
+    }
+    a{
+      background:none;
+      display:block;
+      padding:13px 0;
+      text-align:center;
+      border-radius:10px;
+      position:relative;
+      @include med($pk){
+        padding:13px 30px;
+        @include flx(display,flex);
+        @include flx(align-items,center);
+      }
+      &.active{
+        color:#000;
+        background:getc(grn);
+        span{
+          background:none;
+        }
+      }
+    }
+    span{
+      @include grad-ref($c:getc(red),$b:1px,$d:true);
+    }
+  }
+  //---
+  .the-radio{
+    display:block;
+    margin-top:16px;
+    cursor:pointer;
+    position:relative;
+    padding-left:26px;
+    color:getc(ref);
+    &+.the-radio{
+      margin-top:8px;
+    }
+    input{
+      opacity:0;
+      position:absolute;
+      &:checked+span{
+        background:transparent;
+      }
+    }
+    .t-r-toggle{
+      @include abs($l:0,$t:1px);
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      border:4px solid getc(red);
+      background:getc(red);
+    }
+    .t-r-info{
+      display:block;
+      color:#000;
+    }
+  }
 }

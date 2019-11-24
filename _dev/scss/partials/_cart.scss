@@ -1,0 +1,408 @@
+/*@path:partials\_cart.scss*/
+.cart-block{
+  @extend %prod-amt;
+  $l-sh:200px;
+  input[type=text],input[type=password],input[type=number],textarea,select{
+    background:#fff;
+    border:none;
+    padding-left:24px;
+    width:100%;
+    height:50px;
+    font-size:14px;
+    @extend %bxz;
+    @include plh(){
+      color:getc(font);
+      font-size:12px;
+    };
+    &.error{
+      background:#f00;
+      @include plh(){
+        color:#fff;
+      };
+    }
+  }
+  .h{
+    text-align:center;
+    font:24px/24px font();
+    @include med($pk){
+      text-align:left;
+    }
+  }
+  .left{
+    position:relative;
+    @include med($pk){
+      padding-right:444px;
+      min-height:720px;
+    }
+  }
+  .cart{
+
+  }
+  .c-item{
+    padding:24px 0;
+    position:relative;
+    border-bottom:2px solid getc(bd);
+    @include flx(display,flex);
+    @include flx(align-items,center);
+    @include flx(flex-flow,'row wrap');
+    @include med($pk + $l-sh){
+      padding:30px 0 30px 10px;
+    }
+  }
+  .c-del{
+    background:none;
+    border:none;
+    @include abs($b:24px,$r:0);
+    @include med($pk + $l-sh){
+      position:static;
+    }
+    svg{
+      width:22px;
+      height:22px;
+    }
+  }
+  .c-img{
+    width:80px;
+    @include flx(order,-2);
+    @include med($pk + $l-sh){
+      width:100px;
+      margin-left:6px;
+      @include flx(order,0);
+    }
+    img{
+      max-width:100%;
+      text-align:center;
+    }
+  }
+  .c-name{
+    line-height:16px;
+    width:100%;
+    margin-top:24px;
+    @include med($pk + $l-sh){
+      margin:0 0 0 24px;
+      line-height:14px;
+      @include flx(flex,'1 0 0px');
+    }
+  }
+  .p-amt{
+    margin-top:20px;
+    @include med($pk + $l-sh){
+      margin:0 0 0 24px;
+    }
+  }
+  .c-price{
+    margin-left:20px;
+    width:144px;
+    @include flx(order,-1);
+    @include med($pk + $l-sh){
+      margin-left:24px;
+      text-align:right;
+      @include flx(order,1);
+    }
+  }
+  .c-p-val{
+    font:28px/28px font();
+    span{
+      font-size:14px;
+      font-weight:600;
+    }
+  }
+  .c-p-info{
+    font-style:italic;
+    font-size:12px;
+    color:getc(font);
+  }
+  .c-p-old{
+    text-decoration:line-through;
+  }
+  .c-p-disc{
+    color:getc(red);
+    font-weight:600;
+  }
+  //---
+  .add{
+    margin-top:20px;
+    @extend %g-add;
+    @include med($pk){
+      margin-top:30px;
+      border-bottom:2px solid getc(ref);
+    }
+  }
+  .a-wrap{
+    position:relative;
+    .c-item{
+      opacity:0.5;
+      border-bottom:none;
+      @include med($pk + $l-sh){
+        padding-left:30px;
+      }
+    }
+    .g-add{
+      @include abs($r:0,$b:26px);
+      @include med($pk + $l-sh){
+        right:auto;
+        left:0;
+        bottom:50%;
+        margin-bottom:-17px;
+      }
+    }
+  }
+  //---
+  .right{
+    @include med($pk){
+      width:420px;
+      @include abs($t:0,$b:0,$r:0);
+    }
+  }
+  .info{
+    border:2px solid getc(bd);
+    @include abs($t:20px,$p:sticky);
+    margin:54px (- $mpd) 0 (- $mpd);
+    padding:0 $mpd 30px $mpd;
+    @include med($pk){
+      margin:0;
+      padding:0 30px 30px 30px;
+      border-radius:8px;
+    }
+  }
+  .in-h1{
+    background:getc(grn);
+    margin:0 (- $mpd);
+    height:54px;
+    color:#fff;
+    text-align:center;
+    font:600 20px/54px font();
+    @include med($pk){
+      margin:0 -30px;
+      border-radius:8px 8px 0 0;
+    }
+  }
+  .in-top{
+    background:getc(grn);
+    margin:26px (- $mpd) 0 (- $mpd);
+    padding:10px 0;
+    position:relative;
+    @include med($pk){
+      margin:26px -30px 0 -30px;
+    }
+  }
+  .in-notif{
+    background:getc(red);
+    padding:6px 10px;
+    font-size:12px;
+    line-height:16px;
+    white-space:nowrap;
+    color:#fff;
+    box-shadow:2px 2px 6px rgba(#000,0.2);
+    @include center($b:100%);
+    margin-bottom:16px;
+    @include med($pk){
+      bottom:auto;
+      left:auto;
+      @include center($r:100%);
+      margin:0 16px 0 0;
+    }
+    &:before{
+      content:'';
+      @include tri($d:bottom,$s1:10px,$s2:10px,$c:getc(red));
+      @include center($b:-10px);
+      @include med($pk){
+        bottom:auto;
+        left:auto;
+        @include center($r:-10px);
+        border:none;
+        @include tri($d:right,$s1:10px,$s2:10px,$c:getc(red));
+      }
+    }
+  }
+  .in-n-close{
+    @include abs($t:4px,$r:6px);
+    text-align:center;
+    width:10px;
+    font-size:20px;
+    color:#fff;
+  }
+  .in-choose{
+    position:relative;
+    padding-left:124px;
+    background:none;
+    color:#fff;
+    display:block;
+    svg{
+      width:64px;
+      height:40px;
+      @include abs($t:-2px,$l:30px);
+    }
+    span{
+      @include grad-ref($c:#fff,$b:1px,$d:true);
+    }
+  }
+  .in-h{
+    font-size:20px;
+    line-height:20px;
+    margin-top:26px;
+  }
+  .in-promo{
+    margin-top:30px;
+    position:relative;
+    @include med($pk){
+      margin:30px -20px 0 -20px;
+    }
+    input{
+      border:2px solid getc(bd);
+      @include plh(){
+        font-size:14px;
+      };
+    }
+  }
+  .in-promo-go{
+    border:none;
+    background:none;
+    @include abs($t:0,$r:0);
+    svg{
+      width:50px;
+      height:50px;
+    }
+  }
+  .in-price{
+    margin-top:8px;
+    @include flx(display,flex);
+    &.disc{
+      color:getc(red);
+    }
+    &.sum{
+      margin-top:14px;
+      font-size:20px;
+      line-height:20px;
+      font-weight:500;
+      div:last-child{
+        font-weight:600;
+      }
+    }
+    div{
+      &:last-child{
+        margin-left:auto;
+        font-size:20px;
+        line-height:20px;
+      }
+    }
+  }
+  .in-free{
+    font-size:20px;
+    line-height:20px;
+    color:#fff;
+    text-align:center;
+    background:getc(red);
+    position:relative;
+    margin:24px (- $mpd) 0 (- $mpd);
+    padding:14px 0 12px 0;
+    @include med($pk){
+      margin:24px -20px 0 -20px;
+    }
+    &:before{
+      content:'';
+      @include abs($r:20px,$t:-14px);
+      border-left:14px solid getc(red);
+      border-top:14px solid transparent;
+    }
+  }
+  .in-no-addr{
+    text-align:center;
+    margin-top:26px;
+    color:getc(gfont);
+  }
+  .done-btn{
+    margin:26px auto 0 auto;
+    width:260px;
+    height:34px;
+    display:block;
+    font-size:20px;
+    line-height:20px;
+    color:#fff;
+    background:getc(grn);
+    border:2px solid getc(grn);
+    text-align:center;
+    &.disabled{
+      margin-top:12px;
+      color:getc(gfont);
+      background:none;
+      pointer-events:none;
+      border-color:getc(gfont);
+    }
+  }
+  //---
+  .c-bottom{
+    text-align:center;
+    @include med($pk){
+      @include flx(display,flex);
+      @include flx(justify-content,center);
+      @include flx(flex-flow,'row wrap');
+    }
+  }
+  .the-tabs{
+    margin-top:30px;
+    @include med($pk){
+      margin-top:50px;
+    }
+  }
+  .c-form{
+    overflow:hidden;
+    height:0;
+    width:100%;
+    opacity:0;
+    text-align:left;
+    @include med($pk){
+      margin-left:-20px;
+      @include flx(display,flex);
+      @include flx(flex-flow,'row wrap');
+    }
+    &.active{
+      overflow:visible;
+      height:auto;
+      margin-top:20px;
+      opacity:1;
+      @include trs('opacity #{$anim*2} ease-in-out');
+    }
+  }
+  .c-f-item{
+    margin:20px auto 0 auto;
+    display:block;
+    position:relative;
+    max-width:300px;
+    @include med($pk){
+      margin-left:20px;
+      max-width:none;
+      @include flx(flex,'1 1 35%');
+    }
+    &.short{
+      @include med($pk){
+        @include flx(flex,none);
+        width:226px;
+      }
+    }
+    &.soc{
+      text-align:center;
+    }
+    svg{
+      @include abs($l:0,$t:1px);
+      width:12px;
+      height:14px;
+    }
+    input{
+      border:2px solid getc(bd);
+    }
+  }
+  .c-f-i-h{
+    display:block;
+    margin:0 0 6px 24px;
+  }
+  .c-f-soc{
+    display:inline-block;
+    margin:10px 12px 0 12px;
+    vertical-align:middle;
+    background:none;
+    svg{
+      position:static;
+    }
+  }
+}
