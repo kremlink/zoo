@@ -4,6 +4,7 @@
   overflow:hidden;
   @extend %loader;
   margin-bottom:20px;
+  padding-bottom:20%;
   @include med($pk){
     margin-bottom:46px;
   }

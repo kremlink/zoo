@@ -1,0 +1,69 @@
+/*@path:partials\_catalog.scss*/
+.shop-grid-controls{
+  font-weight:400;
+}
+.simple-drop-down:after{
+  margin-top:-1px;
+}
+.blog-sidebar{
+  font-family:font();
+}
+.shop-grid{
+  @include flx(display,flex);
+  @include flx(flex-flow,'row wrap');
+  .shop-grid-item{
+    margin-bottom:50px !important;
+  }
+  .product-slide-entry{
+    padding-bottom:40px;
+    //margin-bottom:0;
+  }
+}
+.article-container ul li{
+  font-size:16px;
+  &:before{
+    display:none;
+  }
+  a{
+    color:getc(font) !important;
+  }
+}
+.information-blocks .catalog-center{
+  text-align:center;
+  .button{
+    color:#fff;
+    font-family:font();
+    text-transform:none;
+    font-size:15px;
+    .type2 &{
+      background:getc(grn);
+      border:none;
+    }
+  }
+}
+.categories-border-wrapper{
+  .accordeon-title{
+    font-size:16px;
+  }
+}
+.ui-slider-handle,.ui-slider-range{
+  .type2 &{
+    background:getc(grn);
+  }
+}
+.block-title.size-2{
+  font-size:24px;
+}
+.range-price{
+  color:getc(base);
+}
+.checkbox-entry{
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  input:checked + span{
+    .type2 &{
+      background:getc(grn);
+    }
+  }
+}
