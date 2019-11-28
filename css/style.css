@@ -1900,6 +1900,7 @@ body.style-1 .button.style-4 {
 .tabs-container .swiper-tabs .block-title {
   color: #808080;
   font-family: "Comfortaa", sans-serif;
+  font-size: 24px;
 }
 .tabs-container .swiper-tabs .block-title.active {
   font-weight: 400;
@@ -2052,6 +2053,7 @@ body.style-1 .button.style-4 {
   margin: 0 40px;
 }
 
+/*@path:partials\_product.scss*/
 /*@path:partials\_profile.scss*/
 .profile-block {
   font-size: 15px;
@@ -2112,10 +2114,12 @@ body.style-1 .button.style-4 {
   font: 20px/34px "Comfortaa", sans-serif;
   padding: 0 30px;
   background: none;
-  background: #749625;
   color: #fff;
   border: none;
   margin-right: 16px;
+}
+.type2 .profile-block .u-a-btn {
+  background: #749625;
 }
 .profile-block .f-item {
   display: block;
@@ -2166,7 +2170,6 @@ body.style-1 .button.style-4 {
 }
 .profile-block .a-add {
   display: inline-block;
-  background: linear-gradient(90deg,#749625 1px,transparent 1px,transparent 1px) left calc(100% - 0px)/2px 1px repeat-x;
   margin-top: 14px;
   line-height: 18px;
 }
@@ -2175,14 +2178,19 @@ body.style-1 .button.style-4 {
     margin-top: 34px;
   }
 }
+.type2 .profile-block .a-add {
+  background: linear-gradient(90deg,#749625 1px,transparent 1px,transparent 1px) left calc(100% - 0px)/2px 1px repeat-x;
+}
 .profile-block .s-stat {
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  border: 2px solid #749625;
   border-radius: 17px;
 }
-.profile-block .s-stat.on div:first-child {
+.type2 .profile-block .s-stat {
+  border: 2px solid #749625;
+}
+.type2 .profile-block .s-stat.on div:first-child {
   background: #749625;
 }
 .profile-block .s-stat.on div:last-child {
@@ -2197,12 +2205,13 @@ body.style-1 .button.style-4 {
   cursor: pointer;
   margin: -2px;
 }
-.profile-block .s-stat div:last-child {
+.type2 .profile-block .s-stat div:last-child {
   background: #749625;
 }
 .profile-block .s-info {
   display: block;
   margin-top: 10px;
+  color: #808080;
 }
 .profile-block .hist {
   margin-top: 26px;
@@ -2236,13 +2245,13 @@ body.style-1 .button.style-4 {
     align-items: center;
   }
 }
-.profile-block .h-item.h-head a {
+.type2 .profile-block .h-item.h-head a {
   background: linear-gradient(90deg,#749625 1px,transparent 1px,transparent 1px) left calc(100% - 0px)/2px 1px repeat-x;
 }
 .profile-block .h-item:not(.h-head) + .h-item {
   margin-top: 28px;
   padding-top: 24px;
-  border-top: 2px solid #f3f3f3;
+  border-top: 2px solid #ebebeb;
 }
 @media (min-width: 992px) {
   .profile-block .h-item:not(.h-head) + .h-item {

@@ -47,10 +47,12 @@
     font:20px/34px font();
     padding:0 30px;
     background:none;
-    background:getc(grn);
     color:#fff;
     border:none;
     margin-right:16px;
+    .type2 &{
+      background:getc(grn);
+    }
   }
   .f-item{
     display:block;
@@ -99,23 +101,29 @@
   }
   .a-add{
     display:inline-block;
-    @include grad-ref($c:getc(grn),$b:0px,$d:true);
     margin-top:14px;
     line-height:18px;
     @include med($pk){
       margin-top:34px;
+    }
+    .type2 &{
+      @include grad-ref($c:getc(grn),$b:0px,$d:true);
     }
   }
   .s-stat{
     margin-bottom:30px;
     @include flx(display,flex);
     @include flx(justify-content,space-between);
-    border:2px solid getc(grn);
     border-radius:17px;
+    .type2 &{
+      border:2px solid getc(grn);
+    }
     &.on{
       div{
         &:first-child{
-          background:getc(grn);
+          .type2 &{
+            background:getc(grn);
+          }
         }
         &:last-child{
           background:none;
@@ -131,14 +139,16 @@
       cursor:pointer;
       margin:-2px;
       &:last-child{
-        background:getc(grn);
+        .type2 &{
+          background:getc(grn);
+        }
       }
     }
   }
   .s-info{
     display:block;
     margin-top:10px;
-    color:getc(gfont);
+    color:getc(font);
   }
   //---
   .hist{
@@ -166,13 +176,15 @@
         @include flx(align-items,center);
       }
       a{
-        @include grad-ref($c:getc(grn),$b:0px,$d:true);
+        .type2 &{
+          @include grad-ref($c:getc(grn),$b:0px,$d:true);
+        }
       }
     }
     &:not(.h-head)+.h-item{
       margin-top:28px;
       padding-top:24px;
-      border-top:2px solid getc(bg);
+      border-top:2px solid getc(bd);
       @include med($pk){
         margin-top:14px;
         padding-top:14px;

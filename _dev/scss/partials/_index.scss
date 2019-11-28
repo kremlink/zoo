@@ -104,6 +104,7 @@
 .tabs-container .swiper-tabs .block-title{
   color:getc(font);
   font-family:font();
+  font-size:24px;
   &.active{
     font-weight:400;
     color:#000;
