@@ -2052,4 +2052,265 @@ body.style-1 .button.style-4 {
   margin: 0 40px;
 }
 
+/*@path:partials\_profile.scss*/
+.profile-block {
+  font-size: 15px;
+}
+@media (min-width: 992px) {
+  .profile-block {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+}
+.profile-block .col {
+  flex: 1 1 300px;
+  margin-top: 24px;
+}
+.profile-block .col:first-child {
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .profile-block .col:first-child {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .profile-block .col.addr {
+    margin-left: 20px;
+  }
+}
+.profile-block .h {
+  font: 28px/28px "Comfortaa", sans-serif;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .profile-block .h {
+    text-align: left;
+  }
+}
+.profile-block .h + .i-item {
+  margin-top: 6px;
+}
+@media (min-width: 992px) {
+  .profile-block .h + .i-item {
+    margin-top: 0;
+  }
+}
+.profile-block .form {
+  border: 2px solid #f3f3f3;
+  margin: 12px -20px 0 -20px;
+  padding: 24px 20px;
+}
+@media (min-width: 992px) {
+  .profile-block .form {
+    padding: 24px 28px;
+    margin: 18px 0 0 0;
+  }
+}
+.profile-block .u-a-btn {
+  font: 20px/34px "Comfortaa", sans-serif;
+  padding: 0 30px;
+  background: none;
+  background: #749625;
+  color: #fff;
+  border: none;
+  margin-right: 16px;
+}
+.profile-block .f-item {
+  display: block;
+  position: relative;
+}
+.profile-block .f-item:nth-child(n+2) {
+  margin-top: 20px;
+}
+.profile-block .f-item svg {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 13px;
+  height: 14px;
+}
+.profile-block .f-i-h {
+  display: block;
+  margin: 0 0 6px 24px;
+  color: #313131;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.profile-block .f-i-h.pass {
+  margin-left: 24px;
+  display: inline;
+  background: linear-gradient(90deg, 1px,transparent 1px,transparent 1px) left calc(100% - 1px)/2px 1px repeat-x;
+}
+.profile-block input {
+  background: none;
+  width: 100%;
+  height: 46px;
+  border: 2px solid #ebebeb;
+  padding-left: 24px;
+  font-size: 16px;
+}
+.profile-block .a-item {
+  position: relative;
+  padding-left: 42px;
+  margin-top: 22px;
+}
+.profile-block .a-rem svg {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+.profile-block .a-add {
+  display: inline-block;
+  background: linear-gradient(90deg,#749625 1px,transparent 1px,transparent 1px) left calc(100% - 0px)/2px 1px repeat-x;
+  margin-top: 14px;
+  line-height: 18px;
+}
+@media (min-width: 992px) {
+  .profile-block .a-add {
+    margin-top: 34px;
+  }
+}
+.profile-block .s-stat {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #749625;
+  border-radius: 17px;
+}
+.profile-block .s-stat.on div:first-child {
+  background: #749625;
+}
+.profile-block .s-stat.on div:last-child {
+  background: none;
+}
+.profile-block .s-stat div {
+  width: 92px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 17px;
+  cursor: pointer;
+  margin: -2px;
+}
+.profile-block .s-stat div:last-child {
+  background: #749625;
+}
+.profile-block .s-info {
+  display: block;
+  margin-top: 10px;
+}
+.profile-block .hist {
+  margin-top: 26px;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .profile-block .hist {
+    margin-top: 46px;
+    width: 100%;
+  }
+}
+.profile-block .h-item {
+  position: relative;
+  margin-top: 12px;
+}
+@media (min-width: 992px) {
+  .profile-block .h-item {
+    display: flex;
+  }
+}
+.profile-block .h-item.h-head {
+  display: none;
+  border-bottom: 2px solid #ebebeb;
+  margin: 26px 0 14px 0;
+  padding-bottom: 16px;
+  white-space: nowrap;
+}
+@media (min-width: 992px) {
+  .profile-block .h-item.h-head {
+    display: flex;
+    align-items: center;
+  }
+}
+.profile-block .h-item.h-head a {
+  background: linear-gradient(90deg,#749625 1px,transparent 1px,transparent 1px) left calc(100% - 0px)/2px 1px repeat-x;
+}
+.profile-block .h-item:not(.h-head) + .h-item {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 2px solid #f3f3f3;
+}
+@media (min-width: 992px) {
+  .profile-block .h-item:not(.h-head) + .h-item {
+    margin-top: 14px;
+    padding-top: 14px;
+  }
+}
+.profile-block .h-date {
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .profile-block .h-date {
+    width: 100px;
+    font-size: 14px;
+  }
+}
+.profile-block .h-name {
+  margin-top: 14px;
+}
+@media (min-width: 992px) {
+  .profile-block .h-name {
+    margin: 0 0 0 10%;
+    flex: 1 1 0px;
+  }
+}
+.profile-block .h-price {
+  font: 24px/24px "Comfortaa", sans-serif;
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  .profile-block .h-price {
+    text-align: right;
+    margin: 0;
+    width: 100px;
+    font: 14px/18px "Open Sans", sans-serif;
+  }
+}
+.profile-block .h-rubl {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: -4px;
+}
+@media (min-width: 992px) {
+  .profile-block .h-rubl {
+    display: none;
+  }
+}
+.profile-block .h-rep {
+  background: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media (min-width: 992px) {
+  .profile-block .h-rep {
+    position: static;
+    margin-left: 20px;
+    width: 114px;
+    text-align: center;
+  }
+}
+.profile-block .h-rep svg {
+  width: 21px;
+  height: 23px;
+}
+.profile-block .h-no {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=../../css/style.css.map */

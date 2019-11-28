@@ -33,10 +33,163 @@
         @@include('components/header.html',{"inner":"style-10"})
         
         <div class="content-push type2">
-            
+            <div class="profile-block">
+                <section class="col">
+                    <div class="h">Информация о покупателе</div>
+                    <div class="form">
+                        <label class="f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-user"></use>
+                            </svg>
+                            <span class="f-i-h">Ваше имя</span>
+                            <input type="text" name="name" value="" />
+                        </label>
+                        <label class="f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-mail"></use>
+                            </svg>
+                            <span class="f-i-h">Электронная почта</span>
+                            <input type="text" name="email" value="" />
+                        </label>
+                        <label class="f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-phone"></use>
+                            </svg>
+                            <span class="f-i-h">Номер телефона</span>
+                            <input type="text" name="phone" value="" />
+                        </label>
+                        <label class="f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-trojka-brown"></use>
+                            </svg>
+                            <span class="f-i-h">Номер карты "Тройка"</span>
+                            <input type="text" name="trojka" value="" />
+                        </label>
+                        <label class="f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-password"></use>
+                            </svg>
+                            <span class="f-i-h">Пароль</span>
+                            <input type="text" name="pass" value="" />
+                        </label>
+                        <label class="f-item">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-cart-password"></use>
+                            </svg>
+                            <span class="f-i-h">Подтверждение пароля</span>
+                            <input type="text" name="pass-c" value="" />
+                        </label>
+                        <div class="f-item">
+                            <button class="u-a-btn">Сохранить</button>
+                            <a href="" class="exit">Выйти &rarr;</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="col addr">
+                    <div class="h">Адрес</div>
+                    <div class="a-item">
+                        <a href="" class="a-rem">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-trash"></use>
+                            </svg>
+                        </a>
+                        Адрес1
+                    </div>
+                    <div class="a-item">
+                        <a href="" class="a-rem">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-trash"></use>
+                            </svg>
+                        </a>
+                        Адрес2
+                    </div>
+                    <a href="" class="a-add">Добавить адрес доставки</a>
+                </section>
+                <section class="hist">
+                    <div class="h">История покупок</div>
+                    <div class="h-item h-head">
+                        <div class="h-date"><a href="">Дата</a></div>
+                        <div class="h-name"><a href="">Состав</a></div>
+                        <div class="h-price"><a href="">Цена, ₽</a></div>
+                        <div class="h-rep"><a href="">Повторить заказ</a></div>
+                    </div>
+                    <!--<div class="h-item">
+                        <time class="h-date" datetime="2001-01-31">11.11.2019</time>
+                        <div class="h-name">
+                            Масло сливочное 82.5%, кардамон, помидор
+                        </div>
+                        <div class="h-price">100 <span class="h-rubl">₽</span></div>
+                        <a href="" class="h-rep">
+                            <svg>
+                                <use xlink:href="#icon-shared-icon-repeat"></use>
+                            </svg>
+                        </a>
+                    </div>-->
+                    <div class="h-no">У вас пока нет заказов</div>
+                </section>
+            </div>
             
             <!-- FOOTER -->
             @@include('components/footer.html')
+            <div class="standard-pop cart">
+                <a href="" class="close">
+                    <svg>
+                        <use xlink:href="#icon-shared-close"></use>
+                    </svg>
+                </a>
+                <!--<div class="h">Добавьте адрес доставки</div>-->
+                <div class="form active">
+                    <label class="f-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-city"></use>
+                        </svg>
+                        <span class="f-i-h">Индекс</span>
+                        <input type="text" name="ind" />
+                    </label>
+                    <label class="f-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-city"></use>
+                        </svg>
+                        <span class="f-i-h">Область</span>
+                        <input type="text" name="reg" />
+                    </label>
+                    <label class="f-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-city"></use>
+                        </svg>
+                        <span class="f-i-h">Город</span>
+                        <input type="text" name="city" />
+                    </label>
+                    <label class="f-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-street"></use>
+                        </svg>
+                        <span class="f-i-h">Улица</span>
+                        <input type="text" name="street" />
+                    </label>
+                    <div class="f-pack">
+                        <label class="f-item">
+                            <span class="f-i-h">Дом/корпус</span>
+                            <input type="text" name="b" />
+                        </label>
+                        <label class="f-item">
+                            <span class="f-i-h">Подъезд</span>
+                            <input type="text" name="s" />
+                        </label>
+                        <label class="f-item">
+                            <span class="f-i-h">Этаж</span>
+                            <input type="text" name="f" />
+                        </label>
+                        <label class="f-item">
+                            <span class="f-i-h">Кв./Офис</span>
+                            <input type="text" name="a" />
+                        </label>
+                    </div>
+                    <div class="ctrls">
+                        <button class="btn">Применить</button>
+                    </div>
+                </div>
+            </div>
         </div>
     
     </div>

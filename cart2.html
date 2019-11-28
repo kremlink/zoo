@@ -797,8 +797,10 @@
 <script src="js/bf/lib/utils.js"></script>
 <script src="js/modules/cart/cart-d.js"></script>
 <script src="js/modules/index/index-d.js"></script>
+<script src="js/modules/profile/profile-d.js"></script>
 <script src="js/modules/cart/cart.js"></script>
 <script src="js/modules/index/index.js"></script>
+<script src="js/modules/profile/profile.js"></script>
 <script src="js/app.js"></script>
 
 <!--<script src="js/built.min.js"></script>-->
@@ -889,134 +891,134 @@
         </div>
     </div>
 </div>
+            <div class="standard-pop cart">
+                <a href="" class="close">
+                    <svg>
+                        <use xlink:href="#icon-shared-close"></use>
+                    </svg>
+                </a>
+                <div class="the-tabs">
+                    <a class="active" href=""><span>Доставка1</span></a><a href=""><span>Доставка2</span></a><a href=""><span>Доставка3</span></a><a href=""><span>Доставка4</span></a>
+                </div>
+                <div class="form">
+                    <div class="f-h">Ваши адреса</div>
+                    <label class="the-radio"><input checked type="radio" name="pay"/><span class="t-r-toggle"></span>Наличными на месте получения на месте получения на месте получения</label>
+                    <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на месте получения<span class="t-r-info">Пояснения черным цветом, если надо какие-то</span></label>
+                    <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на сайте</label>
+                    <div class="ctrls">
+                        <button class="btn">Применить</button>
+                        <div class="price">Стоимость доставки:<span>300 ₽</span></div>
+                    </div>
+                </div>
+                <div class="form">
+                    <label class="f-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-city"></use>
+                        </svg>
+                        <span class="f-i-h">Город</span>
+                        <input disabled type="text" name="city" value="Москва" />
+                    </label>
+                    <label class="f-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-street"></use>
+                        </svg>
+                        <span class="f-i-h">Улица</span>
+                        <input type="text" name="street" />
+                    </label>
+                    <div class="f-pack">
+                        <label class="f-item">
+                            <span class="f-i-h">Дом/корпус</span>
+                            <input type="text" name="b" />
+                        </label>
+                        <label class="f-item">
+                            <span class="f-i-h">Подъезд</span>
+                            <input type="text" name="s" />
+                        </label>
+                        <label class="f-item">
+                            <span class="f-i-h">Этаж</span>
+                            <input type="text" name="f" />
+                        </label>
+                        <label class="f-item">
+                            <span class="f-i-h">Кв./Офис</span>
+                            <input type="text" name="a" />
+                        </label>
+                    </div>
+                    <div class="ctrls">
+                        <button class="btn">Применить</button>
+                        <div class="price">Стоимость доставки:<span>300 ₽</span></div>
+                    </div>
+                </div>
+                <div class="form">
+                    <label class="f-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-city"></use>
+                        </svg>
+                        <span class="f-i-h">Индекс</span>
+                        <input type="text" name="ind" />
+                    </label>
+                    <label class="f-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-city"></use>
+                        </svg>
+                        <span class="f-i-h">Область</span>
+                        <input type="text" name="reg" />
+                    </label>
+                    <label class="f-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-city"></use>
+                        </svg>
+                        <span class="f-i-h">Город</span>
+                        <input type="text" name="city" />
+                    </label>
+                    <label class="f-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-street"></use>
+                        </svg>
+                        <span class="f-i-h">Улица</span>
+                        <input type="text" name="street" />
+                    </label>
+                    <div class="f-pack">
+                        <label class="f-item">
+                            <span class="f-i-h">Дом/корпус</span>
+                            <input type="text" name="b" />
+                        </label>
+                        <label class="f-item">
+                            <span class="f-i-h">Подъезд</span>
+                            <input type="text" name="s" />
+                        </label>
+                        <label class="f-item">
+                            <span class="f-i-h">Этаж</span>
+                            <input type="text" name="f" />
+                        </label>
+                        <label class="f-item">
+                            <span class="f-i-h">Кв./Офис</span>
+                            <input type="text" name="a" />
+                        </label>
+                    </div>
+                    <div class="ctrls">
+                        <button class="btn">Применить</button>
+                        <div class="price">Стоимость доставки:<span>300 ₽</span></div>
+                    </div>
+                </div>
+                <div class="form">
+                    <div id="gWidget"
+                         data-from-city="Москва"
+                         data-from-hide="1"
+                         data-from-single="1"
+                         data-no-weight="1"
+                         data-no-partners="grastinpikup,boxberrypikup,hermespikup,dpdpikup,partnerpikup"
+                         style="height:500px;"></div>
+                    <div class="ctrls">
+                        <button class="btn">Применить</button>
+                    </div>
+                    <script src="//grastin.ru/widgets/delivery_widget/js/gWidget.js" async></script>
+                </div>
+            </div>
         </div>
     
     </div>
     <div class="clear"></div>
 
-</div>
-<div class="standard-pop cart">
-    <a href="" class="close">
-        <svg>
-            <use xlink:href="#icon-shared-close"></use>
-        </svg>
-    </a>
-    <div class="the-tabs">
-        <a class="active" href=""><span>Доставка1</span></a><a href=""><span>Доставка2</span></a><a href=""><span>Доставка3</span></a><a href=""><span>Доставка4</span></a>
-    </div>
-    <div class="form">
-        <div class="f-h">Ваши адреса</div>
-        <label class="the-radio"><input checked type="radio" name="pay"/><span class="t-r-toggle"></span>Наличными на месте получения на месте получения на месте получения</label>
-        <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на месте получения<span class="t-r-info">Пояснения черным цветом, если надо какие-то</span></label>
-        <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на сайте</label>
-        <div class="ctrls">
-            <button class="btn">Применить</button>
-            <div class="price">Стоимость доставки:<span>300 ₽</span></div>
-        </div>
-    </div>
-    <div class="form">
-        <label class="f-item">
-            <svg>
-                <use xlink:href="#icon-shared-icon-city"></use>
-            </svg>
-            <span class="f-i-h">Город</span>
-            <input disabled type="text" name="city" value="Москва" />
-        </label>
-        <label class="f-item">
-            <svg>
-                <use xlink:href="#icon-shared-icon-street"></use>
-            </svg>
-            <span class="f-i-h">Улица</span>
-            <input type="text" name="street" />
-        </label>
-        <div class="f-pack">
-            <label class="f-item">
-                <span class="f-i-h">Дом/корпус</span>
-                <input type="text" name="b" />
-            </label>
-            <label class="f-item">
-                <span class="f-i-h">Подъезд</span>
-                <input type="text" name="s" />
-            </label>
-            <label class="f-item">
-                <span class="f-i-h">Этаж</span>
-                <input type="text" name="f" />
-            </label>
-            <label class="f-item">
-                <span class="f-i-h">Кв./Офис</span>
-                <input type="text" name="a" />
-            </label>
-        </div>
-        <div class="ctrls">
-            <button class="btn">Применить</button>
-            <div class="price">Стоимость доставки:<span>300 ₽</span></div>
-        </div>
-    </div>
-    <div class="form">
-        <label class="f-item">
-            <svg>
-                <use xlink:href="#icon-shared-icon-city"></use>
-            </svg>
-            <span class="f-i-h">Индекс</span>
-            <input type="text" name="ind" />
-        </label>
-        <label class="f-item">
-            <svg>
-                <use xlink:href="#icon-shared-icon-city"></use>
-            </svg>
-            <span class="f-i-h">Область</span>
-            <input type="text" name="reg" />
-        </label>
-        <label class="f-item">
-            <svg>
-                <use xlink:href="#icon-shared-icon-city"></use>
-            </svg>
-            <span class="f-i-h">Город</span>
-            <input type="text" name="city" />
-        </label>
-        <label class="f-item">
-            <svg>
-                <use xlink:href="#icon-shared-icon-street"></use>
-            </svg>
-            <span class="f-i-h">Улица</span>
-            <input type="text" name="street" />
-        </label>
-        <div class="f-pack">
-            <label class="f-item">
-                <span class="f-i-h">Дом/корпус</span>
-                <input type="text" name="b" />
-            </label>
-            <label class="f-item">
-                <span class="f-i-h">Подъезд</span>
-                <input type="text" name="s" />
-            </label>
-            <label class="f-item">
-                <span class="f-i-h">Этаж</span>
-                <input type="text" name="f" />
-            </label>
-            <label class="f-item">
-                <span class="f-i-h">Кв./Офис</span>
-                <input type="text" name="a" />
-            </label>
-        </div>
-        <div class="ctrls">
-            <button class="btn">Применить</button>
-            <div class="price">Стоимость доставки:<span>300 ₽</span></div>
-        </div>
-    </div>
-    <div class="form">
-        <div id="gWidget"
-             data-from-city="Москва"
-             data-from-hide="1"
-             data-from-single="1"
-             data-no-weight="1"
-             data-no-partners="grastinpikup,boxberrypikup,hermespikup,dpdpikup,partnerpikup"
-             style="height:500px;"></div>
-        <div class="ctrls">
-            <button class="btn">Применить</button>
-        </div>
-        <script src="//grastin.ru/widgets/delivery_widget/js/gWidget.js" async></script>
-    </div>
 </div>
 
 <div class="search-box popup">
