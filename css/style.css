@@ -1779,6 +1779,132 @@ body.style-1 .button.style-4 {
   background: #749625;
 }
 
+/*@path:partials\_delivery.scss*/
+.delivery-block {
+  margin-top: 20px;
+}
+.delivery-block .h {
+  font: 26px "Comfortaa", sans-serif;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.delivery-block .h:not(:first-child) {
+  margin-top: 40px;
+}
+.delivery-block .s-h {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  font: 18px "Comfortaa", sans-serif;
+}
+.delivery-block .s-h.simple {
+  text-align: center;
+}
+.delivery-block .s-h.simple:before, .delivery-block .s-h.simple:after {
+  display: none;
+}
+.delivery-block .s-h:before, .delivery-block .s-h:after {
+  content: "";
+  border-top: 2px solid #ebebeb;
+  flex: 1 0 auto;
+}
+.delivery-block .s-h:before {
+  margin-right: 20px;
+}
+.delivery-block .s-h:after {
+  margin-left: 20px;
+}
+.delivery-block .b-h {
+  font: 20px/54px "Comfortaa", sans-serif;
+  color: #fff;
+  margin: -19px -19px 0 -19px;
+}
+.type2 .delivery-block .b-h {
+  background: #749625;
+}
+.delivery-block .dots li {
+  margin: 10px 0 0 20px;
+  position: relative;
+}
+.delivery-block .dots li:before {
+  content: "•";
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
+.delivery-block p:not(:first-child) {
+  margin-top: 16px;
+}
+.delivery-block p.alone {
+  text-align: center;
+  margin-top: 20px;
+}
+.delivery-block p.alone img {
+  margin-top: 24px;
+}
+.delivery-block i {
+  font-style: italic;
+}
+.delivery-block .block {
+  border: 3px solid #ebebeb;
+  padding: 16px;
+  text-align: center;
+  margin-top: 30px;
+}
+.delivery-block .block.simple {
+  border-width: 2px;
+}
+.delivery-block .block.simple .b-h {
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  margin-top: -26px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  padding: 0 20px;
+}
+.delivery-block .block.simple .b-h + p {
+  margin-top: 0;
+}
+.delivery-block .three {
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .delivery-block .three {
+    display: flex;
+  }
+}
+.delivery-block .three .block {
+  margin: 10px 0 0 0;
+}
+@media (min-width: 992px) {
+  .delivery-block .three .block {
+    margin: 0 0 0 10px;
+    flex: 1 1 0px;
+  }
+}
+@media (min-width: 992px) {
+  .delivery-block .three .col:first-child {
+    margin: 20px 20px 0 0;
+  }
+}
+@media (min-width: 992px) {
+  .delivery-block .two {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .delivery-block .two .col {
+    width: 48%;
+  }
+}
+.delivery-block .two .s-h {
+  margin-top: 30px;
+}
+
 /*@path:partials\_index.scss*/
 .bnr-block {
   position: relative;
