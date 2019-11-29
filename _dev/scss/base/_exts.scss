@@ -4,6 +4,7 @@
       color:getc(font);
       @include flx(display,flex);
       font-size:20px;
+      position:relative;
       input[type=number]{
         width:34px;
         height:31px;

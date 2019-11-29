@@ -1,1 +1,97 @@
 /*@path:partials\_product.scss*/
+.product-detail-box{
+  @extend %prod-amt;
+  .product-title{
+    font-weight:300;
+    .type2 &{
+      color:getc(grn);
+    }
+  }
+  .price{
+    margin:50px 0 10px 0;
+    font-family:font();
+    .prev{
+      font-size:22px;
+      vertical-align:baseline;
+    }
+    .current{
+      font-weight:400;
+      font-size:40px;
+      vertical-align:baseline;
+      .type2 &{
+        color:getc(grn) !important;
+      }
+    }
+  }
+  .p-amt-h{
+    font-size:16px;
+    font-family:font();
+    margin-bottom:6px;
+  }
+  .p-amt-free{
+    @include center($l:130px);
+    color:getc(red);
+    font-size:13px;
+  }
+  .button.style-10{
+    color:#fff;
+    margin-top:26px;
+    font:16px font();
+    text-transform:none;
+    border:none;
+    max-width:none;
+    width:auto;
+    padding:11px 18px;
+    letter-spacing:0;
+    .type2 &{
+      background:getc(grn);
+    }
+  }
+}
+.product-description{
+  color:getc(base);
+  font:600 16px/20px font();
+  p:not(:first-child){
+    margin-top:10px;
+  }
+}
+.production-logo{
+  padding-bottom:25px;
+  .background{
+    background:none;
+    padding:0;
+  }
+  .logo{
+    border:none;
+    padding:0;
+  }
+}
+.product-sidebar {
+  .block-title{
+    font-size:22px;
+  }
+  .title{
+    color:#000 !important;
+  }
+  .price{
+    margin-top:10px;
+  }
+  .current{
+    font-weight:400;
+    margin-left:6px;
+  }
+}
+.product-descr{
+  margin:0 15px;
+  font-size:15px;
+  color:#000;
+  p:not(:first-child){
+    margin:10px 0 0 0;
+  }
+  b{
+    font-weight:700;
+  }
+}
+.prod-descr-title{
+  font:22px font();
+}
