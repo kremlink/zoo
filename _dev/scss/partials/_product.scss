@@ -6,6 +6,9 @@
     .type2 &{
       color:getc(grn);
     }
+    .type2 &{
+      color:getc(grn21);
+    }
   }
   .price{
     margin:50px 0 10px 0;
@@ -20,6 +23,9 @@
       vertical-align:baseline;
       .type2 &{
         color:getc(grn) !important;
+      }
+      .type22 &{
+        color:getc(grn21) !important;
       }
     }
   }
@@ -46,6 +52,9 @@
     .type2 &{
       background:getc(grn);
     }
+    .type22 &{
+      background:getc(grn25);
+    }
   }
 }
 .product-description{
@@ -69,6 +78,11 @@
 .product-sidebar {
   .block-title{
     font-size:22px;
+    a{
+      .type22 &{
+        color:getc(grn21);
+      }
+    }
   }
   .title{
     color:#000 !important;
@@ -79,6 +93,9 @@
   .current{
     font-weight:400;
     margin-left:6px;
+    body.style-1 .type22 &{
+      color:getc(grn21);
+    }
   }
 }
 .product-descr{
@@ -94,4 +111,7 @@
 }
 .prod-descr-title{
   font:22px font();
+}
+.inline-product-entry .image:hover{
+  border-color:transparent;
 }

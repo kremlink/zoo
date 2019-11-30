@@ -157,6 +157,10 @@
     color:#fff;
   }
 }
+body.style-1 .type22 .price .current{
+
+  color:getc(grn21);
+}
 .product-slide-entry{
   padding-bottom:80px;
   position:relative;
@@ -164,11 +168,6 @@
   margin-left:20px;
   .title:hover{
     body.style-1 .type22 &{
-      color:getc(grn21);
-    }
-  }
-  body.style-1 .price .current{
-    .type22 &{
       color:getc(grn21);
     }
   }
@@ -212,7 +211,12 @@
       display:inline-block;
       margin-right:6px;
       vertical-align:middle;
-      @include sprite(i-cart);
+      .type2 &{
+        @include sprite(i-cart);
+      }
+      .type22 &{
+        @include sprite(i-carta);
+      }
     }
   }
 }

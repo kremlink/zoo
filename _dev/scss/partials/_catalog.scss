@@ -39,6 +39,10 @@
       background:getc(grn);
       border:none;
     }
+    .type22 &{
+      background:getc(grn25);
+      border:none;
+    }
   }
 }
 .categories-border-wrapper{
@@ -49,6 +53,9 @@
 .ui-slider-handle,.ui-slider-range{
   .type2 &{
     background:getc(grn);
+  }
+  .type22 &{
+    background:getc(grn25);
   }
 }
 .block-title.size-2{
@@ -64,6 +71,9 @@
   input:checked + span{
     .type2 &{
       background:getc(grn);
+    }
+    .type22 &{
+      background:getc(grn25);
     }
   }
 }

@@ -2,20 +2,31 @@
   .header-wrapper.type2{
     &.style-1 .navigation{
       background:getc(grn);
-    }
-    &.style-10 header:not(.fixed-header) .nav-overflow:before {
-      @include med($pk12){
-        background:getc(grn);
+      nav>ul>li>.fa{
+        color:getc(grn_);
       }
+    }
+    &.style-10 header:not(.fixed-header){
+      .nav-overflow:before{
+        @include med($pk12){
+          background:getc(grn);
+        }
+      }
+      nav>ul>li>.fa{
+        color:getc(grn_);
+      }
+    }
+  }
+  body.style-1 .type22 .search-button{
+    background:getc(grn2);
+    .fa{
+      color:#000;
     }
   }
   .header-wrapper.type22{
     body.style-1 &{
-      .navigation,.search-button{
+      .navigation{
         background:getc(grn2);
-        .fa{
-          color:#000;
-        }
         nav>ul>li>.fa{
           color:getc(grn21);
         }

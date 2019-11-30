@@ -53,6 +53,9 @@
     .type2 &{
       background:getc(grn);
     }
+    .type22 &{
+      background:getc(grn25);
+    }
   }
   .f-item{
     display:block;
@@ -109,6 +112,10 @@
     .type2 &{
       @include grad-ref($c:getc(grn),$b:0px,$d:true);
     }
+    .type22 &{
+      color:getc(grn21);
+      @include grad-ref($c:getc(grn21),$b:0px,$d:true);
+    }
   }
   .s-stat{
     margin-bottom:30px;
@@ -118,11 +125,17 @@
     .type2 &{
       border:2px solid getc(grn);
     }
+    .type22 &{
+      border:2px solid getc(grn21);
+    }
     &.on{
       div{
         &:first-child{
           .type2 &{
             background:getc(grn);
+          }
+          .type22 &{
+            background:getc(grn21);
           }
         }
         &:last-child{
@@ -141,6 +154,9 @@
       &:last-child{
         .type2 &{
           background:getc(grn);
+        }
+        .type22 &{
+          background:getc(grn21);
         }
       }
     }
@@ -178,6 +194,10 @@
       a{
         .type2 &{
           @include grad-ref($c:getc(grn),$b:0px,$d:true);
+        }
+        .type22 &{
+          color:getc(grn21);
+          @include grad-ref($c:getc(grn21),$b:0px,$d:true);
         }
       }
     }
