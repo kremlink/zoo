@@ -19,6 +19,10 @@
       .type2 &{
         color:getc(grn);
       }
+      .type22 &{
+        color:#000;
+        background:getc(grn2);
+      }
       @include med($pk){
         padding:13px 30px;
         @include flx(display,flex);
@@ -26,14 +30,25 @@
       }
       &.active{
         color:#fff;
-        background:getc(grn);
+        .type2 &{
+          background:getc(grn);
+        }
+        .type22 &{
+          color:#000;
+          background:getc(grn23);
+        }
         span{
           background:none;
         }
       }
     }
     span{
-      @include grad-ref($c:getc(grn),$b:1px,$d:true);
+      .type2 &{
+        @include grad-ref($c:getc(grn),$b:1px,$d:true);
+      }
+      .type22 &{
+        @include grad-ref($c:#000,$b:1px,$d:true);
+      }
     }
   }
   //---
@@ -43,7 +58,6 @@
     cursor:pointer;
     position:relative;
     padding-left:26px;
-    color:getc(grn);
     font-weight:400;
     &+.the-radio{
       margin-top:8px;

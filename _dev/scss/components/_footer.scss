@@ -80,8 +80,15 @@
         font-family:font();
       }
     }
+    body.style-1 .type22 & .price,body.style-1 .type22 & .grandtotal span{
+      color:getc(grn21);
+    }
   }
   body.style-1 .button.style-4{
     color:#fff;
+  }
+  body.style-1 .type22 .button.style-4{
+    background:getc(grn25);
+    border-color:getc(grn25);
   }
 }
