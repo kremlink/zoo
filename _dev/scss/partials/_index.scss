@@ -226,10 +226,11 @@ body.style-1 .type22 .price .current{
     font:700 18px/1 font();
     text-transform:none;
   }
-  .more{
+  .description .more{
     font:700 16px/1 font();
     font-size:16px;
     margin-top:20px;
+    display:block;
   }
   .description a{
     color:getc(base);

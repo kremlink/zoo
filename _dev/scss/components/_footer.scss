@@ -1,4 +1,10 @@
 @include exports("@path:components\_footer.scss"){/*@path:components\_footer.scss*/
+  .type1-footer{
+    background:getc(bg);
+    .footer-bottom-navigation{
+      border-top:none;
+    }
+  }
   .footer-bottom-navigation{
     border-top: 1px getc(bd) solid;
     margin-top:40px;

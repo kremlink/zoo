@@ -549,6 +549,13 @@ body {
 }
 
 /*@path:components\_footer.scss*/
+.type1-footer {
+  background: #f3f3f3;
+}
+.type1-footer .footer-bottom-navigation {
+  border-top: none;
+}
+
 .footer-bottom-navigation {
   border-top: 1px #ebebeb solid;
   margin-top: 40px;
@@ -2308,10 +2315,11 @@ body.style-1 .type22 .product-slide-entry .title:hover {
   font: 700 18px/1 "Comfortaa", sans-serif;
   text-transform: none;
 }
-.product-column-entry .more {
+.product-column-entry .description .more {
   font: 700 16px/1 "Comfortaa", sans-serif;
   font-size: 16px;
   margin-top: 20px;
+  display: block;
 }
 .product-column-entry .description a {
   color: #313131;
