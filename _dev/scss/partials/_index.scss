@@ -179,6 +179,7 @@ body.style-1 .type22 .price .current{
     color:getc(font);
     text-transform:none;
     margin-bottom:16px;
+    font-weight:400;
   }
   .information-blocks & .title{
     font-family:font();
@@ -291,5 +292,28 @@ body.style-1 .type22 .price .current{
   .ph{
     width:160px;
     margin:0 40px;
+  }
+}
+//---
+.promo-banner-box{
+  &.inv .promo-text{
+    .title,.description,.detail-link{
+      color:getc(grn11);
+      border-bottom-color:getc(grn11);
+    }
+  }
+  .promo-text{
+    .title{
+      font:24px/30px font11();
+      color:getc(grn2);
+    }
+    .description{
+      font:52px/46px font1();
+      color:getc(grn2);
+    }
+    .detail-link{
+      color:getc(grn2);
+      border-bottom-color:getc(grn2);
+    }
   }
 }

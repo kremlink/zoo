@@ -21,6 +21,8 @@ $colors:(
         grn23:#ffd082,
         grn24:#82c4ff,
         grn25:#3778b2,
+        grn1:#fe0000,
+        grn11:#1e154a,
         bd:#ebebeb,
         font:#808080,
         red:#962625,
@@ -38,6 +40,12 @@ $colors:(
 
 @function font(){
   @return 'Comfortaa',sans-serif;
+}
+@function font1(){
+  @return 'Underdog',sans-serif;
+}
+@function font11(){
+  @return 'Ubuntu Condensed',sans-serif;
 }
 
 @function m-prop($arg,$p:12){

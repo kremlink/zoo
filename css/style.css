@@ -2,7 +2,7 @@
 /*@path:core\_base.scss*/
 /*@path:core\_mixins.scss*/
 /*@path:core\_exts.scss*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400i|Comfortaa:300,400,600,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400i|Comfortaa:300,400,600,700|Underdog:400|Ubuntu:400,400i,700|Ubuntu+Condensed:400&subset=cyrillic");
 .bnr-block {
   background: url(../images/loader.gif) center no-repeat;
 }
@@ -426,12 +426,40 @@ table {
   margin-bottom: 50px;
 }
 
+nav > ul {
+  vertical-align: top;
+}
+
+nav > ul > li {
+  border: none;
+}
+.type1 nav > ul > li > a {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .type1 nav > ul > li {
+    padding: 0 10px;
+  }
+  .type1 nav > ul > li > a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1500px) {
+  .type1 nav > ul > li {
+    padding: 0 20px;
+  }
+  .type1 nav > ul > li > a {
+    font-size: 18px;
+  }
+}
 nav > ul > li:hover a {
   text-decoration: none;
 }
 nav > ul > li > a {
   position: relative;
   font-weight: 400;
+  font-size: 14px;
 }
 @media (min-width: 1200px) {
   nav > ul > li > a {
@@ -489,6 +517,9 @@ html {
 
 body {
   font-family: "Open sans", sans-serif;
+}
+body.type1font {
+  font-family: "Ubuntu", sans-serif;
 }
 
 /*@path:base\_exts.scss*/
@@ -689,6 +720,22 @@ body.style-1 .header-wrapper.type22 header:not(.fixed-header) nav > ul > li > a 
   }
 }
 
+.type1.header-wrapper.style-9 header.type-1.fixed-header nav > ul > li:not(.fixed-header-visible) {
+  margin-top: -16px;
+  padding-bottom: 16px;
+}
+@media (min-width: 1200px) {
+  .type1.header-wrapper.style-9 header.type-1 .navigation {
+    top: -34px;
+    right: 50px;
+  }
+}
+@media (min-width: 1500px) {
+  .type1.header-wrapper.style-9 header.type-1 .navigation {
+    top: -36px;
+  }
+}
+
 .logo-wrapper {
   width: 460px;
 }
@@ -703,6 +750,18 @@ body.style-1 .header-wrapper.type22 header:not(.fixed-header) nav > ul > li > a 
   justify-content: space-between;
   flex-flow: row wrap;
 }
+.type1 .header-top {
+  display: block;
+  padding: 20px 0;
+}
+@media (min-width: 1200px) {
+  .type1 .header-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #ebebeb;
+  }
+}
 
 .header-top-free {
   font-weight: 700;
@@ -715,18 +774,39 @@ body.style-1 .header-wrapper.type22 header:not(.fixed-header) nav > ul > li > a 
   position: relative;
   padding-right: 24px;
   width: 100%;
+  z-index: 1;
+  font-size: 13px;
+}
+.type1 .header-top-call {
+  display: block;
+  padding: 0;
+  margin: 0 0 10px 0;
+  width: 130px;
 }
 @media (min-width: 500px) {
   .header-top-call {
     width: auto;
     margin-right: 60px;
     padding-right: 44px;
+    font-size: 14px;
+  }
+  .type1 .header-top-call {
+    width: auto;
+    display: inline-block;
+    padding: 0;
+    margin: 0 90px 0 30px;
+  }
+  .type1 .header-top-call + .header-top-call {
+    margin-left: 0;
   }
 }
 @media (min-width: 1200px) {
   .header-top-call {
     margin-right: 0;
   }
+}
+.header-top-call + .header-top-call:after {
+  display: none;
 }
 .header-top-call:after {
   content: "";
@@ -737,6 +817,21 @@ body.style-1 .header-wrapper.type22 header:not(.fixed-header) nav > ul > li > a 
   width: 31px;
   height: 31px;
   background: url(../images/shared-sprite.png) 0px -236px no-repeat;
+  transition: opacity 0.3s ease-in-out;
+}
+.type1 .header-top-call:after {
+  pointer-events: none;
+  right: -36px;
+  margin-top: 8px;
+}
+@media (min-width: 500px) {
+  .type1 .header-top-call:after {
+    right: -66px;
+    margin: 0;
+  }
+}
+.opened .header-top-call:after {
+  opacity: 0;
 }
 
 .fa-phone {
@@ -757,6 +852,9 @@ body.style-1 .header-wrapper.type22 header:not(.fixed-header) nav > ul > li > a 
 @media (min-width: 1200px) {
   .header-middle {
     padding: 50px 0;
+  }
+  .type1 .header-middle {
+    padding: 80px 0 30px 0;
   }
 }
 .header-middle .right-entries {
@@ -798,6 +896,9 @@ body.style-1 .header-wrapper.type22 header:not(.fixed-header) nav > ul > li > a 
     display: block;
   }
 }
+.type1 .header-cart-side {
+  top: 200px;
+}
 .header-cart-side span {
   position: absolute;
   left: -6px;
@@ -816,6 +917,9 @@ body.style-1 .header-wrapper.type22 header:not(.fixed-header) nav > ul > li > a 
   background: #82c4ff;
 }
 
+.navigation-header {
+  border: none;
+}
 .navigation-header .close-menu {
   top: 15px;
 }
@@ -917,7 +1021,7 @@ body.style-1 .header-wrapper.type22 header:not(.fixed-header) nav > ul > li > a 
 }
 .navigation-addit .navigation-log {
   display: block;
-  padding: 12px 0 12px 20px;
+  padding: 12px 0;
   position: relative;
   color: #fff;
   font-family: "Comfortaa", sans-serif;
@@ -943,9 +1047,11 @@ body.style-1 .header-wrapper.type22 header:not(.fixed-header) nav > ul > li > a 
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
+  display: none;
 }
 @media (min-width: 1200px) {
   .navigation-addit .navigation-log:before {
+    display: block;
     left: 20px;
   }
 }
@@ -2263,6 +2369,7 @@ body.style-1 .type22 .product-slide-entry .title:hover {
   color: #808080;
   text-transform: none;
   margin-bottom: 16px;
+  font-weight: 400;
 }
 .information-blocks .product-slide-entry .title {
   font-family: "Comfortaa", sans-serif;
@@ -2377,6 +2484,23 @@ body.style-1 .type22 .product-slide-entry .title:hover {
 .logos-blocks .ph {
   width: 160px;
   margin: 0 40px;
+}
+
+.promo-banner-box.inv .promo-text .title, .promo-banner-box.inv .promo-text .description, .promo-banner-box.inv .promo-text .detail-link {
+  color: #1e154a;
+  border-bottom-color: #1e154a;
+}
+.promo-banner-box .promo-text .title {
+  font: 24px/30px "Ubuntu Condensed", sans-serif;
+  color: #ffd99b;
+}
+.promo-banner-box .promo-text .description {
+  font: 52px/46px "Underdog", sans-serif;
+  color: #ffd99b;
+}
+.promo-banner-box .promo-text .detail-link {
+  color: #ffd99b;
+  border-bottom-color: #ffd99b;
 }
 
 /*@path:partials\_product.scss*/
