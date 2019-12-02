@@ -767,6 +767,9 @@ body.style-9 .type1 .search-button {
 .logo-wrapper {
   width: 460px;
 }
+.type1 .logo-wrapper {
+  width: 570px;
+}
 
 .header-functionality-entry span, .header-functionality-entry .fa {
   vertical-align: bottom;
@@ -2865,6 +2868,9 @@ body.style-1 .type22 .product-sidebar .current {
     text-align: left;
   }
 }
+.type1 .profile-block .h {
+  font-family: "Underdog", sans-serif;
+}
 .profile-block .h + .i-item {
   margin-top: 6px;
 }
@@ -2884,6 +2890,9 @@ body.style-1 .type22 .product-sidebar .current {
     margin: 18px 0 0 0;
   }
 }
+.type1 .profile-block .form {
+  border-color: #ffd99b;
+}
 .profile-block .u-a-btn {
   font: 20px/34px "Comfortaa", sans-serif;
   padding: 0 30px;
@@ -2897,6 +2906,10 @@ body.style-1 .type22 .product-sidebar .current {
 }
 .type22 .profile-block .u-a-btn {
   background: #3778b2;
+}
+.type1 .profile-block .u-a-btn {
+  background: #fe0000;
+  font-family: "Underdog", sans-serif;
 }
 .profile-block .f-item {
   display: block;
@@ -2933,6 +2946,9 @@ body.style-1 .type22 .product-sidebar .current {
   padding-left: 24px;
   font-size: 16px;
 }
+.type1 .profile-block .exit {
+  color: #fe0000;
+}
 .profile-block .a-item {
   position: relative;
   padding-left: 42px;
@@ -2961,6 +2977,10 @@ body.style-1 .type22 .product-sidebar .current {
 .type22 .profile-block .a-add {
   color: #b48b49;
   background: linear-gradient(90deg,#b48b49 1px,transparent 1px,transparent 1px) left calc(100% - 0px)/2px 1px repeat-x;
+}
+.type1 .profile-block .a-add {
+  color: #fe0000;
+  background: linear-gradient(90deg,#fe0000 1px,transparent 1px,transparent 1px) left calc(100% - 0px)/2px 1px repeat-x;
 }
 .profile-block .s-stat {
   margin-bottom: 30px;
@@ -2997,6 +3017,9 @@ body.style-1 .type22 .product-sidebar .current {
 }
 .type22 .profile-block .s-stat div:last-child {
   background: #b48b49;
+}
+.type1 .profile-block .s-stat div:last-child {
+  background: #fe0000;
 }
 .profile-block .s-info {
   display: block;
@@ -3041,6 +3064,10 @@ body.style-1 .type22 .product-sidebar .current {
 .type22 .profile-block .h-item.h-head a {
   color: #b48b49;
   background: linear-gradient(90deg,#b48b49 1px,transparent 1px,transparent 1px) left calc(100% - 0px)/2px 1px repeat-x;
+}
+.type1 .profile-block .h-item.h-head a {
+  color: #fe0000;
+  background: linear-gradient(90deg,#fe0000 1px,transparent 1px,transparent 1px) left calc(100% - 0px)/2px 1px repeat-x;
 }
 .profile-block .h-item:not(.h-head) + .h-item {
   margin-top: 28px;

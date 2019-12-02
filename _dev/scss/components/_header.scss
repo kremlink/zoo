@@ -78,6 +78,9 @@
   }
   .logo-wrapper{
     width:460px;
+    .type1 &{
+      width:570px;
+    }
   }
   .header-functionality-entry{
     span,.fa{
