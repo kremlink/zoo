@@ -86,11 +86,17 @@
     .content{
       .title,.price{
         font-family:font();
+        .type1 &{
+          font-family:font1();
+        }
       }
     }
     .summary{
       .subtotal,.grandtotal{
         font-family:font();
+        .type1 &{
+          font-family:font1();
+        }
       }
     }
     body.style-1 .type22 & .price,body.style-1 .type22 & .grandtotal span{

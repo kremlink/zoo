@@ -84,13 +84,13 @@
       vertical-align:bottom;
     }
     span{
-      .type2 &,.type22 &{
-        position:relative;
+      position:relative;
+      .type2 &,.type22 &,.type1 &{
         top:-2px;
       }
     }
     .fa{
-      .type2 &,.type22 &{
+      .type2 &,.type22 &,.type1 &{
         top:-3px;
       }
     }

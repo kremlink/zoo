@@ -1,6 +1,6 @@
 /*@path:partials\_cart.scss*/
 .cart-block{
-  margin-top:40px;
+  margin-top:20px;
   @extend %prod-amt;
   $l-sh:200px;
   input[type=text],input[type=password],input[type=number],textarea,select{
@@ -28,6 +28,9 @@
     font:24px/24px font();
     @include med($pk){
       text-align:left;
+    }
+    .type1 &{
+      font-family:font1();
     }
   }
   .left{
@@ -85,6 +88,9 @@
       line-height:14px;
       @include flx(flex,'1 0 0px');
     }
+    .type1 &{
+      font-size:16px;
+    }
   }
   .p-amt{
     margin-top:20px;
@@ -101,6 +107,9 @@
       margin-left:24px;
       text-align:right;
       @include flx(order,1);
+    }
+    .type1 &{
+      font:22px/22px font1();
     }
   }
   .c-p-val{
@@ -128,6 +137,9 @@
       .type22 &{
         border-color:getc(grn21);
       }
+      .type1 &{
+        border-color:getc(bd);
+      }
     }
   }
   .a-wrap{
@@ -147,6 +159,9 @@
         bottom:50%;
         margin-bottom:-17px;
       }
+      .type1 &{
+        background:getc(grn1);
+      }
     }
   }
   //---
@@ -154,6 +169,9 @@
     @include med($pk){
       width:420px;
       @include abs($t:-20px,$b:0,$r:0);
+    }
+    .type1 &{
+      font-size:16px;
     }
   }
   .info{
@@ -164,6 +182,10 @@
     @include med($pk){
       margin:0;
       padding:0 30px 30px 30px;
+    }
+    .type1 &{
+      border-color:getc(grn2);
+      border-width:3px;
     }
   }
   .in-h1{
@@ -182,18 +204,21 @@
     .type2 &{
       background:getc(grn);
     }
-    .type22 &{
+    .type22 &,.type1 &{
       background:getc(grn2);
       color:#000;
     }
     span{
       position:relative;
+      .type1 &{
+        font-family:font1();
+      }
     }
     &:before{
       content:'';
       @include abs($l:0,$t:0,$r:0,$b:0);
       background:rgba(#000,0.15);
-      .type22 &{
+      .type22 &,.type1 &{
         display:none;
       }
     }
@@ -210,6 +235,9 @@
     }
     .type22 &{
       background:getc(grn25);
+    }
+    .type1 &{
+      background:getc(grn1);
     }
   }
   .in-notif{
@@ -267,6 +295,9 @@
     font-size:20px;
     line-height:20px;
     margin-top:26px;
+    .type1 &{
+      font-family:font1();
+    }
   }
   .in-promo{
     margin-top:30px;
@@ -294,6 +325,9 @@
     .type22 &{
       @include sprite(promo-btn1a);
     }
+    .type1 &{
+      @include sprite(promo-btn1b);
+    }
   }
   .in-price{
     margin-top:8px;
@@ -306,12 +340,19 @@
       font-size:20px;
       line-height:20px;
       font-weight:500;
+      .type1 &{
+        font-weight:400;
+        font-family:font1();
+      }
     }
     div{
       &:last-child{
         margin-left:auto;
         font-size:20px;
         line-height:20px;
+        .type1 &{
+          font-family:font1();
+        }
       }
     }
   }
@@ -325,6 +366,9 @@
     padding:14px 0 12px 0;
     @include med($pk){
       margin:24px -20px 0 -20px;
+    }
+    .type1 &{
+      font-family:font1();
     }
     &:before{
       content:'';
@@ -346,6 +390,9 @@
       .type22 &{
         color:getc(grn21);
       }
+      .type1 &{
+        color:getc(grn1);
+      }
     }
   }
   .pass{
@@ -363,8 +410,22 @@
     border-radius:0;
     padding:0;
     text-align:center;
+    .type2 &{
+      background:getc(grn);
+      border:2px solid getc(grn);
+    }
+    .type22 &{
+      background:getc(grn25);
+    }
+    .type1 &{
+      font-family:font1();
+      background:getc(grn1);
+    }
     &.done{
       line-height:20px;
+      .type1 &{
+        line-height:34px;
+      }
     }
     &.disabled{
       margin-top:12px;
@@ -372,13 +433,6 @@
       background:none;
       pointer-events:none;
       border-color:getc(gfont);
-    }
-    .type2 &{
-      background:getc(grn);
-      border:2px solid getc(grn);
-    }
-    .type22 &{
-      background:getc(grn25);
     }
   }
   //---
@@ -429,6 +483,9 @@
       margin-left:20px;
       max-width:none;
       @include flx(flex,'1 1 35%');
+    }
+    .type1 &{
+      font-weight:500;
     }
     &.short{
       @include med($pk){
