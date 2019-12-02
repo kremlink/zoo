@@ -2186,6 +2186,9 @@ body.style-9 .type1 .search-button {
   text-align: center;
   margin-bottom: 24px;
 }
+.type1 .delivery-block .h {
+  font-family: "Underdog", sans-serif;
+}
 .delivery-block .h:not(:first-child) {
   margin-top: 40px;
 }
@@ -2194,6 +2197,9 @@ body.style-9 .type1 .search-button {
   display: flex;
   align-items: center;
   font: 18px "Comfortaa", sans-serif;
+}
+.type1 .delivery-block .s-h {
+  font-family: "Underdog", sans-serif;
 }
 .delivery-block .s-h.simple {
   text-align: center;
@@ -2223,6 +2229,11 @@ body.style-9 .type1 .search-button {
 .type22 .delivery-block .b-h {
   color: #000;
   background: #ffd99b;
+}
+.type1 .delivery-block .b-h {
+  font-family: "Underdog", sans-serif;
+  background: #ffd99b;
+  color: #000;
 }
 .delivery-block .dots li {
   margin: 10px 0 0 20px;
