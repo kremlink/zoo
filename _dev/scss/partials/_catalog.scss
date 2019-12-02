@@ -35,13 +35,15 @@
     font-family:font();
     text-transform:none;
     font-size:15px;
+    border:none;
     .type2 &{
       background:getc(grn);
-      border:none;
     }
     .type22 &{
       background:getc(grn25);
-      border:none;
+    }
+    .type1 &{
+      background:getc(grn1);
     }
   }
 }
@@ -56,6 +58,9 @@
   }
   .type22 &{
     background:getc(grn25);
+  }
+  .type1 &{
+    background:getc(grn1);
   }
 }
 .block-title.size-2{
@@ -74,6 +79,9 @@
     }
     .type22 &{
       background:getc(grn25);
+    }
+    .type1 &{
+      background:getc(grn1);
     }
   }
 }

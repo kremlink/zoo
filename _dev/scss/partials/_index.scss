@@ -304,6 +304,9 @@ body.style-9 .type1 .list-type-1{
 //---
 .block-title{
   font:700 18px/1 font();
+  body.style-9 .type1 &{
+    font:24px font1();
+  }
 }
 .information-blocks .information-entry .information-entry-item{
   margin-top:16px;

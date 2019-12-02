@@ -422,6 +422,10 @@ table {
   border: 1px solid #f00;
 }
 
+.type1 .categories-border-wrapper {
+  border-color: #ffd99b;
+}
+
 .information-blocks {
   margin-bottom: 50px;
 }
@@ -500,6 +504,9 @@ nav > ul:nth-child(2) > li {
   color: #fff !important;
   background: #3778b2;
   border-color: #3778b2;
+}
+.type1 .square-button:hover, .type1 .square-button.active {
+  color: #fff !important;
 }
 
 .safe-hide-svg {
@@ -2121,14 +2128,16 @@ body.style-9 .type1 .search-button {
   font-family: "Comfortaa", sans-serif;
   text-transform: none;
   font-size: 15px;
+  border: none;
 }
 .type2 .information-blocks .catalog-center .button {
   background: #749625;
-  border: none;
 }
 .type22 .information-blocks .catalog-center .button {
   background: #3778b2;
-  border: none;
+}
+.type1 .information-blocks .catalog-center .button {
+  background: #fe0000;
 }
 
 .categories-border-wrapper .accordeon-title {
@@ -2140,6 +2149,9 @@ body.style-9 .type1 .search-button {
 }
 .type22 .ui-slider-handle, .type22 .ui-slider-range {
   background: #3778b2;
+}
+.type1 .ui-slider-handle, .type1 .ui-slider-range {
+  background: #fe0000;
 }
 
 .block-title.size-2 {
@@ -2160,6 +2172,9 @@ body.style-9 .type1 .search-button {
 }
 .type22 .checkbox-entry input:checked + span {
   background: #3778b2;
+}
+.type1 .checkbox-entry input:checked + span {
+  background: #fe0000;
 }
 
 /*@path:partials\_delivery.scss*/
@@ -2634,6 +2649,9 @@ body.style-9 .type1 .list-type-1 li .fa {
 
 .block-title {
   font: 700 18px/1 "Comfortaa", sans-serif;
+}
+body.style-9 .type1 .block-title {
+  font: 24px "Underdog", sans-serif;
 }
 
 .information-blocks .information-entry .information-entry-item {

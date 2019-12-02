@@ -17,6 +17,9 @@
       }
     }
   }
+  .type1 .categories-border-wrapper{
+    border-color:getc(grn2);
+  }
 
   .type2{
     .content-center, .position-center{
@@ -96,6 +99,11 @@
         color:#fff !important;
         background:getc(grn25);
         border-color:getc(grn25);
+      }
+    }
+    .type1 &{
+      &:hover,&.active{
+        color:#fff !important;
       }
     }
   }
