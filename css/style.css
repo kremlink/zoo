@@ -2718,12 +2718,20 @@ body.style-9 .type1 .list-type-1 li .fa {
 .type2 .product-detail-box .product-title {
   color: #749625;
 }
-.type2 .product-detail-box .product-title {
+.type22 .product-detail-box .product-title {
   color: #b48b49;
+}
+.type1 .product-detail-box .product-title {
+  color: #1e154a;
+  font-weight: 400;
+  font-family: "Underdog", sans-serif;
 }
 .product-detail-box .price {
   margin: 50px 0 10px 0;
   font-family: "Comfortaa", sans-serif;
+}
+.type1 .product-detail-box .price {
+  font-family: "Underdog", sans-serif;
 }
 .product-detail-box .price .prev {
   font-size: 22px;
@@ -2740,10 +2748,15 @@ body.style-9 .type1 .list-type-1 li .fa {
 .type22 .product-detail-box .price .current {
   color: #b48b49 !important;
 }
+.type1 .product-detail-box .price .current {
+  color: #fe0000 !important;
+}
 .product-detail-box .p-amt-h {
-  font-size: 16px;
-  font-family: "Comfortaa", sans-serif;
+  font: 16px "Comfortaa", sans-serif;
   margin-bottom: 6px;
+}
+.type1 .product-detail-box .p-amt-h {
+  font: 18px "Ubuntu", sans-serif;
 }
 .product-detail-box .p-amt-free {
   position: absolute;
@@ -2770,10 +2783,18 @@ body.style-9 .type1 .list-type-1 li .fa {
 .type22 .product-detail-box .button.style-10 {
   background: #3778b2;
 }
+.type1 .product-detail-box .button.style-10 {
+  background: #fe0000;
+  font: 20px "Underdog", sans-serif;
+}
 
 .product-description {
   color: #313131;
   font: 600 16px/20px "Comfortaa", sans-serif;
+}
+.type1 .product-description {
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
 }
 .product-description p:not(:first-child) {
   margin-top: 10px;
@@ -2791,11 +2812,19 @@ body.style-9 .type1 .list-type-1 li .fa {
   padding: 0;
 }
 
+.type1 .product-sidebar .products-list {
+  border-width: 3px;
+  border-color: #ffd99b;
+}
 .product-sidebar .block-title {
   font-size: 22px;
 }
 .type22 .product-sidebar .block-title a {
   color: #b48b49;
+}
+.type1 .product-sidebar .block-title a {
+  color: #fe0000;
+  font: 24px "Underdog", sans-serif;
 }
 .product-sidebar .title {
   color: #000 !important;
@@ -2803,12 +2832,21 @@ body.style-9 .type1 .list-type-1 li .fa {
 .product-sidebar .price {
   margin-top: 10px;
 }
+.type1 .product-sidebar .price {
+  font-family: "Underdog", sans-serif;
+}
+.type1 .product-sidebar .price .current {
+  color: #fe0000;
+}
 .product-sidebar .current {
   font-weight: 400;
   margin-left: 6px;
 }
 body.style-1 .type22 .product-sidebar .current {
   color: #b48b49;
+}
+body.style-1 .type1 .product-sidebar .current {
+  color: #fe0000;
 }
 
 .product-descr {
@@ -2825,6 +2863,9 @@ body.style-1 .type22 .product-sidebar .current {
 
 .prod-descr-title {
   font: 22px "Comfortaa", sans-serif;
+}
+.type1 .prod-descr-title {
+  font-family: "Underdog", sans-serif;
 }
 
 .inline-product-entry .image:hover {

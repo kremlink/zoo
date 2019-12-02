@@ -6,13 +6,21 @@
     .type2 &{
       color:getc(grn);
     }
-    .type2 &{
+    .type22 &{
       color:getc(grn21);
+    }
+    .type1 &{
+      color:getc(grn11);
+      font-weight:400;
+      font-family:font1();
     }
   }
   .price{
     margin:50px 0 10px 0;
     font-family:font();
+    .type1 &{
+      font-family:font1();
+    }
     .prev{
       font-size:22px;
       vertical-align:baseline;
@@ -27,12 +35,17 @@
       .type22 &{
         color:getc(grn21) !important;
       }
+      .type1 &{
+        color:getc(grn1) !important;
+      }
     }
   }
   .p-amt-h{
-    font-size:16px;
-    font-family:font();
+    font:16px font();
     margin-bottom:6px;
+    .type1 &{
+      font:18px font111();
+    }
   }
   .p-amt-free{
     @include center($l:130px);
@@ -55,11 +68,19 @@
     .type22 &{
       background:getc(grn25);
     }
+    .type1 &{
+      background:getc(grn1);
+      font:20px font1();
+    }
   }
 }
 .product-description{
   color:getc(base);
   font:600 16px/20px font();
+  .type1 &{
+    font-weight:400;
+    font-family:font111();
+  }
   p:not(:first-child){
     margin-top:10px;
   }
@@ -75,12 +96,20 @@
     padding:0;
   }
 }
-.product-sidebar {
+.product-sidebar{
+  .type1 & .products-list{
+    border-width:3px;
+    border-color:getc(grn2);
+  }
   .block-title{
     font-size:22px;
     a{
       .type22 &{
         color:getc(grn21);
+      }
+      .type1 &{
+        color:getc(grn1);
+        font:24px font1();
       }
     }
   }
@@ -89,12 +118,21 @@
   }
   .price{
     margin-top:10px;
+    .type1 &{
+      font-family:font1();
+      .current{
+        color:getc(grn1);
+      }
+    }
   }
   .current{
     font-weight:400;
     margin-left:6px;
     body.style-1 .type22 &{
       color:getc(grn21);
+    }
+    body.style-1 .type1 &{
+      color:getc(grn1);
     }
   }
 }
@@ -111,6 +149,9 @@
 }
 .prod-descr-title{
   font:22px font();
+  .type1 &{
+    font-family:font1();
+  }
 }
 .inline-product-entry .image:hover{
   border-color:transparent;
