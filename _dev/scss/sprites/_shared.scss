@@ -4,22 +4,37 @@ $shared-sprite:(
   arr-l1:(
    width:30px,
    height:30px,
-   pos:0px -156px
+   pos:0px -265px
+  ),
+  arr-l2:(
+   width:30px,
+   height:30px,
+   pos:0px -305px
   ),
   arr-r1:(
    width:30px,
    height:30px,
-   pos:0px -196px
+   pos:0px -225px
+  ),
+  arr-r2:(
+   width:30px,
+   height:30px,
+   pos:0px -185px
   ),
   i-cart:(
    width:23px,
    height:22px,
-   pos:0px -88px
+   pos:0px -117px
   ),
   i-carta:(
    width:24px,
    height:18px,
    pos:0px -60px
+  ),
+  i-cartb:(
+   width:23px,
+   height:19px,
+   pos:0px -88px
   ),
   log:(
    width:12px,
@@ -34,47 +49,47 @@ $shared-sprite:(
   menu1:(
    width:32px,
    height:32px,
-   pos:0px -571px
+   pos:0px -680px
   ),
   menu1a:(
    width:32px,
    height:32px,
-   pos:0px -277px
+   pos:0px -386px
   ),
   menu2:(
    width:32px,
    height:32px,
-   pos:0px -529px
+   pos:0px -428px
   ),
   menu2a:(
    width:32px,
    height:32px,
-   pos:0px -319px
+   pos:0px -722px
   ),
   menu3:(
    width:32px,
    height:32px,
-   pos:0px -613px
+   pos:0px -638px
   ),
   menu3a:(
    width:32px,
    height:32px,
-   pos:0px -361px
+   pos:0px -470px
   ),
   menu4:(
    width:32px,
    height:32px,
-   pos:0px -403px
+   pos:0px -512px
   ),
   menu4a:(
    width:32px,
    height:32px,
-   pos:0px -445px
+   pos:0px -554px
   ),
   menu5:(
    width:32px,
    height:32px,
-   pos:0px -487px
+   pos:0px -596px
   ),
   nothing:(
    width:1px,
@@ -84,27 +99,32 @@ $shared-sprite:(
   pay1:(
    width:43px,
    height:26px,
-   pos:0px -120px
+   pos:0px -149px
   ),
   promo-btn1:(
    width:50px,
    height:50px,
-   pos:0px -655px
+   pos:0px -764px
   ),
   promo-btn1a:(
    width:50px,
    height:50px,
-   pos:0px -715px
+   pos:0px -824px
   ),
   sidecart:(
    width:50px,
    height:50px,
-   pos:0px -775px
+   pos:0px -884px
+  ),
+  sidecarta:(
+   width:50px,
+   height:50px,
+   pos:0px -944px
   ),
   wapp:(
    width:31px,
    height:31px,
-   pos:0px -236px
+   pos:0px -345px
   )
  )
 );

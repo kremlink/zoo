@@ -2,18 +2,15 @@
   .header-wrapper.type2{
     &.style-1 .navigation{
       background:getc(grn);
-      nav>ul>li>.fa{
-        color:getc(grn_);
-      }
+    }
+    nav>ul>li>.fa{
+      color:getc(grn_);
     }
     &.style-10 header:not(.fixed-header){
       .nav-overflow:before{
         @include med($pk12){
           background:getc(grn);
         }
-      }
-      nav>ul>li>.fa{
-        color:getc(grn_);
       }
     }
   }
@@ -27,9 +24,9 @@
     body.style-1 &{
       .navigation{
         background:getc(grn2);
-        nav>ul>li>.fa{
-          color:getc(grn21);
-        }
+      }
+      nav>ul>li>.fa{
+        color:getc(grn21);
       }
       .header-functionality-entry.open-cart-popup b{
         color:getc(grn21);
@@ -43,9 +40,6 @@
       nav>ul>li{
         >a{
           color:#000;
-        }
-        >.fa{
-          color:getc(grn21);
         }
       }
       .nav-overflow:before {
@@ -69,12 +63,43 @@
         top:-36px;
       }
     }
+    nav>ul>li>.fa{
+      color:getc(grn1);
+    }
+    .search-button{
+      background:getc(grn1);
+    }
+    .header-functionality-entry.open-cart-popup b{
+      color:getc(grn1);
+    }
+  }
+  body.style-9 .type1 .search-button{
+    background:getc(grn1);
   }
   .logo-wrapper{
     width:460px;
   }
-  .header-functionality-entry b{
-    font:600 20px/1 font();
+  .header-functionality-entry{
+    span,.fa{
+      vertical-align:bottom;
+    }
+    span{
+      .type2 &,.type22 &{
+        position:relative;
+        top:-2px;
+      }
+    }
+    .fa{
+      .type2 &,.type22 &{
+        top:-3px;
+      }
+    }
+    b{
+      font:600 20px/1 font();
+      .type1 &{
+        font:20px/1 font1();
+      }
+    }
   }
   .header-top{
     border:none;
@@ -199,6 +224,7 @@
     }
     .type1 &{
       top:200px;
+      @include sprite(sidecarta);
     }
     span{
       @include abs($l:-6px,$b:-6px);
@@ -213,6 +239,9 @@
       }
       .type22 &{
         background:getc(grn24);
+      }
+      .type1 &{
+        background:getc(grn11);
       }
     }
   }
@@ -345,5 +374,9 @@
   }
   .submenu-list-title a{
     font-family:font();
+    .type1 &{
+      font-family:font11();
+      font-weight:400;
+    }
   }
 }

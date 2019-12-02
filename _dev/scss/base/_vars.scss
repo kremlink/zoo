@@ -47,6 +47,9 @@ $colors:(
 @function font11(){
   @return 'Ubuntu Condensed',sans-serif;
 }
+@function font111(){
+  @return 'Ubuntu',sans-serif;
+}
 
 @function m-prop($arg,$p:12){
   @return $arg*1vw/$p;

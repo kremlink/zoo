@@ -1,6 +1,7 @@
 @include exports("@path:components\_footer.scss"){/*@path:components\_footer.scss*/
   .type1-footer{
     background:getc(bg);
+    font-size:16px;
     .footer-bottom-navigation{
       border-top:none;
     }
@@ -33,6 +34,9 @@
     }
   }
   .footer-links{
+    .type1 &{
+      font-size:16px;
+    }
     .pluso a{
       margin:5px 0 0 5px !important;
       border:none;
@@ -44,9 +48,12 @@
       font-weight:700;
       margin:0!important;
       color:#000!important;
+      .type1 &{
+        font-size:16px;
+      }
       &.footer-agreement{
         text-decoration:underline;
-        font-weight:500;
+        font-weight:400;
       }
     }
   }
@@ -89,6 +96,9 @@
     body.style-1 .type22 & .price,body.style-1 .type22 & .grandtotal span{
       color:getc(grn21);
     }
+    body.style-9 .type1 & .price,body.style-9 .type1 & .grandtotal span{
+      color:getc(grn1);
+    }
   }
   body.style-1 .button.style-4{
     color:#fff;
@@ -96,5 +106,9 @@
   body.style-1 .type22 .button.style-4{
     background:getc(grn25);
     border-color:getc(grn25);
+  }
+  body.style-9 .type1 .button.style-4{
+    background:getc(grn1);
+    border-color:getc(grn1);
   }
 }

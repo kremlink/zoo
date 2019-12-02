@@ -43,11 +43,17 @@
     .type2 &:before,.type22 &:before{
       @include sprite(arr-l1);
     }
+    .type1 &:before{
+      @include sprite(arr-l2);
+    }
   }
   .next-arr{
     right:0;
     .type2 &:before,.type22 &:before{
       @include sprite(arr-r1);
+    }
+    .type1 &:before{
+      @include sprite(arr-r2);
     }
   }
 }
@@ -61,6 +67,10 @@
   body.style-1 .type22 &{
     border-color:getc(grn25);
     background:getc(grn25);
+  }
+  body.style-9 .type1 &{
+    border-color:getc(grn1);
+    background:getc(grn1);
   }
 }
 .mozaic-swiper .mozaic-banner-entry.type-1{
@@ -121,16 +131,29 @@
   @include flx(display,flex);
 }
 //---
-.tabs-container .swiper-tabs .block-title{
-  color:getc(font);
-  font:20px font();
-  &.active{
-    font-weight:400;
-    color:#000;
+.tabs-container .swiper-tabs{
+  .see-all{
+    @include abs($t:0,$r:0);
+    font:20px font1();
+    color:getc(grn1);
   }
-  &:before{
-    .type22 &{
-      background:getc(grn2);
+  .block-title{
+    color:getc(font);
+    font:20px font();
+    .type1 &{
+      font:20px font1();
+    }
+    &.active{
+      font-weight:400;
+      color:#000;
+    }
+    &:before{
+      .type22 &{
+        background:getc(grn2);
+      }
+      .type1 &{
+        background:getc(grn1);
+      }
     }
   }
 }
@@ -180,10 +203,28 @@ body.style-1 .type22 .price .current{
     text-transform:none;
     margin-bottom:16px;
     font-weight:400;
+    .type1 &{
+      font-family:font1();
+    }
   }
   .information-blocks & .title{
     font-family:font();
     color:#000;
+    .type1 &{
+      font-family:font11();
+      font-weight:400;
+      font-size:18px;
+    }
+  }
+  .type1 .information-blocks.other &{
+    .title{
+      font-size:18px;
+      font-family:font1();
+    }
+    .other-text{
+      font-size:16px;
+      margin-top:18px;
+    }
   }
   .bottom{
     font-family:font();
@@ -191,6 +232,12 @@ body.style-1 .type22 .price .current{
   }
   .price{
     margin:0;
+    .type1 &{
+      font-family:font1();
+      .current{
+        color:getc(grn1);
+      }
+    }
   }
   .cart{
     display:inline-block;
@@ -207,6 +254,12 @@ body.style-1 .type22 .price .current{
       border:2px solid getc(grn24);
       color:getc(grn25);
     }
+    .type1 &{
+      font-family:font1();
+      background:getc(grn1);
+      color:#fff;
+      font-size:16px;
+    }
     &:before{
       content:'';
       display:inline-block;
@@ -218,7 +271,18 @@ body.style-1 .type22 .price .current{
       .type22 &{
         @include sprite(i-carta);
       }
+      .type1 &{
+        @include sprite(i-cartb);
+      }
     }
+  }
+}
+body.style-9 .type1 .list-type-1{
+  font-size:15px;
+  line-height:20px;
+  font-weight:400;
+  li .fa{
+    color:getc(grn24);
   }
 }
 //---
@@ -281,6 +345,15 @@ body.style-1 .type22 .price .current{
   @include flx(flex-flow,'row wrap');
   @include flx(justify-content,space-between);
   @include flx(align-items,center);
+  .type1 &{
+    margin:0;
+    .item{
+      margin:10px 0 0 0;
+    }
+    .ph{
+      margin:0;
+    }
+  }
   .item{
     margin:10px 40px 0 40px;
     width:160px;
