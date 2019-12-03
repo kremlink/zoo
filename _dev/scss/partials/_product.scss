@@ -9,16 +9,21 @@
     .type22 &{
       color:getc(grn21);
     }
-    .type1 &{
-      color:getc(grn11);
+    .type1font &{
       font-weight:400;
       font-family:font1();
+    }
+    .type1 &{
+      color:getc(grn11);
+    }
+    .type11 &{
+      color:getc(grn11);
     }
   }
   .price{
     margin:50px 0 10px 0;
     font-family:font();
-    .type1 &{
+    .type1font &{
       font-family:font1();
     }
     .prev{
@@ -38,12 +43,15 @@
       .type1 &{
         color:getc(grn1) !important;
       }
+      .type11 &{
+        color:getc(grn1_) !important;
+      }
     }
   }
   .p-amt-h{
     font:16px font();
     margin-bottom:6px;
-    .type1 &{
+    .type1font &{
       font:18px font111();
     }
   }
@@ -68,16 +76,22 @@
     .type22 &{
       background:getc(grn25);
     }
+    .type1font &{
+      font:20px font1();
+    }
     .type1 &{
       background:getc(grn1);
-      font:20px font1();
+    }
+    .type11 &{
+      background:getc(grn11_);
+      color:getc(grn111_);
     }
   }
 }
 .product-description{
   color:getc(base);
   font:600 16px/20px font();
-  .type1 &{
+  .type1font &{
     font-weight:400;
     font-family:font111();
   }
@@ -101,15 +115,23 @@
     border-width:3px;
     border-color:getc(grn2);
   }
+  .type11 & .products-list{
+    border-width:3px;
+  }
   .block-title{
     font-size:22px;
     a{
       .type22 &{
         color:getc(grn21);
       }
+      .type1font &{
+        font:24px font1();
+      }
       .type1 &{
         color:getc(grn1);
-        font:24px font1();
+      }
+      .type11 &{
+        color:getc(grn1_);
       }
     }
   }
@@ -118,10 +140,15 @@
   }
   .price{
     margin-top:10px;
-    .type1 &{
+    .type1font &{
       font-family:font1();
-      .current{
+    }
+    .current{
+      .type1 &{
         color:getc(grn1);
+      }
+      .type11 &{
+        color:getc(grn1_);
       }
     }
   }
@@ -131,8 +158,11 @@
     body.style-1 .type22 &{
       color:getc(grn21);
     }
-    body.style-1 .type1 &{
+    body.style-9 .type1 &{
       color:getc(grn1);
+    }
+    body.style-9 .type11 &{
+      color:getc(grn1_);
     }
   }
 }
@@ -149,7 +179,7 @@
 }
 .prod-descr-title{
   font:22px font();
-  .type1 &{
+  .type1font &{
     font-family:font1();
   }
 }

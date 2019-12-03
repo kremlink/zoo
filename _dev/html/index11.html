@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @@include('components/head.html')
+    <script>
+     var theApp={
+      shared:{
+       modules:['index']
+      },
+      data:{
+                 @@include('components/data.html')
+     }
+     };
+    </script>
+</head>
+<body class="type1font style-9">
+
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div class="bubbles">
+            <div class="title">loading</div>
+            <span></span>
+            <span id="bubble2"></span>
+            <span id="bubble3"></span>
+        </div>
+    </div>
+
+    <div id="content-block">
+
+        <!-- HEADER -->
+        @@include('components/header1.html',{"inner":"type11 style-9"})
+
+        <div class="content-push type11">
+
+            <div class="wide-center fixed-header-margin">
+                <div class="information-blocks">
+                    <div class="row">
+                        <div class="custom-col-1">
+                            <a class="promo-banner-box" style="background-image: url(images/promo1.jpg); background-color: #d6b620;">
+                                <span class="promo-text" style="background-color: #db5f29;">
+                                    <span class="title">Лучшее для</span>
+                                    <span class="description">Собак</span>
+                                    <span class="detail-link">посмотреть</span>
+                                </span>
+                            </a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="custom-col-1">
+                            <a class="promo-banner-box" style="background-image: url(images/promo2.jpg);background-color: #26334c;">
+                                <span class="promo-text" style="background-color: #7a3d3c;">
+                                    <span class="title">Лучшее для</span>
+                                    <span class="description">кошек</span>
+                                    <span class="detail-link">посмотреть</span>
+                                </span>
+                            </a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="custom-col-1">
+                            <a class="promo-banner-box inv" style="background-image: url(images/promo1.jpg); background-color: #914168;">
+                                 <span class="promo-text" style="background-color: #ebebeb;">
+                                    <span class="title">Лучшее для</span>
+                                    <span class="description">Собак</span>
+                                    <span class="detail-link">посмотреть</span>
+                                </span>
+                            </a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="custom-col-2">
+                            <a class="promo-banner-box" style="background-image: url(images/promo2.jpg); background-color: #23c0e0;">
+                                <span class="promo-text">
+                                    <span class="title">Лучшее для</span>
+                                    <span class="description">кошек</span>
+                                    <span class="detail-link">посмотреть</span>
+                                </span>
+                            </a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="custom-col-4">
+                            <div class="row">
+                                <div class="custom-col-5">
+                                    <a class="promo-banner-box" style="background-image: url(images/promo1.jpg); background-color: #e35b5b;">
+                                         <span class="promo-text">
+                                            <span class="title">Лучшее для</span>
+                                            <span class="description">Собак</span>
+                                            <span class="detail-link">посмотреть</span>
+                                        </span>
+                                    </a>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="custom-col-5">
+                                    <a class="promo-banner-box inv" style="background-image: url(images/promo2.jpg); background-color: #865d3c;">
+                                        <span class="promo-text">
+                                            <span class="title">Лучшее для</span>
+                                            <span class="description">кошек</span>
+                                            <span class="detail-link">посмотреть</span>
+                                        </span>
+                                    </a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="custom-col-5">
+                                    <div class="logos-blocks">
+                                        <a href="" class="item"><img src="images/logo1.jpg" alt=""/></a>
+                                        <div class="item"><img src="images/logo2.jpg" alt=""/></div>
+                                        <a href="" class="item"><img src="images/logo1.jpg" alt=""/></a>
+                                        <div class="item"><img src="images/logo2.jpg" alt=""/></div>
+                                        <a href="" class="item"><img src="images/logo1.jpg" alt=""/></a>
+                                        <div class="item"><img src="images/logo2.jpg" alt=""/></div>
+                                        <a href="" class="item"><img src="images/logo1.jpg" alt=""/></a>
+                                        <div class="item"><img src="images/logo2.jpg" alt=""/></div>
+                                        <a href="" class="item"><img src="images/logo1.jpg" alt=""/></a>
+                                        <div class="item"><img src="images/logo2.jpg" alt=""/></div>
+                                        <div class="ph"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-col-3">
+                            <div class="information-blocks">
+                                <div class="tabs-container">
+                                    <div class="swiper-tabs tabs-switch">
+                                        <div class="title">Продукты</div>
+                                        <div class="see-all">Посмотреть все скидки &rarr;</div>
+                                        <div class="list">
+                                            <a class="block-title tab-switcher active">Скидки</a>
+                                            <a class="block-title tab-switcher">Акции</a>
+                                            <a class="block-title tab-switcher">Новинки</a>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tabs-entry">
+                                            <div class="products-swiper">
+                                                <div class="swiper-container" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="responsive" data-xs-slides="2" data-int-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="4" data-add-slides="6">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs-entry">
+                                            <div class="products-swiper">
+                                                <div class="swiper-container" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="responsive" data-xs-slides="2" data-int-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="4" data-add-slides="6">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs-entry">
+                                            <div class="products-swiper">
+                                                <div class="swiper-container" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="responsive" data-xs-slides="2" data-int-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="4" data-add-slides="6">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <div class="product-image">
+                                                                        <img src="images/ctlg-product1.jpg" alt="" />
+                                                                    </div>
+                                                                    <a class="tag" href="#">Консервы для кошек</a>
+                                                                    <a class="title" href="#">Happy Cat для взрослых кошек с кроликом и индейкой [400 г]</a>
+                                                                    <div class="bottom">
+                                                                        <div class="price">
+                                                                            <div class="prev">117 р</div>
+                                                                            <div class="current">117 р</div>
+                                                                        </div>
+                                                                        <button class="cart">В корзину</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <section class="bnr-block">
+                                <div class="item" style="background-image: url(images/b1.jpg);"></div>
+                                <div class="item" style="background-image: url(images/b1.jpg);"></div>
+                                <div class="item" style="background-image: url(images/b1.jpg);"></div>
+                                <a href="" class="prev-arr"></a>
+                                <a href="" class="next-arr"></a>
+                                <div class="pag"></div>
+                            </section>
+                            
+                            <div class="information-blocks other">
+                                <div class="tabs-container">
+                                    <div class="swiper-tabs tabs-switch">
+                                        <a class="block-title tab-switcher active">Категории</a>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div>
+                                        <div class="tabs-entry">
+                                            <div class="products-swiper">
+                                                <div class="swiper-container" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="responsive" data-xs-slides="2" data-int-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="4" data-add-slides="6">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <img src="images/ind-cat1.jpg" alt="" />
+                                                                    <a class="title" href="#">Для собак</a>
+                                                                    <ul class="list-type-1">
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Корма для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Лакомства для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Витамины для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Посуда для собак</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <img src="images/ind-cat1.jpg" alt="" />
+                                                                    <a class="title" href="#">Для кошек</a>
+                                                                    <ul class="list-type-1">
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Корма для кошек</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Лакомства для кошек</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Витамины для кошек</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Посуда для кошек</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <img src="images/ind-cat1.jpg" alt="" />
+                                                                    <a class="title" href="#">Для собак</a>
+                                                                    <ul class="list-type-1">
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Корма для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Лакомства для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Витамины для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Посуда для собак</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <img src="images/ind-cat1.jpg" alt="" />
+                                                                    <a class="title" href="#">Для собак</a>
+                                                                    <ul class="list-type-1">
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Корма для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Лакомства для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Витамины для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Посуда для собак</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <img src="images/ind-cat1.jpg" alt="" />
+                                                                    <a class="title" href="#">Для собак</a>
+                                                                    <ul class="list-type-1">
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Корма для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Лакомства для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Витамины для собак</a></li>
+                                                                        <li><a href="#"><i class="fa fa-angle-right"></i>Посуда для собак</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide"> 
+                                                            <div class="paddings-container">
+                                                                <div class="product-slide-entry">
+                                                                    <img src="images/ind-cat1.jpg" alt="" />
+                                                                    <a class="title" href="#">Для собак</a>
+                                                                   <p class="other-text">
+                                                                       В новогодние праздн ики праз дники праз дники празд ники праздни ки праздн ики
+                                                                   </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            @@include('components/footer1.html')
+        </div>
+
+    </div>
+
+    <div class="search-box type11 popup">
+        <form>
+            <div class="search-button">
+                <i class="fa fa-search"></i>
+                <input type="submit" />
+            </div>
+            <div class="search-field">
+                <input type="text" value="" placeholder="Search for product" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

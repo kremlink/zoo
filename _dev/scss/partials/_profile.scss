@@ -27,7 +27,7 @@
     @include med($pk){
       text-align:left;
     }
-    .type1 &{
+    .type1font &{
       font-family:font1();
     }
     &+.i-item{
@@ -62,9 +62,15 @@
     .type22 &{
       background:getc(grn25);
     }
+    .type1font &{
+      font-family:font1();
+    }
     .type1 &{
       background:getc(grn1);
-      font-family:font1();
+    }
+    .type11 &{
+      background:getc(grn11_);
+      color:getc(grn111_);
     }
   }
   .f-item{
@@ -104,6 +110,9 @@
     .type1 &{
       color:getc(grn1);
     }
+    .type11 &{
+      color:getc(grn11_);
+    }
   }
   .a-item{
     position:relative;
@@ -134,6 +143,10 @@
     .type1 &{
       color:getc(grn1);
       @include grad-ref($c:getc(grn1),$b:0px,$d:true);
+    }
+    .type11 &{
+      color:getc(grn11_);
+      @include grad-ref($c:getc(grn11_),$b:0px,$d:true);
     }
   }
   .s-stat{
@@ -180,6 +193,9 @@
         .type1 &{
           background:getc(grn1);
         }
+        .type1 &{
+          background:getc(grn11_);
+        }
       }
     }
   }
@@ -224,6 +240,10 @@
         .type1 &{
           color:getc(grn1);
           @include grad-ref($c:getc(grn1),$b:0px,$d:true);
+        }
+        .type11 &{
+          color:getc(grn11_);
+          @include grad-ref($c:getc(grn11_),$b:0px,$d:true);
         }
       }
     }

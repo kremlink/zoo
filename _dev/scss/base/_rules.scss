@@ -34,7 +34,7 @@
   }
   nav>ul>li{
     border:none;
-    .type1 &{
+    .type1font &{
       >a{
         font-family:font11();
         font-size:18px;
@@ -101,9 +101,21 @@
         border-color:getc(grn25);
       }
     }
-    .type1 &{
+    .type1font &{
       &:hover,&.active{
         color:#fff !important;
+      }
+    }
+    .type1 &{
+      &:hover,&.active{
+        background:getc(grn1);
+        border-color:getc(grn1);
+      }
+    }
+    .type11 &{
+      &:hover,&.active{
+        background:getc(grn11_);
+        border-color:getc(grn11_);
       }
     }
   }

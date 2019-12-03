@@ -34,7 +34,7 @@
     }
   }
   .footer-links{
-    .type1 &{
+    .type1font &{
       font-size:16px;
     }
     .pluso a{
@@ -48,7 +48,7 @@
       font-weight:700;
       margin:0!important;
       color:#000!important;
-      .type1 &{
+      .type1font &{
         font-size:16px;
       }
       &.footer-agreement{
@@ -70,23 +70,7 @@
     .content{
       .title,.price{
         font-family:font();
-      }
-    }
-    .summary{
-      .subtotal,.grandtotal{
-        font-family:font();
-      }
-    }
-  }
-  body.style-1 .button.style-4{
-    color:#fff;
-  }
-  //---
-  .cart-box.popup{
-    .content{
-      .title,.price{
-        font-family:font();
-        .type1 &{
+        .type1font &{
           font-family:font1();
         }
       }
@@ -94,7 +78,7 @@
     .summary{
       .subtotal,.grandtotal{
         font-family:font();
-        .type1 &{
+        .type1font &{
           font-family:font1();
         }
       }
@@ -104,6 +88,9 @@
     }
     body.style-9 .type1 & .price,body.style-9 .type1 & .grandtotal span{
       color:getc(grn1);
+    }
+    body.style-9 .type11 & .price,body.style-9 .type11 & .grandtotal span{
+      color:getc(grn1_);
     }
   }
   body.style-1 .button.style-4{
@@ -116,5 +103,9 @@
   body.style-9 .type1 .button.style-4{
     background:getc(grn1);
     border-color:getc(grn1);
+  }
+  body.style-9 .type11 .button.style-4{
+    background:getc(grn11_);
+    border-color:getc(grn11_);
   }
 }

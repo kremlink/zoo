@@ -39,20 +39,16 @@
     }
   }
   .prev-arr{
-    left:0;
-    .type2 &:before,.type22 &:before{
-      @include sprite(arr-l1);
-    }
-    .type1 &:before{
+    left:10px;
+    @include sprite(arr-l1);
+    .type1font &:before{
       @include sprite(arr-l2);
     }
   }
   .next-arr{
-    right:0;
-    .type2 &:before,.type22 &:before{
-      @include sprite(arr-r1);
-    }
-    .type1 &:before{
+    right:10px;
+    @include sprite(arr-r1);
+    .type1font &:before{
       @include sprite(arr-r2);
     }
   }
@@ -71,6 +67,10 @@
   body.style-9 .type1 &{
     border-color:getc(grn1);
     background:getc(grn1);
+  }
+  body.style-9 .type11 &{
+    border-color:getc(grn1_);
+    background:getc(grn1_);
   }
 }
 .mozaic-swiper .mozaic-banner-entry.type-1{
@@ -134,13 +134,20 @@
 .tabs-container .swiper-tabs{
   .see-all{
     @include abs($t:0,$r:0);
-    font:20px font1();
-    color:getc(grn1);
+    .type1font &{
+      font:20px font1();
+    }
+    .type1 &{
+      color:getc(grn1);
+    }
+    .type11 &{
+      color:getc(grn1_);
+    }
   }
   .block-title{
     color:getc(font);
     font:20px font();
-    .type1 &{
+    .type1font &{
       font:20px font1();
     }
     &.active{
@@ -153,6 +160,9 @@
       }
       .type1 &{
         background:getc(grn1);
+      }
+      .type11 &{
+        background:getc(grn11_);
       }
     }
   }
@@ -202,20 +212,20 @@ body.style-1 .type22 .price .current{
     text-transform:none;
     margin-bottom:16px;
     font-weight:400;
-    .type1 &{
+    .type1font &{
       font-family:font1();
     }
   }
   .information-blocks & .title{
     font-family:font();
     color:#000;
-    .type1 &{
+    .type1font &{
       font-family:font11();
       font-weight:400;
       font-size:18px;
     }
   }
-  .type1 .information-blocks.other &{
+  .type1font .information-blocks.other &{
     .title{
       font-size:18px;
       font-family:font1();
@@ -231,10 +241,18 @@ body.style-1 .type22 .price .current{
   }
   .price{
     margin:0;
-    .type1 &{
+    .type1font &{
       font-family:font1();
-      .current{
+    }
+    .current{
+      .type1font &{
+        font-weight:400;
+      }
+      .type1 &{
         color:getc(grn1);
+      }
+      .type11 &{
+        color:getc(grn1_);
       }
     }
   }
@@ -253,11 +271,17 @@ body.style-1 .type22 .price .current{
       border:2px solid getc(grn24);
       color:getc(grn25);
     }
-    .type1 &{
+    .type1font &{
       font-family:font1();
-      background:getc(grn1);
       color:#fff;
       font-size:16px;
+    }
+    .type1 &{
+      background:getc(grn1);
+    }
+    .type11 &{
+      background:getc(bd);
+      color:getc(grn11_);
     }
     &:before{
       content:'';
@@ -273,10 +297,13 @@ body.style-1 .type22 .price .current{
       .type1 &{
         @include sprite(i-cartb);
       }
+      .type11 &{
+        @include sprite(i-cartc);
+      }
     }
   }
 }
-body.style-9 .type1 .list-type-1{
+body.style-9.type1font .list-type-1{
   font-size:15px;
   line-height:20px;
   font-weight:400;
@@ -304,7 +331,7 @@ body.style-9 .type1 .list-type-1{
 //---
 .block-title{
   font:700 18px/1 font();
-  body.style-9 .type1 &{
+  body.style-9.type1font &{
     font:24px font1();
   }
 }
@@ -347,7 +374,7 @@ body.style-9 .type1 .list-type-1{
   @include flx(flex-flow,'row wrap');
   @include flx(justify-content,space-between);
   @include flx(align-items,center);
-  .type1 &{
+  .type1font &{
     margin:0;
     .item{
       margin:10px 0 0 0;
@@ -372,23 +399,42 @@ body.style-9 .type1 .list-type-1{
 //---
 .promo-banner-box{
   &.inv .promo-text{
-    .title,.description,.detail-link{
-      color:getc(grn11);
-      border-bottom-color:getc(grn11);
+    .type1 &,.type11 &{
+      .title,.description,.detail-link{
+        color:getc(grn11);
+        border-bottom-color:getc(grn11);
+      }
+    }
+    .type11 &{
+      .title,.description,.detail-link{
+        color:getc(grn11_);
+        border-bottom-color:getc(grn11_);
+      }
     }
   }
   .promo-text{
+    .type11 &{
+      right:auto;
+      left:0;
+      padding:10px 20px 15px 20px;
+    }
     .title{
       font:24px/30px font11();
-      color:getc(grn2);
     }
     .description{
       font:52px/46px font1();
-      color:getc(grn2);
     }
-    .detail-link{
-      color:getc(grn2);
-      border-bottom-color:getc(grn2);
+    .title,.description,.detail-link{
+      .type1 &{
+        color:getc(grn2);
+        border-bottom-color:getc(grn2);
+      }
+      .type11 &{
+        .title,.description,.detail-link{
+          color:getc(bd);
+          border-bottom-color:getc(grn111_);
+        }
+      }
     }
   }
 }

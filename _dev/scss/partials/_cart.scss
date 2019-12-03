@@ -29,7 +29,7 @@
     @include med($pk){
       text-align:left;
     }
-    .type1 &{
+    .type1font &{
       font-family:font1();
     }
   }
@@ -88,7 +88,7 @@
       line-height:14px;
       @include flx(flex,'1 0 0px');
     }
-    .type1 &{
+    .type1font &{
       font-size:16px;
     }
   }
@@ -108,7 +108,7 @@
       text-align:right;
       @include flx(order,1);
     }
-    .type1 &{
+    .type1font &{
       font:22px/22px font1();
     }
   }
@@ -140,6 +140,9 @@
       .type1 &{
         border-color:getc(bd);
       }
+      .type11 &{
+        border-color:getc(grn11_);
+      }
     }
   }
   .a-wrap{
@@ -162,6 +165,9 @@
       .type1 &{
         background:getc(grn1);
       }
+      .type11 &{
+        background:getc(grn11_);
+      }
     }
   }
   //---
@@ -170,7 +176,7 @@
       width:420px;
       @include abs($t:-20px,$b:0,$r:0);
     }
-    .type1 &{
+    .type1font &{
       font-size:16px;
     }
   }
@@ -185,6 +191,10 @@
     }
     .type1 &{
       border-color:getc(grn2);
+      border-width:3px;
+    }
+    .type11 &{
+      border-color:getc(grn111_);
       border-width:3px;
     }
   }
@@ -208,9 +218,13 @@
       background:getc(grn2);
       color:#000;
     }
+    .type11 &{
+      background:getc(grn111_);
+      color:getc(grn11_);
+    }
     span{
       position:relative;
-      .type1 &{
+      .type1font &{
         font-family:font1();
       }
     }
@@ -218,7 +232,7 @@
       content:'';
       @include abs($l:0,$t:0,$r:0,$b:0);
       background:rgba(#000,0.15);
-      .type22 &,.type1 &{
+      .type22 &,.type1font &{
         display:none;
       }
     }
@@ -238,6 +252,9 @@
     }
     .type1 &{
       background:getc(grn1);
+    }
+    .type11 &{
+      background:getc(grn11_);
     }
   }
   .in-notif{
@@ -295,7 +312,7 @@
     font-size:20px;
     line-height:20px;
     margin-top:26px;
-    .type1 &{
+    .type1font &{
       font-family:font1();
     }
   }
@@ -307,12 +324,19 @@
     }
     input{
       border:1px solid getc(bd);
+      font-size:14px;
       @include plh(){
-        font-size:14px;
         color:getc(font);
         font-weight:400;
         opacity:0.5;
+        font-size:14px;
+        .type1font &{
+          font-size:16px;
+        }
       };
+      .type1font &{
+        font-size:16px;
+      }
     }
   }
   .in-promo-go{
@@ -328,6 +352,9 @@
     .type1 &{
       @include sprite(promo-btn1b);
     }
+    .type11 &{
+      @include sprite(promo-btn1c);
+    }
   }
   .in-price{
     margin-top:8px;
@@ -340,7 +367,7 @@
       font-size:20px;
       line-height:20px;
       font-weight:500;
-      .type1 &{
+      .type1font &{
         font-weight:400;
         font-family:font1();
       }
@@ -350,7 +377,7 @@
         margin-left:auto;
         font-size:20px;
         line-height:20px;
-        .type1 &{
+        .type1font &{
           font-family:font1();
         }
       }
@@ -367,7 +394,7 @@
     @include med($pk){
       margin:24px -20px 0 -20px;
     }
-    .type1 &{
+    .type1font &{
       font-family:font1();
     }
     &:before{
@@ -393,6 +420,9 @@
       .type1 &{
         color:getc(grn1);
       }
+      .type11 &{
+        color:getc(grn11_);
+      }
     }
   }
   .pass{
@@ -417,13 +447,19 @@
     .type22 &{
       background:getc(grn25);
     }
-    .type1 &{
+    .type1font &{
       font-family:font1();
+    }
+    .type1 &{
       background:getc(grn1);
+    }
+    .type11 &{
+      background:getc(grn11_);
+      color:getc(grn111_) !important;
     }
     &.done{
       line-height:20px;
-      .type1 &{
+      .type1font &{
         line-height:34px;
       }
     }
@@ -484,7 +520,7 @@
       max-width:none;
       @include flx(flex,'1 1 35%');
     }
-    .type1 &{
+    .type1font &{
       font-weight:500;
     }
     &.short{

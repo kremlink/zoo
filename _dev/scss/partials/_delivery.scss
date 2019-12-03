@@ -5,7 +5,7 @@
     font:26px font();
     text-align:center;
     margin-bottom:24px;
-    .type1 &{
+    .type1font &{
       font-family:font1();
     }
     &:not(:first-child){
@@ -17,7 +17,7 @@
     @include flx(display,flex);
     @include flx(align-items,center);
     font:18px font();
-    .type1 &{
+    .type1font &{
       font-family:font1();
     }
     &.simple{
@@ -30,6 +30,9 @@
       content:'';
       border-top:2px solid getc(bd);
       @include flx(flex,'1 0 auto');
+      .type11 &{
+        border-color:getc(grn111_);
+      }
     }
     &:before{
       margin-right:20px;
@@ -49,10 +52,16 @@
       color:#000;
       background:getc(grn2);
     }
-    .type1 &{
+    .type1font &{
       font-family:font1();
-      background:getc(grn2);
       color:#000;
+    }
+    .type1 &{
+      background:getc(grn2);
+    }
+    .type11 &{
+      background:getc(grn111_);
+      color:getc(grn11_);
     }
   }
   .dots{
@@ -87,6 +96,9 @@
     padding:16px;
     text-align:center;
     margin-top:30px;
+    .type11 &{
+      border-color:getc(grn111_);
+    }
     &.simple{
       border-width:2px;
       .b-h{

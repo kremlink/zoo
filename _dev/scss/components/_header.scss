@@ -49,7 +49,7 @@
       }
     }
   }
-  .type1.header-wrapper.style-9 header.type-1{
+  .type1font .header-wrapper.style-9 header.type-1{
     &.fixed-header nav>ul>li:not(.fixed-header-visible){
       margin-top:-16px;
       padding-bottom:16px;
@@ -63,22 +63,32 @@
         top:-36px;
       }
     }
-    nav>ul>li>.fa{
+  }
+  .type1.header-wrapper.style-9 header.type-1{
+    nav>ul>li>.fa,.header-functionality-entry.open-cart-popup b{
       color:getc(grn1);
     }
     .search-button{
       background:getc(grn1);
     }
-    .header-functionality-entry.open-cart-popup b{
-      color:getc(grn1);
+  }
+  .type11.header-wrapper.style-9 header.type-1{
+    nav>ul>li>.fa,.header-functionality-entry.open-cart-popup b{
+      color:getc(grn1_);
+    }
+    .search-button{
+      background:getc(grn1_);
     }
   }
   body.style-9 .type1 .search-button{
     background:getc(grn1);
   }
+  body.style-9 .type11 .search-button{
+    background:getc(grn1_);
+  }
   .logo-wrapper{
     width:460px;
-    .type1 &{
+    .type1font &{
       width:570px;
     }
   }
@@ -88,18 +98,14 @@
     }
     span{
       position:relative;
-      .type2 &,.type22 &,.type1 &{
-        top:-2px;
-      }
+      top:-2px;
     }
     .fa{
-      .type2 &,.type22 &,.type1 &{
-        top:-3px;
-      }
+      top:-3px;
     }
     b{
       font:600 20px/1 font();
-      .type1 &{
+      .type1font &{
         font:20px/1 font1();
       }
     }
@@ -109,7 +115,7 @@
     @include flx(display,flex);
     @include flx(justify-content,space-between);
     @include flx(flex-flow,'row wrap');
-    .type1 &{
+    .type1font &{
       display:block;
       padding:20px 0;
       @include med($pk12){
@@ -130,7 +136,7 @@
     width:100%;
     z-index:1;
     font-size:13px;
-    .type1 &{
+    .type1font &{
       display:block;
       padding:0;
       margin:0 0 10px 0;
@@ -141,7 +147,7 @@
       margin-right:60px;
       padding-right:44px;
       font-size:14px;
-      .type1 &{
+      .type1font &{
         width:auto;
         display:inline-block;
         padding:0;
@@ -162,7 +168,7 @@
       @include center($r:0);
       @include sprite(wapp);
       @include trs('opacity #{$anim} ease-in-out');
-      .type1 &{
+      .type1font &{
         pointer-events:none;
         right:-36px;
         margin-top:8px;
@@ -181,6 +187,9 @@
   }
   .search-field{
     margin-right:45px;
+    .type1font & input{
+      font-size:16px;
+    }
   }
   .search-drop-down{
     display:none;
@@ -189,7 +198,7 @@
     padding-top:25px;
     @include med($pk12){
       padding:50px 0;
-      .type1 &{
+      .type1font &{
         padding:80px 0 30px 0;
       }
     }
@@ -225,9 +234,14 @@
     @include med($pk12){
       display:block;
     }
-    .type1 &{
+    .type1font &{
       top:200px;
+    }
+    .type1 &{
       @include sprite(sidecarta);
+    }
+    .type11 &{
+      @include sprite(sidecartb);
     }
     span{
       @include abs($l:-6px,$b:-6px);
@@ -245,6 +259,10 @@
       }
       .type1 &{
         background:getc(grn11);
+      }
+      .type11 &{
+        background:getc(grn11_);
+        color:getc(grn2);
       }
     }
   }
@@ -377,7 +395,7 @@
   }
   .submenu-list-title a{
     font-family:font();
-    .type1 &{
+    .type1font &{
       font-family:font11();
       font-weight:400;
     }
