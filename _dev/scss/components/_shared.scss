@@ -237,7 +237,7 @@
         }
         &:disabled{
           background:none;
-          border:2px solid getc(bd);
+          border:2px solid getc(font);
         }
       }
     }
@@ -269,6 +269,9 @@
       border-radius:0;
       .type2 &{
         background:getc(grn);
+      }
+      .type22 &{
+        background:getc(grn25);
       }
       .type1 &{
         background:getc(grn1);

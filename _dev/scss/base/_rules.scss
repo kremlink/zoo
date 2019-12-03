@@ -90,6 +90,7 @@
     font-size:15px;
     .type2 &{
       &:hover,&.active{
+        color:#fff !important;
         background:getc(grn);
         border-color:getc(grn);
       }

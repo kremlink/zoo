@@ -19,6 +19,28 @@
     }
    },lib:false});
 
+  //----
+  $('#logo img').attr('src',(function(){
+   var l,
+   s=location.href.match(/(\d+)\.html/)[1];
+
+   switch(s){
+    case '1':
+     l=2;
+     break;
+    case '11':
+     l=3;
+     break;
+    case '2':
+     l='';
+     break;
+    case '22':
+     l=1;
+   }
+
+   return 'images/logo'+l+'.png';
+  })());
+
   mgr.trigger('app:ready',[mgr.get('shared.modules')]);
  });
 }));

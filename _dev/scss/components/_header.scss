@@ -321,6 +321,9 @@
     .header-cart-side{
       top: 100px;
     }
+    .type2 & .menu-item-pic{
+      filter:invert(100%);
+    }
   }
   .fixed-header-square-button{
     padding: 0;

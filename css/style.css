@@ -497,6 +497,7 @@ nav > ul:nth-child(2) > li {
   font-size: 15px;
 }
 .type2 .square-button:hover, .type2 .square-button.active {
+  color: #fff !important;
   background: #749625;
   border-color: #749625;
 }
@@ -1072,6 +1073,9 @@ body.style-9 .type11 .search-button {
 .fixed-header .header-cart-side {
   top: 100px;
 }
+.type2 .fixed-header .menu-item-pic {
+  filter: invert(100%);
+}
 
 .fixed-header-square-button {
   padding: 0;
@@ -1455,7 +1459,7 @@ body.style-9 .type11 .search-button {
 }
 .standard-pop .f-item input:disabled {
   background: none;
-  border: 2px solid #ebebeb;
+  border: 2px solid #808080;
 }
 .standard-pop .f-i-h {
   display: block;
@@ -1488,6 +1492,9 @@ body.style-9 .type11 .search-button {
 }
 .type2 .standard-pop .btn {
   background: #749625;
+}
+.type22 .standard-pop .btn {
+  background: #3778b2;
 }
 .type1 .standard-pop .btn {
   background: #fe0000;
@@ -2181,6 +2188,14 @@ body.style-9 .type11 .search-button {
 
 .blog-sidebar {
   font-family: "Comfortaa", sans-serif;
+}
+
+.type1font .accordeon {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.type1font .accordeon-title {
+  font: 20px "Underdog", sans-serif;
 }
 
 .shop-grid {

@@ -8,6 +8,16 @@
 .blog-sidebar{
   font-family:font();
 }
+.accordeon{
+  .type1font &{
+    font-family:font111();
+  }
+}
+.accordeon-title{
+  .type1font &{
+    font:20px font1();
+  }
+}
 .shop-grid{
   @include flx(display,flex);
   @include flx(flex-flow,'row wrap');
