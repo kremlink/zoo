@@ -1,0 +1,65 @@
+/*@path:partials\_blog.scss*/
+.blog-block{
+  margin:20px 0 40px 0;
+  @include med($pk){
+    @include flx(display,flex);
+    @include flx(flex-flow,'row wrap');
+    @include flx(justify-content,space-between);
+  }
+  .type1font &{
+    font-size:16px;
+  }
+  .h{
+    font:26px font();
+    text-align:center;
+    width:100%;
+    .type1font &{
+      font-family:font1();
+    }
+  }
+  .item{
+    text-align:left;
+    margin:26px auto 0 auto;
+    @include med($pk){
+      margin:34px 0 0 0;
+      width:48%;
+    }
+  }
+  .i-h{
+    font:22px font();
+    margin-bottom:20px;
+    .type1font &{
+      font-family:font1();
+    }
+    .type1 & a{
+      color:getc(grn1);
+    }
+    .type11 & a{
+      color:getc(grn11_);
+    }
+    .type2 & a{
+      color:getc(grn);
+    }
+    .type22 & a{
+      color:getc(grn21);
+    }
+  }
+  .img{
+    margin-top:16px;
+    max-width:100%;
+    display:block;
+    @include med($pk){
+      display:inline-block;
+      margin-right:24px;
+    }
+    &:first-child{
+      margin-top:8px;
+      @include med($pk){
+        margin-top:16px;
+      }
+    }
+  }
+  p+p{
+    margin-top:16px;
+  }
+}

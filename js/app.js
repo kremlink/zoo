@@ -20,7 +20,7 @@
    },lib:false});
 
   //----
-  $('#logo img').attr('src',(function(){
+  $('#logo img,.additional-header-logo img').attr('src',(function(){
    var l,
    s=location.href.match(/(\d+)\.html/)[1];
 

@@ -239,7 +239,7 @@
   }
   .in-top{
     margin:26px (- $mpd) 0 (- $mpd);
-    padding:10px 0;
+    padding:14px 0;
     position:relative;
     @include med($pk){
       margin:26px -32px 0 -32px;
@@ -295,7 +295,7 @@
   }
   .in-choose{
     position:relative;
-    padding-left:124px;
+    text-align:center;
     background:none;
     color:#fff !important;
     display:block;
@@ -303,6 +303,7 @@
       width:64px;
       height:40px;
       @include abs($t:-5px,$l:30px);
+      display:none;
     }
     span{
       @include grad-ref($c:#fff,$b:1px,$d:true);

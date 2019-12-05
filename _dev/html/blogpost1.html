@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @@include('components/head.html')
+    <script>
+     var theApp={
+      shared:{
+       modules:[''],
+       pk:matchMedia('(min-width:990px)').matches
+      },
+      data:{
+                 @@include('components/data.html')
+     }
+     };
+    </script>
+</head>
+<body class="type1font style-9">
+
+<!-- LOADER -->
+<div id="loader-wrapper">
+    <div class="bubbles">
+        <div class="title">loading</div>
+        <span></span>
+        <span id="bubble2"></span>
+        <span id="bubble3"></span>
+    </div>
+</div>
+
+<div id="content-block">
+    <!-- HEADER -->
+    @@include('components/header1.html',{"inner":"type1 style-9"})
+    <div class="content-push type1">
+        <div class="wide-center fixed-header-margin">
+            <div class="blog-block">
+               <div class="h">Работа магазинов в майские праздники</div>
+                <article class="item">
+                    <p>
+                        Работа магазинов в майские магазинов в майские магазинов в майские Работа магазинов в майские магазинов в майские магазинов в майские Работа магазинов в майские магазинов в майские магазинов в майские
+                    </p>
+                    <p>
+                        Работа магазинов в майские
+                    </p>
+                    <p>
+                        <img class="img" src="images/promo1.jpg" alt=""/>
+                    </p>
+                </article>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        @@include('components/footer1.html')
+        <div class="standard-pop cart">
+            <a href="" class="close">
+                <svg>
+                    <use xlink:href="#icon-shared-close"></use>
+                </svg>
+            </a>
+            <!--<div class="h">Добавьте адрес доставки</div>-->
+            <div class="form active">
+                <label class="f-item">
+                    <svg>
+                        <use xlink:href="#icon-shared-icon-city"></use>
+                    </svg>
+                    <span class="f-i-h">Индекс</span>
+                    <input type="text" name="ind" />
+                </label>
+                <label class="f-item">
+                    <svg>
+                        <use xlink:href="#icon-shared-icon-city"></use>
+                    </svg>
+                    <span class="f-i-h">Область</span>
+                    <input type="text" name="reg" />
+                </label>
+                <label class="f-item">
+                    <svg>
+                        <use xlink:href="#icon-shared-icon-city"></use>
+                    </svg>
+                    <span class="f-i-h">Город</span>
+                    <input type="text" name="city" />
+                </label>
+                <label class="f-item">
+                    <svg>
+                        <use xlink:href="#icon-shared-icon-street"></use>
+                    </svg>
+                    <span class="f-i-h">Улица</span>
+                    <input type="text" name="street" />
+                </label>
+                <div class="f-pack">
+                    <label class="f-item">
+                        <span class="f-i-h">Дом/корпус</span>
+                        <input type="text" name="b" />
+                    </label>
+                    <label class="f-item">
+                        <span class="f-i-h">Подъезд</span>
+                        <input type="text" name="s" />
+                    </label>
+                    <label class="f-item">
+                        <span class="f-i-h">Этаж</span>
+                        <input type="text" name="f" />
+                    </label>
+                    <label class="f-item">
+                        <span class="f-i-h">Кв./Офис</span>
+                        <input type="text" name="a" />
+                    </label>
+                </div>
+                <div class="ctrls">
+                    <button class="btn">Применить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+</div>
+
+<div class="search-box type1 popup">
+    <form>
+        <div class="search-button">
+            <i class="fa fa-search"></i>
+            <input type="submit" />
+        </div>
+        <div class="search-field">
+            <input type="text" value="" placeholder="Search for product" />
+        </div>
+    </form>
+</div>
+</body>
+</html>

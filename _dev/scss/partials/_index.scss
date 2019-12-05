@@ -375,7 +375,7 @@ body.style-9.type1font .list-type-1{
   @include flx(justify-content,space-between);
   @include flx(align-items,center);
   .type1font &{
-    margin:0;
+    margin:0 0 40px 0;
     .item{
       margin:10px 0 0 0;
     }
@@ -385,14 +385,17 @@ body.style-9.type1font .list-type-1{
   }
   .item{
     margin:10px 40px 0 40px;
-    width:160px;
+    max-width:160px;
+    width:40%;
     text-align:center;
   }
   img{
+    width:100%;
     max-width:160px;
   }
   .ph{
-    width:160px;
+    max-width:160px;
+    width:40%;
     margin:0 40px;
   }
 }
@@ -409,6 +412,16 @@ body.style-9.type1font .list-type-1{
       .title,.description,.detail-link{
         color:getc(grn11_);
         border-bottom-color:getc(grn11_);
+      }
+    }
+  }
+  &:before{
+    .type1 &{
+      @media(min-width:451px) and (max-width:800px){
+        opacity:0.8;
+      }
+      @media(min-width:992px) and (max-width:1366px){
+        opacity:0.8;
       }
     }
   }
