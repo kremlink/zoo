@@ -1508,7 +1508,7 @@ body.style-9 .type11 .search-button {
   margin: 20px 0 40px 0;
 }
 @media (min-width: 992px) {
-  .blog-block {
+  .type1 .blog-block, .type11 .blog-block {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -1527,11 +1527,10 @@ body.style-9 .type11 .search-button {
 }
 .blog-block .item {
   text-align: left;
-  margin: 26px auto 0 auto;
+  margin-top: 30px;
 }
 @media (min-width: 992px) {
-  .blog-block .item {
-    margin: 34px 0 0 0;
+  .type1 .blog-block .item, .type11 .blog-block .item {
     width: 48%;
   }
 }
