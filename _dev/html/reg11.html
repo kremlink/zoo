@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @@include('components/head.html')
+    <script>
+     var theApp={
+      shared:{
+       modules:['all'],
+       pk:matchMedia('(min-width:990px)').matches
+      },
+      data:{
+       'all.masked':{mask:'+7 (xxx) xxx-xx-xx'}
+                 @@include('components/data.html')
+     }
+     };
+    </script>
+</head>
+<body class="type1font style-9">
+
+<!-- LOADER -->
+<div id="loader-wrapper">
+    <div class="bubbles">
+        <div class="title">loading</div>
+        <span></span>
+        <span id="bubble2"></span>
+        <span id="bubble3"></span>
+    </div>
+</div>
+
+<div id="content-block">
+    <!-- HEADER -->
+    @@include('components/header1.html',{"inner":"type11 style-9"})
+    <div class="content-push type11">
+        <div class="wide-center fixed-header-margin">
+            <div class="reg-block">
+                <div class="the-tabs">
+                    <a class="active" href=""><span>Войти</span></a><a href=""><span>Зарегистрироваться</span></a><a href=""><span>Восстановить пароль</span></a>
+                </div>
+                <div class="u-block log">
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Электронная почта</span>
+                        <input type="text" name="email" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-password-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Пароль</span>
+                        <input type="password" name="pass" />
+                    </label>
+                </div>
+                <div class="u-block reg">
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Электронная почта</span>
+                        <input type="text" name="email" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-user-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Ваше имя</span>
+                        <input type="text" name="name" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-password-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Пароль</span>
+                        <input type="password" name="pass" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-phone-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Номер телефона</span>
+                        <input class="phone-mask" type="text" name="phone" />
+                    </label>
+                    <label class="u-item full">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-city-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Адрес доставки</span>
+                        <input type="text" name="addr" />
+                    </label>
+                </div>
+                <div class="u-block rec">
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Электронная почта</span>
+                        <input type="text" name="email" />
+                    </label>
+                </div>
+                <div class="i-agree">Нажимая "Далее", я соглашаюсь на обработку своих данных</div>
+                <div class="u-after">
+                    <div class="u-a-btns">
+                        <button class="u-a-btn">Войти</button><button class="u-a-btn">Далее</button><button class="u-a-btn">Далее</button>
+                    </div>
+                    <div class="u-a-soc log">
+                        <a class="i1" href="">Войти через Вконтакте</a>
+                        <a class="i2" href="">Войти через Google</a>
+                        <a class="i3" href="">Войти через Facebook</a>
+                    </div>
+                    <div class="u-a-soc reg">
+                        <a class="i1" href="">Регистрация через Вконтакте</a>
+                        <a class="i2" href="">Регистрация через Google</a>
+                        <a class="i3" href="">Регистрация через Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        @@include('components/footer1.html')
+    </div>
+    <div class="clear"></div>
+
+</div>
+
+<div class="search-box type11 popup">
+    <form>
+        <div class="search-button">
+            <i class="fa fa-search"></i>
+            <input type="submit" />
+        </div>
+        <div class="search-field">
+            <input type="text" value="" placeholder="Search for product" />
+        </div>
+    </form>
+</div>
+</body>
+</html>

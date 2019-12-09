@@ -23,10 +23,11 @@
     <script>
      var theApp={
       shared:{
-       modules:['cart'],
+       modules:['all'],
        pk:matchMedia('(min-width:990px)').matches
       },
       data:{
+       'all.masked':{mask:'+7 (xxx) xxx-xx-xx'}
                  
 
      }
@@ -416,259 +417,89 @@
 </div>
         
         <div class="content-push type22">
-            <form action="" class="cart-block">
-                <div class="left">
-                    <h1 class="h">Ваша корзина</h1>
-                    <div class="cart">
-                        <div class="c-item">
-                            <a class="c-del" href="">
-                                <svg>
-                                    <use xlink:href="#icon-shared-icon-trash-b"></use>
-                                </svg>
-                            </a>
-                            <div class="c-img">
-                                <img src="images/product1-s.jpg" alt=""/>
-                            </div>
-                            <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
-                            <div class="p-amt">
-                                <button class="p-m">&ndash;</button>
-                                <input type="number" value="1" />
-                                <button class="p-p">+</button>
-                            </div>
-                            <div class="c-price">
-                                <div class="c-p-val">150 <span>₽</span></div>
-                                <div class="c-p-info">
-                                    75 ₽ / шт.<br/>
-                                    <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="c-item">
-                            <a class="c-del" href="">
-                                <svg>
-                                    <use xlink:href="#icon-shared-icon-trash-b"></use>
-                                </svg>
-                            </a>
-                            <div class="c-img">
-                                <img src="images/product1-s.jpg" alt=""/>
-                            </div>
-                            <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
-                            <div class="p-amt">
-                                <button class="p-m">&ndash;</button>
-                                <input type="number" value="1" />
-                                <button class="p-p">+</button>
-                            </div>
-                            <div class="c-price">
-                                <div class="c-p-val">150 <span>₽</span></div>
-                                <div class="c-p-info">
-                                    75 ₽ / шт.<br/>
-                                    <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="c-item">
-                            <a class="c-del" href="">
-                                <svg>
-                                    <use xlink:href="#icon-shared-icon-trash-b"></use>
-                                </svg>
-                            </a>
-                            <div class="c-img">
-                                <img src="images/product1-s.jpg" alt=""/>
-                            </div>
-                            <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
-                            <div class="p-amt">
-                                <button class="p-m">&ndash;</button>
-                                <input type="number" value="1" />
-                                <button class="p-p">+</button>
-                            </div>
-                            <div class="c-price">
-                                <div class="c-p-val">150 <span>₽</span></div>
-                                <div class="c-p-info">
-                                    75 ₽ / шт.<br/>
-                                    <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
-                                </div>
-                            </div>
-                        </div>
+            <div class="reg-block">
+                <div class="the-tabs">
+                    <a class="active" href=""><span>Войти</span></a><a href=""><span>Зарегистрироваться</span></a><a href=""><span>Восстановить пароль</span></a>
+                </div>
+                <div class="u-block log">
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Электронная почта</span>
+                        <input type="text" name="email" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-password-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Пароль</span>
+                        <input type="password" name="pass" />
+                    </label>
+                </div>
+                <div class="u-block reg">
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Электронная почта</span>
+                        <input type="text" name="email" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-user-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Ваше имя</span>
+                        <input type="text" name="name" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-password-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Пароль</span>
+                        <input type="password" name="pass" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-phone-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Номер телефона</span>
+                        <input class="phone-mask" type="text" name="phone" />
+                    </label>
+                    <label class="u-item full">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-city"></use>
+                        </svg>
+                        <span class="u-i-h">Адрес доставки</span>
+                        <input type="text" name="addr" />
+                    </label>
+                </div>
+                <div class="u-block rec">
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Электронная почта</span>
+                        <input type="text" name="email" />
+                    </label>
+                </div>
+                <div class="i-agree">Нажимая "Далее", я соглашаюсь на обработку своих данных</div>
+                <div class="u-after">
+                    <div class="u-a-btns">
+                        <button class="u-a-btn">Войти</button><button class="u-a-btn">Далее</button><button class="u-a-btn">Далее</button>
                     </div>
-                    <div class="add">
-                        <h2 class="h">Добавьте в корзину</h2>
-                        <div class="a-wrap">
-                            <div class="c-item">
-                                <div class="c-img">
-                                    <img src="images/product1-s.jpg" alt=""/>
-                                </div>
-                                <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
-                                <div class="p-amt">
-                                    <button class="p-m">&ndash;</button>
-                                    <input type="number" value="1" />
-                                    <button class="p-p">+</button>
-                                </div>
-                                <div class="c-price">
-                                    <div class="c-p-val">150 <span>₽</span></div>
-                                    <div class="c-p-info">
-                                        75 ₽ / шт.<br/>
-                                        <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="" class="g-add">
-                                <svg>
-                                    <use xlink:href="#icon-shared-icon-cart"></use>
-                                </svg>
-                            </a>
-                        </div>
+                    <div class="u-a-soc log">
+                        <a class="i1" href="">Войти через Вконтакте</a>
+                        <a class="i2" href="">Войти через Google</a>
+                        <a class="i3" href="">Войти через Facebook</a>
                     </div>
-                    <div class="right">
-                        <aside class="info">
-                            <div class="in-h1"><span>Оформление заказа</span></div>
-                            <div class="in-h">1. СПОСОБ ДОСТАВКИ</div>
-                            <div class="in-top">
-                                <div class="in-notif">
-                                    Для оформления заказа <br/><b>выберите способ доставки</b>
-                                    <a href="" class="in-n-close" onclick="this.parentNode.style.display='none';return false;">&times;</a>
-                                </div>
-                                <a href="" class="in-choose">
-                                    <svg>
-                                        <use xlink:href="#icon-shared-delivery-truck"></use>
-                                    </svg>
-                                    <span>Выбрать адрес доставки или самовывоз</span>
-                                </a>
-                            </div>
-                            <div class="in-h">2. СПОСОБ ОПЛАТЫ</div>
-                            <label class="the-radio"><input checked type="radio" name="pay"/><span class="t-r-toggle"></span>Наличными на месте получения</label>
-                            <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на месте получения</label>
-                            <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на сайте</label>
-                            <div class="in-promo">
-                                <input placeholder="Промокод (если есть)" type="text" name="promo"/>
-                                <a href="" class="in-promo-go"></a>
-                            </div>
-                            <div class="in-h">ИТОГО</div>
-                            <div class="in-price"><div>Сумма заказа</div><div>2 502 ₽</div></div>
-                            <div class="in-price disc"><div>Скидка</div><div>248 ₽</div></div>
-                            <div class="in-price"><div>Доставка</div><div>300 ₽</div></div>
-                            <div class="in-free">Минимальная сумма заказа &mdash; 500 р<br/><br/>БЕСПЛАТНАЯ ДОСТАВКА<br/>ПРИ ЗАКАЗЕ ОТ 3000 ₽</div>
-                            <div class="in-price sum"><div>К ОПЛАТЕ</div><div>2 554 ₽</div></div>
-                            <!--<div class="in-no-addr">Не выбран адрес доставки или самовывоза</div>
-                            <button class="in-done disabled">ОФОРМИТЬ ЗАКАЗ</button>-->
-                            <button class="btn done">ОФОРМИТЬ ЗАКАЗ</button>
-                        </aside>
+                    <div class="u-a-soc reg">
+                        <a class="i1" href="">Регистрация через Вконтакте</a>
+                        <a class="i2" href="">Регистрация через Google</a>
+                        <a class="i3" href="">Регистрация через Facebook</a>
                     </div>
                 </div>
-                <section class="c-bottom">
-                    <div class="the-tabs">
-                        <a class="active" href=""><span>Зарегистрируйтесь<br/>для оформления заказа</span></a><a href=""><span>Войти</span></a><a href=""><span>Восстановить пароль</span></a>
-                    </div>
-                    <div class="c-form">
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-user-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Ваше имя</span>
-                            <input type="text" name="name" />
-                        </label>
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-password-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Пароль</span>
-                            <input type="password" name="pass" />
-                        </label>
-                        <label class="c-f-item short">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-trojka-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Программа лояльности</span>
-                            <input type="text" name="troj" />
-                        </label>
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Электронная почта</span>
-                            <input type="text" name="email" />
-                        </label>
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-phone-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Номер телефона</span>
-                            <input class="phone-mask" type="text" name="phone" />
-                        </label>
-                        <div class="c-f-item short soc">
-                            Регистрация через соцсети<br/>
-                            <a class="c-f-soc" href="">
-                                <svg style="width: 37px;height: 22px;">
-                                    <use xlink:href="#icon-shared-social-vk"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="c-f-soc">
-                                <svg style="width: 36px;height: 36px;">
-                                    <use xlink:href="#icon-shared-social-google"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="c-f-soc">
-                                <svg style="width: 18px;height: 36px;">
-                                    <use xlink:href="#icon-shared-social-facebook"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="c-f-item">
-                            <div class="i-agree">Нажимая "ОФОРМИТЬ ЗАКАЗ", вы принимаете следующие <a href="">условия использования</a></div>
-                            <button class="btn done">ОФОРМИТЬ ЗАКАЗ</button>
-                        </div>
-                    </div>
-                    <div class="c-form">
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Электронная почта</span>
-                            <input type="text" name="email" />
-                        </label>
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-password-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Пароль</span>
-                            <input type="password" name="pass" />
-                        </label>
-                        <div class="c-f-item short soc">
-                            Войти через соцсети<br/>
-                            <a class="c-f-soc" href="">
-                                <svg style="width: 37px;height: 22px;">
-                                    <use xlink:href="#icon-shared-social-vk"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="c-f-soc">
-                                <svg style="width: 36px;height: 36px;">
-                                    <use xlink:href="#icon-shared-social-google"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="c-f-soc">
-                                <svg style="width: 18px;height: 36px;">
-                                    <use xlink:href="#icon-shared-social-facebook"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="c-f-item">
-                            <div class="i-agree">Нажимая "ОФОРМИТЬ ЗАКАЗ", вы принимаете следующие <a href="">условия использования</a></div>
-                            <button class="btn done">ОФОРМИТЬ ЗАКАЗ</button>
-                        </div>
-                    </div>
-                    <div class="c-form">
-                        <label class="c-f-item center">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Введите электронную почту</span>
-                            <input type="text" name="email" />
-                        </label>
-                        <div class="pass">
-                            <a class="btn" href="">ВЫСЛАТЬ ПАРОЛЬ</a>
-                        </div>
-                    </div>
-                </section>
-            </form>
+            </div>
             
             <!-- FOOTER -->
             <div class="footer-wrapper style-1">
@@ -886,116 +717,6 @@
         </div>
     </div>
 </div>
-            <div class="standard-pop cart">
-                <a href="" class="close">
-                    <svg>
-                        <use xlink:href="#icon-shared-close"></use>
-                    </svg>
-                </a>
-                <div class="the-tabs">
-                    <a class="active" href=""><span>Доставка1</span></a><a href=""><span>Доставка2</span></a><a href=""><span>Доставка3</span></a>
-                </div>
-                <div class="form">
-                    <div class="f-h">Ваши адреса</div>
-                    <label class="the-radio"><input checked type="radio" name="pay"/><span class="t-r-toggle"></span>Наличными на месте получения на месте получения на месте получения</label>
-                    <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на месте получения<span class="t-r-info">Пояснения черным цветом, если надо какие-то</span></label>
-                    <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на сайте</label>
-                    <div class="ctrls">
-                        <button class="btn">Применить</button>
-                        <div class="price">Стоимость доставки:<span>300 ₽</span></div>
-                    </div>
-                </div>
-                <div class="form">
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-city"></use>
-                        </svg>
-                        <span class="f-i-h">Город</span>
-                        <input disabled type="text" name="city" value="Москва" />
-                    </label>
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-street"></use>
-                        </svg>
-                        <span class="f-i-h">Улица</span>
-                        <input type="text" name="street" />
-                    </label>
-                    <div class="f-pack">
-                        <label class="f-item">
-                            <span class="f-i-h">Дом/корпус</span>
-                            <input type="text" name="b" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Подъезд</span>
-                            <input type="text" name="s" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Этаж</span>
-                            <input type="text" name="f" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Кв./Офис</span>
-                            <input type="text" name="a" />
-                        </label>
-                    </div>
-                    <div class="ctrls">
-                        <button class="btn">Применить</button>
-                        <div class="price">Стоимость доставки:<span>300 ₽</span></div>
-                    </div>
-                </div>
-                <div class="form">
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-city"></use>
-                        </svg>
-                        <span class="f-i-h">Индекс</span>
-                        <input type="text" name="ind" />
-                    </label>
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-city"></use>
-                        </svg>
-                        <span class="f-i-h">Область</span>
-                        <input type="text" name="reg" />
-                    </label>
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-city"></use>
-                        </svg>
-                        <span class="f-i-h">Город</span>
-                        <input type="text" name="city" />
-                    </label>
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-street"></use>
-                        </svg>
-                        <span class="f-i-h">Улица</span>
-                        <input type="text" name="street" />
-                    </label>
-                    <div class="f-pack">
-                        <label class="f-item">
-                            <span class="f-i-h">Дом/корпус</span>
-                            <input type="text" name="b" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Подъезд</span>
-                            <input type="text" name="s" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Этаж</span>
-                            <input type="text" name="f" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Кв./Офис</span>
-                            <input type="text" name="a" />
-                        </label>
-                    </div>
-                    <div class="ctrls">
-                        <button class="btn">Применить</button>
-                        <div class="price">Стоимость доставки:<span>300 ₽</span></div>
-                    </div>
-                </div>
-            </div>
         </div>
     
     </div>
@@ -1003,7 +724,7 @@
 
 </div>
 
-<div class="search-box type22 popup">
+<div class="search-box popup">
     <form>
         <div class="search-button">
             <i class="fa fa-search"></i>

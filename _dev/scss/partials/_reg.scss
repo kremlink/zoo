@@ -1,0 +1,183 @@
+/*@path:partials\_reg.scss*/
+.reg-block{
+  margin:30px auto 0 auto;
+  max-width:900px;
+  background:getc(bd);
+  padding:20px;
+  .the-tabs a:not(.active){
+    background:none !important;
+  }
+  .u-block{
+    display:none;
+    position:relative;
+    @extend %form-send;
+    &.log{
+      &.active{
+        display:block;
+        &~.u-after{
+          .u-a-btns *:nth-child(1){
+            display:inline-block;
+          }
+          .log{
+            display:block;
+          }
+        }
+      }
+    }
+    &.reg{
+      @include flx(flex-flow,'row wrap');
+      @include flx(justify-content,space-between);
+      &.active{
+        @include flx(display,flex);
+        &~.u-after{
+          .u-a-btns{
+            *:nth-child(2){
+              display:inline-block;
+            }
+          }
+          .reg{
+            display:block;
+          }
+        }
+      }
+      .u-item{
+        width:100%;
+        @include med($pk){
+          width:calc(50% - 10px);
+        }
+        &.full{
+          width:100%;
+        }
+      }
+    }
+    &.rec{
+      &.active{
+        display:block;
+        &~.u-after{
+          .u-a-btns{
+            *:nth-child(3){
+              display:inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .u-item{
+    margin:20px 0 0 0;
+    padding:0;
+    display:block;
+    position:relative;
+    svg{
+      @include abs($l:0,$t:0);
+      width:13px;
+      height:14px;
+    }
+  }
+  .u-i-h{
+    display:block;
+    margin:0 0 6px 20px;
+    font-weight:400;
+    font-size:14px;
+    color:#000;
+  }
+  .u-after{
+    margin-top:20px;
+  }
+  .i-agree{
+    margin-top:16px;
+    width:100%;
+    color:getc(font);
+    text-align:center;
+  }
+  .u-a-btns{
+    margin:0 auto;
+    text-align:center;
+  }
+  .u-a-btn{
+    font:20px/34px font();
+    padding:0 30px;
+    background:none;
+    color:#fff;
+    border:none;
+    border-radius:0;
+    .type1font &{
+      font-family:font1();
+    }
+    .type2 &{
+      background:getc(grn);
+    }
+    .type22 &{
+      background:getc(grn25);
+    }
+    .type1 &{
+      background:getc(grn1);
+    }
+    .type11 &{
+      background:getc(grn11_);
+    }
+    display:none;
+    span{
+      @include grad-ref($c:#000,$b:1px,$d:true);
+    }
+  }
+  .u-a-soc{
+    display:none;
+    text-align:center;
+    a{
+      color:#fff;
+      font-size:12px;
+      line-height:30px;
+      text-align:center;
+      border-radius:0 6px 6px 0;
+      position:relative;
+      margin:26px 6px 0 37px;
+      display:inline-block;
+      padding:0 10px 0 5px;
+      &.i1{
+        background:#6888AD;
+        &:before{
+          @include sprite(s-vk);
+        }
+      }
+      &.i2{
+        background:#F35A4B;
+        &:before{
+          @include sprite(s-g);
+        }
+      }
+      &.i3{
+        background:#5471B8;
+        &:before{
+          @include sprite(s-fb);
+        }
+      }
+      &:before{
+        content:'';
+        @include abs($l:-31px);
+      }
+    }
+  }
+  input{
+    background:#ddd;
+    border:none;
+    padding-left:24px;
+    width:100%;
+    height:50px;
+    font-size:14px;
+    color:#000;
+    @include plh(){
+      font-size:inherit;
+    };
+    &.error{
+      background:#f00;
+      @include plh(){
+        color:#fff;
+      };
+    }
+    &:disabled{
+      background:none;
+      border:2px solid getc(font);
+    }
+  }
+}

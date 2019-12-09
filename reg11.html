@@ -23,17 +23,18 @@
     <script>
      var theApp={
       shared:{
-       modules:['cart'],
+       modules:['all'],
        pk:matchMedia('(min-width:990px)').matches
       },
       data:{
+       'all.masked':{mask:'+7 (xxx) xxx-xx-xx'}
                  
 
      }
      };
     </script>
 </head>
-<body class="style-1">
+<body class="type1font style-9">
 
 <!-- LOADER -->
 <div id="loader-wrapper">
@@ -46,20 +47,18 @@
 </div>
 
 <div id="content-block">
-    
-    <div class="content-center fixed-header-margin">
-        <!-- HEADER -->
-        <div class="header-wrapper type22 style-10">
+    <!-- HEADER -->
+    <div class="header-wrapper type11 style-9">
     <header class="type-1">
         <div class="header-top">
-            <div class="header-top-free">Бесплатная доставка корма по Москве при заказе от 999 руб.</div>
-            <a href="https://api.whatsapp.com/send?phone=74959955837" class="header-top-call"><i class="fa fa-phone"></i>Есть вопросы? Звоните <b>+7 (495) 99-55-837</b></a>
+            <a href="https://api.whatsapp.com/send?phone=74959955837" class="header-top-call"><b>+7 (495) 99-55-837</b></a>
+            <a href="https://api.whatsapp.com/send?phone=74959955837" class="header-top-call"><b>+7 (495) 99-55-837</b></a>
             <div class="menu-button responsive-menu-toggle-class"><i class="fa fa-reorder"></i></div>
         </div>
         
         <div class="header-middle">
             <div class="logo-wrapper">
-                <a id="logo" href="#"><img src="images/logo.png" alt="" /></a>
+                <a id="logo" href="#"><img src="images/logo2.png" alt="" /></a>
             </div>
             
             <div class="middle-entry">
@@ -70,7 +69,7 @@
                             <input type="submit" />
                         </div>
                         <div class="search-field">
-                            <input type="text" value="" placeholder="Поисковая экспедиция по планете" />
+                            <input type="text" value="" placeholder="Поиск по слову" />
                         </div>
                     </form>
                 </div>
@@ -78,8 +77,6 @@
             
             <div class="right-entries">
                 <a class="header-functionality-entry open-search-popup" href="#"><i class="fa fa-search"></i><span>Search</span></a>
-                <!--<a class="header-functionality-entry" href="#"><i class="fa fa-copy"></i><span>Compare</span></a>
-                <a class="header-functionality-entry" href="#"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>-->
                 <a class="header-functionality-entry open-cart-popup" href="#"><i class="fa fa-shopping-cart"></i><span>Моя корзина</span> <b>34922 ₽</b></a>
             </div>
         </div>
@@ -94,7 +91,7 @@
             <div class="nav-overflow">
                 <nav>
                     <ul>
-                        <li class="full-width i1">
+                        <li class="full-width">
                             <a href="#" class="active"><span class="menu-item-pic"></span>Собаки</a><i class="fa fa-chevron-down"></i>
                             <div class="submenu">
                                 <div class="full-width-menu-items-right">
@@ -247,7 +244,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="full-width-columns i2">
+                        <li class="full-width-columns">
                             <a href="#"><span class="menu-item-pic i2"></span>Кошки</a><i class="fa fa-chevron-down"></i>
                             <div class="submenu">
                                 <div class="product-column-entry">
@@ -324,7 +321,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="simple-list i3">
+                        <li class="simple-list">
                             <a href="shop.html"><span class="menu-item-pic"></span>Птицы</a><i class="fa fa-chevron-down"></i>
                             <div class="submenu">
                                 <ul class="simple-menu-list-column">
@@ -335,7 +332,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="column-1 i4">
+                        <li class="column-1">
                             <a href="portfolio-default.html"><span class="menu-item-pic"></span>Рыбы</a><i class="fa fa-chevron-down"></i>
                             <div class="submenu">
                                 <div class="full-width-menu-items-left">
@@ -364,7 +361,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="column-1 i5">
+                        <li class="column-1">
                             <a href="blog.html"><span class="menu-item-pic"></span>Грызуны</a><i class="fa fa-chevron-down"></i>
                             <div class="submenu">
                                 <div class="full-width-menu-items-left">
@@ -392,17 +389,15 @@
                                 </div>
                             </div>
                         </li>
+                        <li>
+                            <a href="" class="navigation-deliv1">ДОСТАВКА И ОПЛАТА</a>
+                        </li>
+                        <li>
+                            <a href="" class="navigation-log1">Войти или Зарегистрироваться</a>
+                        </li>
                         <li class="fixed-header-visible">
                             <a class="fixed-header-square-button open-cart-popup"><i class="fa fa-shopping-cart"></i></a>
                             <a class="fixed-header-square-button open-search-popup"><i class="fa fa-search"></i></a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <div class="navigation-addit">
-                                <a href="" class="navigation-deliv">ДОСТАВКА И ОПЛАТА</a>
-                                <a href="" class="navigation-log">Войти или Зарегистрироваться</a>
-                            </div>
                         </li>
                     </ul>
                     <div class="clear"></div>
@@ -414,314 +409,147 @@
     </header>
     <div class="clear"></div>
 </div>
-        
-        <div class="content-push type22">
-            <form action="" class="cart-block">
-                <div class="left">
-                    <h1 class="h">Ваша корзина</h1>
-                    <div class="cart">
-                        <div class="c-item">
-                            <a class="c-del" href="">
-                                <svg>
-                                    <use xlink:href="#icon-shared-icon-trash-b"></use>
-                                </svg>
-                            </a>
-                            <div class="c-img">
-                                <img src="images/product1-s.jpg" alt=""/>
-                            </div>
-                            <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
-                            <div class="p-amt">
-                                <button class="p-m">&ndash;</button>
-                                <input type="number" value="1" />
-                                <button class="p-p">+</button>
-                            </div>
-                            <div class="c-price">
-                                <div class="c-p-val">150 <span>₽</span></div>
-                                <div class="c-p-info">
-                                    75 ₽ / шт.<br/>
-                                    <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="c-item">
-                            <a class="c-del" href="">
-                                <svg>
-                                    <use xlink:href="#icon-shared-icon-trash-b"></use>
-                                </svg>
-                            </a>
-                            <div class="c-img">
-                                <img src="images/product1-s.jpg" alt=""/>
-                            </div>
-                            <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
-                            <div class="p-amt">
-                                <button class="p-m">&ndash;</button>
-                                <input type="number" value="1" />
-                                <button class="p-p">+</button>
-                            </div>
-                            <div class="c-price">
-                                <div class="c-p-val">150 <span>₽</span></div>
-                                <div class="c-p-info">
-                                    75 ₽ / шт.<br/>
-                                    <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="c-item">
-                            <a class="c-del" href="">
-                                <svg>
-                                    <use xlink:href="#icon-shared-icon-trash-b"></use>
-                                </svg>
-                            </a>
-                            <div class="c-img">
-                                <img src="images/product1-s.jpg" alt=""/>
-                            </div>
-                            <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
-                            <div class="p-amt">
-                                <button class="p-m">&ndash;</button>
-                                <input type="number" value="1" />
-                                <button class="p-p">+</button>
-                            </div>
-                            <div class="c-price">
-                                <div class="c-p-val">150 <span>₽</span></div>
-                                <div class="c-p-info">
-                                    75 ₽ / шт.<br/>
-                                    <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="add">
-                        <h2 class="h">Добавьте в корзину</h2>
-                        <div class="a-wrap">
-                            <div class="c-item">
-                                <div class="c-img">
-                                    <img src="images/product1-s.jpg" alt=""/>
-                                </div>
-                                <div class="c-name">Крем для рук защитный "Календула и пчелиный воск", 75 мл</div>
-                                <div class="p-amt">
-                                    <button class="p-m">&ndash;</button>
-                                    <input type="number" value="1" />
-                                    <button class="p-p">+</button>
-                                </div>
-                                <div class="c-price">
-                                    <div class="c-p-val">150 <span>₽</span></div>
-                                    <div class="c-p-info">
-                                        75 ₽ / шт.<br/>
-                                        <span class="c-p-old">100₽</span><span class="c-p-disc">-25%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="" class="g-add">
-                                <svg>
-                                    <use xlink:href="#icon-shared-icon-cart"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <aside class="info">
-                            <div class="in-h1"><span>Оформление заказа</span></div>
-                            <div class="in-h">1. СПОСОБ ДОСТАВКИ</div>
-                            <div class="in-top">
-                                <div class="in-notif">
-                                    Для оформления заказа <br/><b>выберите способ доставки</b>
-                                    <a href="" class="in-n-close" onclick="this.parentNode.style.display='none';return false;">&times;</a>
-                                </div>
-                                <a href="" class="in-choose">
-                                    <svg>
-                                        <use xlink:href="#icon-shared-delivery-truck"></use>
-                                    </svg>
-                                    <span>Выбрать адрес доставки или самовывоз</span>
-                                </a>
-                            </div>
-                            <div class="in-h">2. СПОСОБ ОПЛАТЫ</div>
-                            <label class="the-radio"><input checked type="radio" name="pay"/><span class="t-r-toggle"></span>Наличными на месте получения</label>
-                            <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на месте получения</label>
-                            <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на сайте</label>
-                            <div class="in-promo">
-                                <input placeholder="Промокод (если есть)" type="text" name="promo"/>
-                                <a href="" class="in-promo-go"></a>
-                            </div>
-                            <div class="in-h">ИТОГО</div>
-                            <div class="in-price"><div>Сумма заказа</div><div>2 502 ₽</div></div>
-                            <div class="in-price disc"><div>Скидка</div><div>248 ₽</div></div>
-                            <div class="in-price"><div>Доставка</div><div>300 ₽</div></div>
-                            <div class="in-free">Минимальная сумма заказа &mdash; 500 р<br/><br/>БЕСПЛАТНАЯ ДОСТАВКА<br/>ПРИ ЗАКАЗЕ ОТ 3000 ₽</div>
-                            <div class="in-price sum"><div>К ОПЛАТЕ</div><div>2 554 ₽</div></div>
-                            <!--<div class="in-no-addr">Не выбран адрес доставки или самовывоза</div>
-                            <button class="in-done disabled">ОФОРМИТЬ ЗАКАЗ</button>-->
-                            <button class="btn done">ОФОРМИТЬ ЗАКАЗ</button>
-                        </aside>
-                    </div>
+    <div class="content-push type11">
+        <div class="wide-center fixed-header-margin">
+            <div class="reg-block">
+                <div class="the-tabs">
+                    <a class="active" href=""><span>Войти</span></a><a href=""><span>Зарегистрироваться</span></a><a href=""><span>Восстановить пароль</span></a>
                 </div>
-                <section class="c-bottom">
-                    <div class="the-tabs">
-                        <a class="active" href=""><span>Зарегистрируйтесь<br/>для оформления заказа</span></a><a href=""><span>Войти</span></a><a href=""><span>Восстановить пароль</span></a>
-                    </div>
-                    <div class="c-form">
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-user-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Ваше имя</span>
-                            <input type="text" name="name" />
-                        </label>
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-password-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Пароль</span>
-                            <input type="password" name="pass" />
-                        </label>
-                        <label class="c-f-item short">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-trojka-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Программа лояльности</span>
-                            <input type="text" name="troj" />
-                        </label>
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Электронная почта</span>
-                            <input type="text" name="email" />
-                        </label>
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-phone-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Номер телефона</span>
-                            <input class="phone-mask" type="text" name="phone" />
-                        </label>
-                        <div class="c-f-item short soc">
-                            Регистрация через соцсети<br/>
-                            <a class="c-f-soc" href="">
-                                <svg style="width: 37px;height: 22px;">
-                                    <use xlink:href="#icon-shared-social-vk"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="c-f-soc">
-                                <svg style="width: 36px;height: 36px;">
-                                    <use xlink:href="#icon-shared-social-google"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="c-f-soc">
-                                <svg style="width: 18px;height: 36px;">
-                                    <use xlink:href="#icon-shared-social-facebook"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="c-f-item">
-                            <div class="i-agree">Нажимая "ОФОРМИТЬ ЗАКАЗ", вы принимаете следующие <a href="">условия использования</a></div>
-                            <button class="btn done">ОФОРМИТЬ ЗАКАЗ</button>
-                        </div>
-                    </div>
-                    <div class="c-form">
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Электронная почта</span>
-                            <input type="text" name="email" />
-                        </label>
-                        <label class="c-f-item">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-password-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Пароль</span>
-                            <input type="password" name="pass" />
-                        </label>
-                        <div class="c-f-item short soc">
-                            Войти через соцсети<br/>
-                            <a class="c-f-soc" href="">
-                                <svg style="width: 37px;height: 22px;">
-                                    <use xlink:href="#icon-shared-social-vk"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="c-f-soc">
-                                <svg style="width: 36px;height: 36px;">
-                                    <use xlink:href="#icon-shared-social-google"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="c-f-soc">
-                                <svg style="width: 18px;height: 36px;">
-                                    <use xlink:href="#icon-shared-social-facebook"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="c-f-item">
-                            <div class="i-agree">Нажимая "ОФОРМИТЬ ЗАКАЗ", вы принимаете следующие <a href="">условия использования</a></div>
-                            <button class="btn done">ОФОРМИТЬ ЗАКАЗ</button>
-                        </div>
-                    </div>
-                    <div class="c-form">
-                        <label class="c-f-item center">
-                            <svg>
-                                <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
-                            </svg>
-                            <span class="c-f-i-h">Введите электронную почту</span>
-                            <input type="text" name="email" />
-                        </label>
-                        <div class="pass">
-                            <a class="btn" href="">ВЫСЛАТЬ ПАРОЛЬ</a>
-                        </div>
-                    </div>
-                </section>
-            </form>
-            
-            <!-- FOOTER -->
-            <div class="footer-wrapper style-1">
-    <footer class="type-1">
-        <div class="footer-bottom-navigation">
-            <div class="cell-view">
-                <p>
-                    Бесплатная доставка корма по Москве при заказе от 999 руб.
-                </p>
-                <p>
-                    Доставка по России по расценкам траспортных компаний
-                </p>
-                <div class="payment-methods">
-                    <a href="#"><img src="images/pay1.jpg" alt="" /></a>
-                    <a href="#"><img src="images/pay2.jpg" alt="" /></a>
-                    <a href="#"><img src="images/pay3.jpg" alt="" /></a>
+                <div class="u-block log">
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Электронная почта</span>
+                        <input type="text" name="email" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-password-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Пароль</span>
+                        <input type="password" name="pass" />
+                    </label>
                 </div>
-                <p>
-                    Заказ может быть оплачен картой онлайн
-                </p>
-            </div>
-            <div class="cell-view">
-                <div class="footer-links">
-                    <!--<script type="text/javascript">(function() {
-                     if (window.pluso)if (typeof window.pluso.start == "function") return;
-                     if (window.ifpluso==undefined) { window.ifpluso = 1;
-                      var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-                      s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
-                      s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
-                      var h=d[g]('body')[0];
-                      h.appendChild(s);
-                     }})();</script>-->
-                    <div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook"></div>
-                    <p>
-                        <a class="footer-agreement" href="#">Соглашение об обработке персональных данных</a>
-                    </p>
-                    <p>
-                        <a class="footer-tel" href="tel:+4959955837">+7 (495) 99-55-837</a>
-                    </p>
-                    <p>
-                        Пн-пт:09:00-21:00<br/>
-                        Сб:10:00-14:00
-                    </p>
-                    <p>
-                        2003-2019 &copy; "ZooFood"
-                    </p>
+                <div class="u-block reg">
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Электронная почта</span>
+                        <input type="text" name="email" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-user-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Ваше имя</span>
+                        <input type="text" name="name" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-password-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Пароль</span>
+                        <input type="password" name="pass" />
+                    </label>
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-phone-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Номер телефона</span>
+                        <input class="phone-mask" type="text" name="phone" />
+                    </label>
+                    <label class="u-item full">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-city-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Адрес доставки</span>
+                        <input type="text" name="addr" />
+                    </label>
+                </div>
+                <div class="u-block rec">
+                    <label class="u-item">
+                        <svg>
+                            <use xlink:href="#icon-shared-icon-cart-mail-brown"></use>
+                        </svg>
+                        <span class="u-i-h">Электронная почта</span>
+                        <input type="text" name="email" />
+                    </label>
+                </div>
+                <div class="i-agree">Нажимая "Далее", я соглашаюсь на обработку своих данных</div>
+                <div class="u-after">
+                    <div class="u-a-btns">
+                        <button class="u-a-btn">Войти</button><button class="u-a-btn">Далее</button><button class="u-a-btn">Далее</button>
+                    </div>
+                    <div class="u-a-soc log">
+                        <a class="i1" href="">Войти через Вконтакте</a>
+                        <a class="i2" href="">Войти через Google</a>
+                        <a class="i3" href="">Войти через Facebook</a>
+                    </div>
+                    <div class="u-a-soc reg">
+                        <a class="i1" href="">Регистрация через Вконтакте</a>
+                        <a class="i2" href="">Регистрация через Google</a>
+                        <a class="i3" href="">Регистрация через Facebook</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--<div class="footer-copyright-wrapper">
-            <div class="copyright">Created with by <a href="#">8theme</a>. All right reserved</div>
-        </div>-->
-    </footer>
+        
+        <!-- FOOTER -->
+        <div class="type1-footer">
+    <div class="wide-center footer-wrapper style-1">
+        <footer class="type-1">
+            <div class="footer-bottom-navigation">
+                <div class="cell-view">
+                    <p>
+                        <b>Бесплатная доставка корма по Москве при заказе от 999 руб.</b>
+                    </p>
+                    <p>
+                        Доставка по России по расценкам траспортных компаний
+                    </p>
+                    <div class="payment-methods">
+                        <a href="#"><img src="images/pay1.jpg" alt="" /></a>
+                        <a href="#"><img src="images/pay2.jpg" alt="" /></a>
+                        <a href="#"><img src="images/pay3.jpg" alt="" /></a>
+                    </div>
+                    <p>
+                        Заказ может быть оплачен картой онлайн
+                    </p>
+                </div>
+                <div class="cell-view">
+                    <div class="footer-links">
+                        <!--<script type="text/javascript">(function() {
+                         if (window.pluso)if (typeof window.pluso.start == "function") return;
+                         if (window.ifpluso==undefined) { window.ifpluso = 1;
+                          var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                          s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                          s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                          var h=d[g]('body')[0];
+                          h.appendChild(s);
+                         }})();</script>-->
+                        <div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook"></div>
+                        <p>
+                            <a class="footer-agreement" href="#">Соглашение об обработке персональных данных</a>
+                        </p>
+                        <p>
+                            <a class="footer-tel" href="tel:+4959955837">+7 (495) 99-55-837</a>
+                        </p>
+                        <p>
+                            Пн-пт:09:00-21:00<br/>
+                            Сб:10:00-14:00
+                        </p>
+                        <p>
+                            2003-2019 &copy; "ZooFood"
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="footer-copyright-wrapper">
+                <div class="copyright">Created with by <a href="#">8theme</a>. All right reserved</div>
+            </div>-->
+        </footer>
+    </div>
 </div>
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/idangerous.swiper.min.js"></script>
@@ -886,124 +714,12 @@
         </div>
     </div>
 </div>
-            <div class="standard-pop cart">
-                <a href="" class="close">
-                    <svg>
-                        <use xlink:href="#icon-shared-close"></use>
-                    </svg>
-                </a>
-                <div class="the-tabs">
-                    <a class="active" href=""><span>Доставка1</span></a><a href=""><span>Доставка2</span></a><a href=""><span>Доставка3</span></a>
-                </div>
-                <div class="form">
-                    <div class="f-h">Ваши адреса</div>
-                    <label class="the-radio"><input checked type="radio" name="pay"/><span class="t-r-toggle"></span>Наличными на месте получения на месте получения на месте получения</label>
-                    <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на месте получения<span class="t-r-info">Пояснения черным цветом, если надо какие-то</span></label>
-                    <label class="the-radio"><input type="radio" name="pay"/><span class="t-r-toggle"></span>Картой на сайте</label>
-                    <div class="ctrls">
-                        <button class="btn">Применить</button>
-                        <div class="price">Стоимость доставки:<span>300 ₽</span></div>
-                    </div>
-                </div>
-                <div class="form">
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-city"></use>
-                        </svg>
-                        <span class="f-i-h">Город</span>
-                        <input disabled type="text" name="city" value="Москва" />
-                    </label>
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-street"></use>
-                        </svg>
-                        <span class="f-i-h">Улица</span>
-                        <input type="text" name="street" />
-                    </label>
-                    <div class="f-pack">
-                        <label class="f-item">
-                            <span class="f-i-h">Дом/корпус</span>
-                            <input type="text" name="b" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Подъезд</span>
-                            <input type="text" name="s" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Этаж</span>
-                            <input type="text" name="f" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Кв./Офис</span>
-                            <input type="text" name="a" />
-                        </label>
-                    </div>
-                    <div class="ctrls">
-                        <button class="btn">Применить</button>
-                        <div class="price">Стоимость доставки:<span>300 ₽</span></div>
-                    </div>
-                </div>
-                <div class="form">
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-city"></use>
-                        </svg>
-                        <span class="f-i-h">Индекс</span>
-                        <input type="text" name="ind" />
-                    </label>
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-city"></use>
-                        </svg>
-                        <span class="f-i-h">Область</span>
-                        <input type="text" name="reg" />
-                    </label>
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-city"></use>
-                        </svg>
-                        <span class="f-i-h">Город</span>
-                        <input type="text" name="city" />
-                    </label>
-                    <label class="f-item">
-                        <svg>
-                            <use xlink:href="#icon-shared-icon-street"></use>
-                        </svg>
-                        <span class="f-i-h">Улица</span>
-                        <input type="text" name="street" />
-                    </label>
-                    <div class="f-pack">
-                        <label class="f-item">
-                            <span class="f-i-h">Дом/корпус</span>
-                            <input type="text" name="b" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Подъезд</span>
-                            <input type="text" name="s" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Этаж</span>
-                            <input type="text" name="f" />
-                        </label>
-                        <label class="f-item">
-                            <span class="f-i-h">Кв./Офис</span>
-                            <input type="text" name="a" />
-                        </label>
-                    </div>
-                    <div class="ctrls">
-                        <button class="btn">Применить</button>
-                        <div class="price">Стоимость доставки:<span>300 ₽</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
     </div>
     <div class="clear"></div>
 
 </div>
 
-<div class="search-box type22 popup">
+<div class="search-box type11 popup">
     <form>
         <div class="search-button">
             <i class="fa fa-search"></i>

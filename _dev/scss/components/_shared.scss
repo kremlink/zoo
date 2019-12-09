@@ -10,6 +10,9 @@
       @include flx(display,flex);
       position:relative;
     }
+    .type1font &{
+      font-family:font1();
+    }
     a{
       background:none;
       display:block;
@@ -267,6 +270,9 @@
       color:#fff;
       border:none;
       border-radius:0;
+      .type1font &{
+        font-family:font1();
+      }
       .type2 &{
         background:getc(grn);
       }

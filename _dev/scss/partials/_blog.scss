@@ -21,7 +21,7 @@
   }
   .item{
     text-align:left;
-    margin-top:30px;
+    margin-top:50px;
     @include med($pk){
       .type1 &,.type11 &{
         width:48%;
@@ -48,18 +48,11 @@
     }
   }
   .img{
-    margin-top:16px;
     max-width:100%;
     display:block;
     @include med($pk){
       display:inline-block;
       margin-right:24px;
-    }
-    &:first-child{
-      margin-top:8px;
-      @include med($pk){
-        margin-top:16px;
-      }
     }
   }
   p+p{
