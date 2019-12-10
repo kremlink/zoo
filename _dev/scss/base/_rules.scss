@@ -121,6 +121,12 @@
     }
   }
 
+  .p404{
+    display:block;
+    margin:50px auto;
+    max-width:100%;
+  }
+
   .safe-hide-svg{
     @include abs($l:0,$t:-100px);
     width:1px;

@@ -20,7 +20,8 @@
     overlay:'.overlay',
     closers:'.standard-pop.cart .close,.standard-pop.cart .btn',
     options:{
-     esc:true
+     esc:true,
+     hideClick:document
     },
     extra:{
      shift:mgr.get('shared.pk')?200:100
